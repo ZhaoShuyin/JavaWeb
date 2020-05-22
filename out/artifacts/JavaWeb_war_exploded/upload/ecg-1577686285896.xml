@@ -1,0 +1,19 @@
+--2f1f8d93-cda1-4e37-8c73-ce20b4bdfc8d
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 16
+
+name=aaa&age=123
+--2f1f8d93-cda1-4e37-8c73-ce20b4bdfc8d
+Content-Disposition: form-data; name="uuuname"
+Content-Length: 3
+
+bbb
+--2f1f8d93-cda1-4e37-8c73-ce20b4bdfc8d
+Content-Disposition: form-data; name="xml"; filename="ECGL.xml"
+Content-Type: multipart/form-data
+Content-Length: 16
+
+test
+test
+test
+--2f1f8d93-cda1-4e37-8c73-ce20b4bdfc8d--

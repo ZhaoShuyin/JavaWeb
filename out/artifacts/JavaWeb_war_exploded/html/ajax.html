@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Ajax测试01</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="/js/xh.js"></script>
+    <script type="text/javascript">
+        //ajax的入门案例
+        function testajax() {
+            var xhr = getXMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                switch (xhr.readyState) {
+                    case 1:
+                        console.warn("状态1:建立请求 status: "+xhr.status)
+                        break;
+                    case 2:
+                        console.warn("状态2:发送请求 status: "+xhr.status)
+                        break;
+                    case 3:
+                        console.warn("状态2:收到响应 status: "+xhr.status)
+                        break;
+                    case 4:                            //响应结束,这里没有表示出响应成功的意思
+                        console.warn("状态2:接收响应 status: "+xhr.status)
+                        if (xhr.status == 200) {            //判断ajax响应状态码。当是200的时候，表示一切都Ok
+                            //xhr.responseText为响应内容
+                            var headers = xhr.getAllResponseHeaders();
+                            //var content = xhr.getResponseHeader("content-length");
+                            var response = "响应: \n headers:\n" + headers.toString() + "\nresponse:\n" + xhr.responseText;
+                            document
+                                .getElementById("response")
+                                .innerHTML = response;
+                            console.warn(response)
+                        }
+                        break;
+                }
+            }
+            //方式,URl,是否异步
+            xhr.open("POST", "/ajax?time=" + new Date().getTime(), true);
+            //4.发送请求.当是get请求方式时，里面的参数是null。如果是post请求方式，里面的参数就是请求正文
+            // xhr.send(null);//方式GET
+
+            var username = document.getElementsByName("username")[0].value;
+            var password = document.getElementsByName("password")[0].value;
+            /*
+            Ajax常见请求头设置
+            * json：xhr.setRequestHeader("Content-type","application/json; charset=utf-8");//内容类型
+              form：xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8");
+              文本：xhr.setRequestHeader("Content-type", "text/plain; charset=utf-8");
+            * */
+            //当使用POST时,必须使用请求消息头
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+            xhr.send(data = "username=" + username + "&password=" + password);//post方式请求时，正文的写法
+        }
+    </script>
+</head>
+<body>
+<!--onblur()失去焦点时执行方法 onblur="testajax()"-->
+用户名：<input type="text" name="username"/><span id="username_msg"></span><br/>
+密码：<input type="password" name="password"/><br/>
+<hr/>
+<input type="button" value="测试ajax" onclick="testajax()"/>
+<hr/>
+
+<div id="response" style="width:200px;height:500px;border:2px solid blue;padding: 10px"></div>
+</body>
+</html>
