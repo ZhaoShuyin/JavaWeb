@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaWeb">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaWeb</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaWeb" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="commons-beanutils-1.8.3" />
+          <element id="library" level="project" name="commons-fileupload-1.4" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="JavaWeb/web/Web2" />
+      <element id="javaee-facet-resources" facet="JavaWeb/web/Web" />
+    </root>
+  </artifact>
+</component>

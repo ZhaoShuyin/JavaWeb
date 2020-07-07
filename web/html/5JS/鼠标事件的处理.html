@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title> 鼠标事件的处理</title>
+
+    <style type="text/css">
+        div{
+            border:3px dashed green;
+            width:500px;
+            height:500px;
+            position:relation;
+            background:url(images/2.jpg);
+        }
+    </style>
+</head>
+<body background="images/bg.jpg">
+<script type="text/javascript">
+    /*
+        鼠标移入事件：onMouseOver
+        鼠标移出事件：onMouseOut
+        鼠标移动事件：onMouseMove
+        鼠标点击事件：onClick
+    */
+    function mymouseover(){
+        alert("鼠标移入了");
+    }
+    function mymouseout(){
+        alert("鼠标移走了");
+    }
+    function mymousemove(){
+        window.status = event.clientX+","+event.clientY;
+        y=document.getElementById("div1");
+        y.innerHTML=event.clientX+","+event.clientY;;
+    }
+    function mymosuedown(){
+        alert(event.clientX+","+event.clientY);
+    }
+</script>
+<input type="text" name="username" onmouseover="mymouseover()" onmouseout="mymouseout()"/>
+
+<div id="div1" background="2.jpg" onmousemove="mymousemove()" onmousedown="mymosuedown()"></div>
+</body>
+</html>
