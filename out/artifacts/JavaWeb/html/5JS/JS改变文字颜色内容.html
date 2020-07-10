@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+ <HEAD>
+  <TITLE> Day 1 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+       <style>
+          p{color:blue;}
+       </style>
+  <script>
+    // to change the color of an object.
+    function changeColor(){
+	 x=document.getElementById("Id1");
+	
+	//alert(x.style.color=="#ccc")
+	if(x.style.color=="blue"){
+	    x.style.color="Red";
+	}else{
+		x.style.color="blue";
+	}
+   
+   
+    }
+    // to change the content of an object.
+    function changeContent(){
+    y=document.getElementById("Id2");
+    y.innerHTML="这是已改变的为内容";
+    }
+    </script>
+ </HEAD>
+ 
+<BODY bgcolor="AntiqueWhite">
+    <h1 ><center>标题文字呦</center></h1>
+    <p id="Id1" bgcolor="#ccc">显示文字颜色</p>
+    <p id="Id2" style="color:green">显示文字内容</p>
+    <button type="button" onclick ="changeColor()">
+        改变文字颜色
+    </button><br/><br/>
+    <button type="button" onclick ="changeContent()">
+        改变文字内容
+    </button>
+ </BODY>
+</HTML>

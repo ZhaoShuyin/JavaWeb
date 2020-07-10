@@ -1,6 +1,8 @@
 package cn.zsy.ajax;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,13 +20,17 @@ import javax.servlet.http.HttpServletResponse;
 public class AjaxServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
-        System.out.println("AjaxServlet-POST");
-        System.out.println("username:"+username+"   password:"+password);
-
+        Map<String, String[]> parameterMap = request.getParameterMap();
+        StringBuilder builder = new StringBuilder();
+        for (Map.Entry<String, String[]> entry : parameterMap.entrySet()) {
+            String mapKey = entry.getKey();
+            String[] mapValue = entry.getValue();
+            builder.append(mapKey + "\n");
+            builder.append("  " + Arrays.toString(mapValue) + "\n");
+        }
+        String parameters = builder.toString();
         response.setCharacterEncoding("UTF-8");
-        response.getWriter().write("AjaxServlet-POST \nusername:"+username+" \npassword:"+password);
+        response.getWriter().write("getParameter \nparameters: \n" + parameters);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -32,4 +38,5 @@ public class AjaxServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         response.getWriter().write("AjaxServlet-GET");
     }
+
 }
