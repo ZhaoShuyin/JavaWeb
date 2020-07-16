@@ -37,6 +37,12 @@
                                 .getElementById("response")
                                 .innerHTML = response;
                             console.warn(response)
+                        } else {
+                            var error = "xmlhttprequest.status: " + xmlhttprequest.status;
+                            document
+                                .getElementById("response")
+                                .innerHTML = error;
+                            console.warn(error)
                         }
                         break;
                     default:
@@ -45,7 +51,10 @@
                 }
             }
             //方式,URl,是否异步
-            xmlhttprequest.open("POST", "/ajax?time=" + new Date().getTime(), true);
+            xmlhttprequest.open(
+                "POST",
+                "/ajax?time=" + new Date().getTime(),
+                true); //async
             //4.发送请求.当是get请求方式时，里面的参数是null。如果是post请求方式，里面的参数就是请求正文
             // xmlhttprequest.send(null);//方式GET
 
@@ -65,6 +74,7 @@
     </script>
 </head>
 <body>
+
 <!--onblur()失去焦点时执行方法 onblur="testajax()"-->
 用户：<input type="text" name="username"/>
 密码：<input type="password" name="password"/>
@@ -73,9 +83,11 @@
 <input type="button" value="测试ajax" style="margin: 20px" onclick="testajax()"/>
 <hr/>
 <hr/>
-<div>显示响应内容</div>
+<h5>显示响应内容</h5>
 <!--white-space: pre-line 可以使用\n换行符-->
 <div id="response"
-     style="width:200px;height:500px;border:5px solid blue;padding: 20px;white-space: pre-line;margin: 20px"></div>
+     style="width:200px;height:500px;border:5px solid blue;padding: 20px;white-space: pre-line;margin: 20px"/>
+
 </body>
+
 </html>

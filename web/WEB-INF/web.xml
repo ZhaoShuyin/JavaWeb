@@ -35,7 +35,7 @@
         <url-pattern>/ajax</url-pattern>
     </servlet-mapping>
 
-
+    <!---->
     <servlet>
         <servlet-name>Ajax01</servlet-name>
         <servlet-class>cn.zsy.ajax.Ajax01Servlet</servlet-class>
@@ -45,17 +45,7 @@
         <url-pattern>/ajax01</url-pattern>
     </servlet-mapping>
 
-
-    <servlet>
-        <servlet-name>Ajax02</servlet-name>
-        <servlet-class>cn.zsy.ajax.Ajax02Servlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Ajax02</servlet-name>
-        <url-pattern>/ajax02</url-pattern>
-    </servlet-mapping>
-
-
+    <!---->
     <servlet>
         <servlet-name>Agency</servlet-name>
         <servlet-class>cn.zsy.AgencyServlet</servlet-class>

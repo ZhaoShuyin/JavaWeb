@@ -20,7 +20,7 @@ public class Ajax01Servlet extends HttpServlet {
 
     public static HashMap<String, String> hashMap = new HashMap<>();
 
-    {
+    static {
         hashMap.put("1", "1");
         hashMap.put("2", "2");
         hashMap.put("3", "3");
