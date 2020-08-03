@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * @autor Zsy
  */
 @WebServlet(name = "AjaxServlet")
-public class Ajax01Servlet extends HttpServlet {
+public class VerifyServlet extends HttpServlet {
 
     public static HashMap<String, String> hashMap = new HashMap<>();
 
