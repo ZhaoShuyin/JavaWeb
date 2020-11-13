@@ -25,9 +25,12 @@ public class UploadServlet extends HttpServlet {
         /**
          *
          */
-        String path = request.getRealPath("/upload");
+        String path = "D:/Test/upload";
         long millis = System.currentTimeMillis();
         File file = new File(path, "ecg-" + millis + ".xml");
+        if (!file.exists()){
+            file.createNewFile();
+        }
         OutputStream out = new FileOutputStream(file);
         BufferedOutputStream bout = new BufferedOutputStream(out);
 
@@ -44,7 +47,7 @@ public class UploadServlet extends HttpServlet {
         response.setCharacterEncoding("utf-8");
         PrintWriter printWriter = response.getWriter();
         String message = "上传完毕 保存文件名文件  < ecg-" + millis + " > 文件大小: " + file.length();
-        String json = "{ \"Status\":1,\"Mes\":\"" + message + "\"}";
+        String json = "{\"Status\":\"1\"}";
         printWriter.print(json);
     }
 

@@ -25,7 +25,7 @@
         <url-pattern>/upload</url-pattern>
     </servlet-mapping>
 
-
+    <!--Ajax接口-->
     <servlet>
         <servlet-name>Ajax</servlet-name>
         <servlet-class>cn.zsy.ajax.AjaxServlet</servlet-class>
@@ -35,27 +35,17 @@
         <url-pattern>/ajax</url-pattern>
     </servlet-mapping>
 
-
+    <!---->
     <servlet>
         <servlet-name>Ajax01</servlet-name>
-        <servlet-class>cn.zsy.ajax.Ajax01Servlet</servlet-class>
+        <servlet-class>cn.zsy.ajax.VerifyServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Ajax01</servlet-name>
         <url-pattern>/ajax01</url-pattern>
     </servlet-mapping>
 
-
-    <servlet>
-        <servlet-name>Ajax02</servlet-name>
-        <servlet-class>cn.zsy.ajax.Ajax02Servlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Ajax02</servlet-name>
-        <url-pattern>/ajax02</url-pattern>
-    </servlet-mapping>
-
-
+    <!---->
     <servlet>
         <servlet-name>Agency</servlet-name>
         <servlet-class>cn.zsy.AgencyServlet</servlet-class>

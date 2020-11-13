@@ -7,14 +7,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2367a018-ad0a-451c-9a6b-acae0e21e5fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/zsy/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_dbcp_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_dbutils_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_pool_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_lib_2_4_jdk15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_39.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-dbcp-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-dbutils-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-pool-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/mysql-connector-java-5.1.39.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/dbcp.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dbcp/DBCPUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dbcp/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dbcp/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dbcp/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dbcp/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dbcp/ThreadManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbc/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mybatis/DataUitl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mybatis/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件/jar包/dbcp/commons-dbcp-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件/jar包/dbcp/commons-dbutils-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件/jar包/dbcp/commons-pool-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件/jar包/dbcp/mysql-connector-java-5.1.39.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件/jar包/文件上传/commons-fileupload-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件/jar包/文件上传/commons-io-2.5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JavaWeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_8_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_8_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/zsy/AgencyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/zsy/AgencyServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/zsy/ajax/Ajax01Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/zsy/ajax/VerifyServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/zsy/ajax/AjaxServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/zsy/ajax/AjaxServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ajax/ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ajax/ajax1-status.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ajax/ajax01.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ajax/ajax2-layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/cn/zsy/ajax/AjaxServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/cn/zsy/ajax/AjaxServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/cn/zsy/web/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/cn/zsy/web/UploadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/zsy/web/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/zsy/web/UploadServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/zsy/ajax/Ajax01Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/zsy/ajax/Ajax02Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/zsy/ajax/AjaxServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/zsy/ajax/AjaxServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/zsy/web/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/zsy/web/UploadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/commons-beanutils-1.8.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/commons-beanutils-1.8.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/commons-collections-3.2.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/commons-collections-3.2.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/commons-fileupload-1.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/commons-fileupload-1.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/commons-io-2.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/commons-io-2.5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/commons-lang-2.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/commons-lang-2.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/commons-logging-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/commons-logging-1.1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/ezmorph-1.0.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/ezmorph-1.0.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/hamcrest-core-1.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hamcrest-core-1.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/json-lib-2.4-jdk15.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/json-lib-2.4-jdk15.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lib/junit-4.12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/junit-4.12.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +79,73 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dbcp/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/zsy/ajax/jsontest/JSONTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dbcp/DBCPUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#825#826#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Java/jdk1.8.0_221/src.zip!/javax/sql/DataSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1280">
+              <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dbcp/ThreadManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/dbcp.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -46,6 +153,7 @@
         <option value="HTML File" />
         <option value="Jsp File" />
         <option value="XHTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -69,13 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/zsy/web/UploadServlet.java" />
-        <option value="$PROJECT_DIR$/web/testhtml.html" />
-        <option value="$PROJECT_DIR$/web/html/form.html.xhtml" />
-        <option value="$PROJECT_DIR$/src/cn/zsy/web/BootServlet.java" />
-        <option value="$PROJECT_DIR$/文件/SqlServer学习" />
-        <option value="$PROJECT_DIR$/文件/表操作" />
         <option value="$PROJECT_DIR$/src/cn/zsy/sql/Main.java" />
         <option value="$PROJECT_DIR$/src/cn/zsy/sql/SqlserverTest.java" />
         <option value="$PROJECT_DIR$/web/html/ajax01.html.xhtml" />
@@ -115,6 +216,18 @@
         <option value="$PROJECT_DIR$/src/cn/zsy/AgencyServlet.java" />
         <option value="$PROJECT_DIR$/src/cn/zsy/domain/Category.java" />
         <option value="$PROJECT_DIR$/src/cn/zsy/ajax/AjaxServlet.java" />
+        <option value="$PROJECT_DIR$/src/cn/zsy/web/UploadServlet.java" />
+        <option value="$PROJECT_DIR$/src/mybatis/DataUitl.java" />
+        <option value="$PROJECT_DIR$/src/dbcp.properties" />
+        <option value="$PROJECT_DIR$/src/dbcp/KCYDBCPUtil.java" />
+        <option value="$PROJECT_DIR$/src/dbcp/DBCPUtil.java" />
+        <option value="$PROJECT_DIR$/src/dbcp/Test2.java" />
+        <option value="$PROJECT_DIR$/src/dbcp/Test3.java" />
+        <option value="$PROJECT_DIR$/src/jdbc/JdbcUtil.java" />
+        <option value="$PROJECT_DIR$/src/dbcp/Test1.java" />
+        <option value="$PROJECT_DIR$/src/config/dbcp.properties" />
+        <option value="$PROJECT_DIR$/src/dbcp/ThreadManager.java" />
+        <option value="$PROJECT_DIR$/src/dbcp/Test.java" />
       </list>
     </option>
   </component>
@@ -131,10 +244,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="372" />
-    <option name="y" value="55" />
-    <option name="width" value="1311" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="111" />
+    <option name="y" value="58" />
+    <option name="width" value="1603" />
     <option name="height" value="980" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -160,7 +273,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -172,45 +284,31 @@
             <path>
               <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="commons-pool-1.6.jar" type="ab9368bb:PsiFileNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="commons-pool-1.6.jar" type="ab9368bb:PsiFileNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="zsy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="zsy" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="zsy" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="zsy" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dbcp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -221,12 +319,38 @@
               <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="文件" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="文件" type="462c0819:PsiDirectoryNode" />
+              <item name="jar包" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="文件" type="462c0819:PsiDirectoryNode" />
+              <item name="jar包" type="462c0819:PsiDirectoryNode" />
+              <item name="dbcp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,27 +360,32 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596103093711" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605245946130" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/lib/commons-pool-1.6.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27586207" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\JavaWeb\src\cn\zsy\domain" />
-      <recent name="D:\Projects\JavaWeb\web\ajax" />
+      <recent name="D:\Projects\JavaWeb\文件\jar包\dbcp" />
+      <recent name="D:\Projects\JavaWeb\libs" />
       <recent name="D:\Projects\JavaWeb\web\lib" />
-      <recent name="D:\Projects\JavaWeb\src\cn\zsy\ajax" />
-      <recent name="D:\Projects\JavaWeb\web\js" />
+      <recent name="D:\Projects\JavaWeb\文件\jar包\文件上传" />
+      <recent name="D:\Projects\JavaWeb\src\cn\zsy\domain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dbcp" />
+      <recent name="jdbc" />
       <recent name="cn.zsy.ajax" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\JavaWeb" />
+      <recent name="D:\Projects\JavaWeb\src\config" />
       <recent name="D:\Projects\JavaWeb\文件\SqlServer" />
       <recent name="D:\Projects\JavaWeb\web\html" />
       <recent name="D:\Projects\JavaWeb\web" />
@@ -274,83 +403,68 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.22">
-    <configuration name="JSONTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="JdbcUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdbc.JdbcUtil" />
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.zsy.ajax.jsontest.*" />
+          <option name="PATTERN" value="jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.zsy.ajax.jsontest" />
-      <option name="MAIN_CLASS_NAME" value="cn.zsy.ajax.jsontest.JSONTest" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JSONTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dbcp.Test" />
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.zsy.ajax.jsontest.*" />
+          <option name="PATTERN" value="dbcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.zsy.ajax.jsontest" />
-      <option name="MAIN_CLASS_NAME" value="cn.zsy.ajax.jsontest.JSONTest" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JSONTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dbcp.Test1" />
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.zsy.ajax.jsontest.*" />
+          <option name="PATTERN" value="dbcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.zsy.ajax.jsontest" />
-      <option name="MAIN_CLASS_NAME" value="cn.zsy.ajax.jsontest.JSONTest" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JSONTest.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dbcp.Test2" />
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.zsy.ajax.jsontest.*" />
+          <option name="PATTERN" value="dbcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.zsy.ajax.jsontest" />
-      <option name="MAIN_CLASS_NAME" value="cn.zsy.ajax.jsontest.JSONTest" />
-      <option name="METHOD_NAME" value="test7" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JSONTest.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dbcp.Test3" />
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.zsy.ajax.jsontest.*" />
+          <option name="PATTERN" value="dbcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.zsy.ajax.jsontest" />
-      <option name="MAIN_CLASS_NAME" value="cn.zsy.ajax.jsontest.JSONTest" />
-      <option name="METHOD_NAME" value="test8" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -429,19 +543,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 9.0.22" />
-      <item itemvalue="JUnit.JSONTest.test3" />
-      <item itemvalue="JUnit.JSONTest.test5" />
-      <item itemvalue="JUnit.JSONTest.test6" />
-      <item itemvalue="JUnit.JSONTest.test7" />
-      <item itemvalue="JUnit.JSONTest.test8" />
+      <item itemvalue="Application.Test1" />
+      <item itemvalue="Application.Test2" />
+      <item itemvalue="Application.Test3" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.JdbcUtil" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JSONTest.test8" />
-        <item itemvalue="JUnit.JSONTest.test7" />
-        <item itemvalue="JUnit.JSONTest.test6" />
-        <item itemvalue="JUnit.JSONTest.test5" />
-        <item itemvalue="JUnit.JSONTest.test3" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Test1" />
+        <item itemvalue="Application.JdbcUtil" />
+        <item itemvalue="Application.Test3" />
+        <item itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -496,6 +610,16 @@
       <workItem from="1595986527515" duration="3437000" />
       <workItem from="1596073020593" duration="11982000" />
       <workItem from="1596433082334" duration="5129000" />
+      <workItem from="1596447441396" duration="70000" />
+      <workItem from="1599810815914" duration="129000" />
+      <workItem from="1603352398436" duration="2970000" />
+      <workItem from="1603415676620" duration="1303000" />
+      <workItem from="1603436498716" duration="599000" />
+      <workItem from="1604480289533" duration="1851000" />
+      <workItem from="1605061630932" duration="2400000" />
+      <workItem from="1605177570508" duration="1092000" />
+      <workItem from="1605231450381" duration="7437000" />
+      <workItem from="1605239048395" duration="2021000" />
     </task>
     <servers />
   </component>
@@ -532,12 +656,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205272000" />
+    <option name="totallyTimeSpent" value="225144000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="372" y="55" width="1311" height="980" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6898223" visible="true" weight="0.2286171" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6898223" visible="true" weight="0.23880596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -547,15 +672,15 @@
       <window_info id="Web" order="7" sideWeight="0.3101777" side_tool="true" weight="0.34594882" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.022988506" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44468546" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39972898" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.44444445" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.13002364" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32291666" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32212582" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
@@ -565,7 +690,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32933652" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -577,74 +702,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/zsy/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/01ajax.html" />
-    <entry file="jar://C:/Java/jdk1.8.0_221/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="610" column="13" selection-start-line="610" selection-start-column="13" selection-end-line="610" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/ajax01.html" />
-    <entry file="file://$PROJECT_DIR$/web/html/stateCode">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaWeb.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Service/apache-tomcat-9.0.22/lib/servlet-api.jar!/javax/servlet/ServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="63" column="54" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/jsp02.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/jsp01.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/html/ajax.html" />
-    <entry file="file://$PROJECT_DIR$/web/html/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/1html/html.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/html/1html/html2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -774,13 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/zsy/domain/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/xmlHttp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -796,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/zsy/ajax/jsontest/JSONTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1705">
-          <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/zsy/AgencyServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -810,28 +853,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/zsy/ajax/VerifyServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/zsy/domain/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -846,9 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1760">
           <caret line="88" column="58" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#input#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -856,9 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -866,10 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-587">
           <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,6 +892,140 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/zsy/web/UploadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/zsy/web/BootServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/zsy/domain/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/zsy/domain/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mybatis/DataUitl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbcp/KCYDBCPUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/dbcp/Test2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbcp/Test3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mybatis/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc/JdbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbcp/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_221/src.zip!/javax/sql/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1280">
+          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/dbcp.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/zsy/ajax/jsontest/JSONTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbcp/ThreadManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbcp/DBCPUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbcp/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -911,11 +1060,11 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>commons-fileupload-1.4</last-edited>
+          <last-edited>commons-io-2.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.27586207" />
               </list>
             </option>
           </splitter-proportions>
