@@ -10,6 +10,8 @@ import javax.sql.DataSource;
 
 /**
  * @Title dbcp
+ * 数据库查看当前连接
+ * show full processlist;
  */
 
 public class Test {
