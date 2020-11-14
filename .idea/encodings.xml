@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/mybatis/demo/dao/impl/UserDaoImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/mybatis/demo/jdbc/JdbcTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/mybatis/demo/quickstart/ImplTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/web/html/1html/html3.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/web/html/1html/html4.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/web/html/3css/CssSelector1.html" charset="GBK" />

@@ -4,5 +4,8 @@ package mybatis;
  * @Title mybatis
  */
 
-class Test {
+public class Test {
+    public static void main(String[] args) {
+
+    }
 }
