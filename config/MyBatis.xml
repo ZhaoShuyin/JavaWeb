@@ -2,6 +2,7 @@
     PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
     <!--加载外部资源文件-->
     <properties resource="db.properties"></properties>
 
@@ -15,9 +16,7 @@
     <typeAliases>
          <!--单个别名的设置-->
          <!--<typeAlias type="mybatis.demo.po.User" alias="user"/>-->
-        <!-- 批量别名设置
-          name：包名   不支持统配符  类名   不区分大小写
-         -->
+        <!-- 批量别名设置-->
         <package name="mybatis.demo.po" />
     </typeAliases>
 

@@ -23,7 +23,7 @@
 		<result column="createtime" property="createtime"/>
 		<result column="note" property="note"/>
 		
-		<!-- 用户信息 内层类变量映射-->
+		<!-- 用户信息 内层类变量映射 association 一对一 -->
 		<association property="user" javaType="user">
 			<id column="user_id" property="id"/>
 			<result column="username" property="username"/>
@@ -40,7 +40,7 @@
 	<!-- 2、查询订单信息并关联查询明细信息 -->
 	<resultMap type="orders" id="detailIntoOrders" extends="userIntoOrders">
 		<!-- 订单信息、用户信息 -->
-		<!-- 订单明细 -->
+		<!-- collection 一对多 -->
 		<collection property="orderdetails" ofType="orderdetail">
 			<id column="orderdetail_id" property="id"/>
 			<result column="items_id" property="itemsId"/>
@@ -59,7 +59,8 @@
 		FROM orders o,USER u,orderdetail d
 		WHERE o.user_id = u.id AND d.orders_id = o.id
 	</select>
-	
+
+
 	<!-- 3、查询用户信息并关联查询商品信息 -->
 	<resultMap type="user" id="allIntoUser">
 		<!-- 用户信息 -->
@@ -105,7 +106,8 @@
 		FROM orders o,USER u,orderdetail d,items i
 		WHERE o.user_id = u.id AND d.orders_id = o.id AND i.id = d.items_id
 	</select>
-	
+
+
 	<!-- 查询订单延迟加载用户 -->
 	<resultMap type="orders" id="lazyLoadingUser">
 		<id column="id" property="id"/>
@@ -114,7 +116,7 @@
 		<result column="createtime" property="createtime"/>
 		<result column="note" property="note"/>
 		
-		<!-- 通过association实现延迟加载 -->
+		<!-- 通过association实现延迟加载在Java中使用getUser时再查询 -->
 		<association property="user" javaType="user" select="queryUserById" column="user_id"></association>
 	</resultMap>
 
@@ -124,7 +126,8 @@
 	<select id="queryUserById" parameterType="int" resultType="user">
 		select * from user where id = #{user_id}
 	</select>
-	
+
+
 	<update id="updateUserById" parameterType="user">
 		update user set username = #{username},birthday = #{birthday},sex = #{sex},address = #{address} where id = #{id}
 	</update>

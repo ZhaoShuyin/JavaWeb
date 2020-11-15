@@ -86,9 +86,13 @@ public class OrdersTest {
 		SqlSession sqlSession = sqlSessionFactory.openSession();
 		OrdersMapper ordersMapper = sqlSession.getMapper(OrdersMapper.class);
 		List<Orders> list = ordersMapper.queryOrdersLazyLoadingByUser();
-		for (Orders orders : list) {
-			System.out.println(orders.getUser());
-		}
+		Thread.sleep(5000);
+		//在使用时使用查询(延迟加载)
+		User user = list.get(0).getUser();
+		System.out.println(user);
+//		for (Orders orders : list) {
+//			System.out.println("================  "+orders.getUser());
+//		}
 	}
 	
 	/**
@@ -115,7 +119,8 @@ public class OrdersTest {
 		
 		User user2 = ordersMapper2.queryUserById(1);
 		System.out.println(user2);
-		
+
+		sqlSession.close();
 	}
 	
 	/**
