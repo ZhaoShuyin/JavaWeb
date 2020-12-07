@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spring-webmvc-portlet-4.3.29.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring/spring-webmvc-portlet-4.3.29.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

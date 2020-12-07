@@ -5,7 +5,8 @@
 
     <!-- 开启本mapper下的二级缓存 -->
     <!--<cache type="org.mybatis.caches.ehcache.EhcacheCache"></cache>-->
-    <cache></cache>
+    <cache>
+    </cache>
 
     <!-- 1-1、查询订单细信息并关联查询用户用信息   (resultType)实现 -->
     <select id="queryOrdersAndUserByResultType" resultType="ordersCustom">

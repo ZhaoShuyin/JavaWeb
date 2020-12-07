@@ -42,7 +42,7 @@
          -->
 
         <!--  接口和xml文件在同一目录下,名称一致
-        <mapper class="cn.itcast.mybatis.mapper.UserMapper"/>
+        <mapper class="spring.day1.mybatis.mapper.UserMapper"/>
          -->
 
         <!--  name：包名(设置mapper.xml文件路径)   不支持统配符

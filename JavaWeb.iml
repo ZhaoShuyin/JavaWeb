@@ -58,5 +58,14 @@
     <orderEntry type="library" name="junit-4.9" level="application" />
     <orderEntry type="library" name="mybatis-ehcache-1.0.2" level="project" />
     <orderEntry type="library" name="ehcache-core-2.6.5" level="project" />
+    <orderEntry type="library" name="spring-aop-5.2.9.RELEASE (2)" level="project" />
+    <orderEntry type="library" name="spring-tx-5.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-webmvc-portlet-4.3.29.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-struts-3.2.18.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-orm-5.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-aspects-5.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-instrument-tomcat-4.3.29.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-oxm-5.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="mybatis-spring-2.0.5" level="project" />
   </component>
 </module>
