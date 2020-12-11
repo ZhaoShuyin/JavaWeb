@@ -4,7 +4,7 @@ public class UserDaoImpl implements UserDao {
 
 	//初始化方法：执行一次
 	public void init(){
-		System.out.println("UserDaoImpl....init");
+		System.out.println("UserDaoImpl....init 初始化时执行的");
 	}
 
 	public void save() {
@@ -13,6 +13,6 @@ public class UserDaoImpl implements UserDao {
 
 	//销毁方法：销毁一次。spring容器关闭时.只有单例模式才有意义
 	public void destroy(){
-		System.out.println("UserDaoImpl....destroy");
+		System.out.println("UserDaoImpl....destroy 销毁时执行的");
 	}
 }

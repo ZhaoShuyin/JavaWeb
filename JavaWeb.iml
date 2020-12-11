@@ -14,6 +14,9 @@
         </sourceRoots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration />
+    </facet>
   </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/web/WEB-INF/classes" />
@@ -54,10 +57,7 @@
     <orderEntry type="library" name="commons-dbutils-1.4" level="project" />
     <orderEntry type="library" name="commons-dbcp-1.4" level="project" />
     <orderEntry type="library" name="commons-pool-1.6" level="project" />
-    <orderEntry type="library" name="asm-7.1" level="project" />
     <orderEntry type="library" name="junit-4.9" level="application" />
-    <orderEntry type="library" name="mybatis-ehcache-1.0.2" level="project" />
-    <orderEntry type="library" name="ehcache-core-2.6.5" level="project" />
     <orderEntry type="library" name="spring-aop-5.2.9.RELEASE (2)" level="project" />
     <orderEntry type="library" name="spring-tx-5.2.9.RELEASE" level="project" />
     <orderEntry type="library" name="spring-webmvc-portlet-4.3.29.RELEASE" level="project" />
@@ -67,5 +67,6 @@
     <orderEntry type="library" name="spring-instrument-tomcat-4.3.29.RELEASE" level="project" />
     <orderEntry type="library" name="spring-oxm-5.2.9.RELEASE" level="project" />
     <orderEntry type="library" name="mybatis-spring-2.0.5" level="project" />
+    <orderEntry type="library" name="asm-7.1" level="project" />
   </component>
 </module>

@@ -18,7 +18,7 @@ beans:根元素
 		id:给对象取了一个名字
 		class：要实例化的对象的类全名
 	-->
-	<bean id="userService" class="spring.day1.ioc.UserServiceImpl">
+	<bean id="userService" class="spring.day1.spring_01IoC.UserServiceImpl">
 		<!-- 注入：通过属性进行注入
 			name:指定setter属性名称
 			ref:引用spring管理的对象
@@ -29,7 +29,9 @@ beans:根元素
 		</property>
 	</bean>
 
-	<bean id="userDao" class="spring.day1.ioc.UserDaoImpl">
+	<bean id="userDao" class="spring.day1.spring_01IoC.UserDaoImpl">
 
 	</bean>
+
+	<bean id="user" class="spring.day1.spring_01IoC.User"/>
 </beans>

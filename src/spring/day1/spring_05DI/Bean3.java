@@ -17,6 +17,6 @@ public class Bean3 {
 		this.birthday = birthday;
 	}
 	public String print(){
-		return name+":"+age+":"+birthday.toLocaleString();
+		return "Bean3 >> { name:" + name + ", age:" + age+", birthday:"+birthday.toLocaleString()+" }";
 	}
 }

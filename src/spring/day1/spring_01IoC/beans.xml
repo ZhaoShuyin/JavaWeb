@@ -32,4 +32,6 @@ beans:根元素
 	<bean id="userDao" class="spring.day1.spring_01IoC.UserDaoImpl">
 
 	</bean>
+
+	<bean id="user" class="spring.day1.spring_01IoC.User"/>
 </beans>
