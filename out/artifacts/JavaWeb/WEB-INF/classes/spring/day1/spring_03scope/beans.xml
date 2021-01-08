@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+				http://www.springframework.org/schema/beans 
+				http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- scope属性：
+				默认值是singleton:单例 
+				prototype:非单例，每次都获取的是新对象
+				request：把对象放到请求范围。（JavaWeb应用下使用）
+				session：把对象放到会话范围。（JavaWeb应用下使用）
+				-->
+	<bean id="userDao" scope="singleton" class="spring.day1.spring_03scope.UserDaoImpl" ></bean>
+
+	<bean id="userDaoMultiple" scope="prototype" class="spring.day1.spring_03scope.UserDaoImpl" ></bean>
+</beans>

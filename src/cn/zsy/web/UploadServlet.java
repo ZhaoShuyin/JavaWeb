@@ -22,13 +22,22 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "UploadServlet")
 public class UploadServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String type = request.getParameter("type");
+
         /**
          *
          */
         String path = "D:/Test/upload";
         long millis = System.currentTimeMillis();
-        File file = new File(path, "ecg-" + millis + ".xml");
-        if (!file.exists()){
+        File file;
+        if (type != null) {
+            file = new File(path, "ecg-" + millis + ".txt");
+        } else {
+            file = new File(path, "ecg-" + millis + ".xml");
+        }
+        System.out.println("type: "+type);
+
+        if (!file.exists()) {
             file.createNewFile();
         }
         OutputStream out = new FileOutputStream(file);
@@ -48,6 +57,11 @@ public class UploadServlet extends HttpServlet {
         PrintWriter printWriter = response.getWriter();
         String message = "上传完毕 保存文件名文件  < ecg-" + millis + " > 文件大小: " + file.length();
         String json = "{\"Status\":\"1\"}";
+        if (type != null) {
+            json = "{\"code\":1,\"data\":\""+result+"\"}";
+        } else {
+            json = "{\"Status\":\"1\"}";
+        }
         printWriter.print(json);
     }
 
@@ -55,4 +69,24 @@ public class UploadServlet extends HttpServlet {
         PrintWriter printWriter = response.getWriter();
         printWriter.print("GET不支持上传文件");
     }
+
+    public static String result =
+            "HR= 54\n" +
+                    "P_width= 100\n" +
+                    "QRS_width= 139\n" +
+                    "axis_qrs= 22\n" +
+                    "PR= 150\n" +
+                    "RV5= 0.860667\n" +
+                    "SV1= -0.296222\n" +
+                    "QT= 554\n" +
+                    "QTc= 526\n" +
+                    "Conclusion= 窦性心律\n" +
+                    "\n" +
+                    "异常心电图\n" +
+                    "\n" +
+                    "窦性心动过缓\n" +
+                    "\n" +
+                    "不完全性右束支传导阻滞\n" +
+                    "异常Q波：II  III  avF  \n" +
+                    "T波倒置：II  III  avF  I  avL  V6  V1  V2  V3  V4  V5  ";
 }

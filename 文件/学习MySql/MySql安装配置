@@ -1,1 +1,49 @@
+方法一 使用默认配置的方法
+https://blog.csdn.net/weixin_41360517/article/details/86766302
+1: mysqld -install
+2: mysqld --initialize --console
+3:启动服务
+4:登录
+5:修改密码
+   重新设置密码(已验证)
+   set password for root@localhost = password('IW*ueQQjkl')
+
+create database mydb;
+use mydb;
+source D:\Sql\资源包\init.sql;
+
+6: 卸载 sc delete mysql
+  删除注册表
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+
+
+
+
+方法二  使用配置文件的方法
+根目录创建文件 my.ini
+<--
+            [mysqld]
+            port = 3306
+            basedir=C:/MySql/mysql-5.7.29-winx64
+            datadir=C:/MySql/data
+            max_connections=200
+            character-set-server=utf8
+            default-storage-engine=INNODB
+            [mysql]
+            default-character-set=utf8
+-->
+
+1:安装命令     mysqld install
+2:初始化命令   mysqld --initialize
+3:启动服务命令 net start mysql
+4:忽略密码命令 mysqld --skip-grant-tables
+5:修改密码
+  mysql
+  mysql> use mysql;
+  mysql> update user set authentication_string=password('IW*ueQQjkl') where user='root';
+
+
+
+方法三安装版
 https://blog.csdn.net/clouderpig/article/details/79556149
+

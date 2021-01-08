@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>¥Ûøß∂·±¶</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta content="telephone=yes" name="format-detection"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/static/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+
+
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    <script src="/static/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="header">
+    <img src="http://p3ro8n15q.bkt.clouddn.com/download/ad7_640_200.jpg-watermark" style="width: 100%">
+</div>
+
+
+<div data-role="content" style="padding:0em 0em 0em 0em;">
+    <div id="list" class="picutre_many"
+         style="overflow: hidden; width: 700px; margin: 0 auto;">
+        <table cellspacing="0" cellpadding="0"
+               style="width: 650px; border: 0px;">
+            <tr>
+                <td id="list1">
+                    <table style="border: 0px;" cellpadding="0" cellspacing="0">
+                        <tr id="pic">
+                            
+
+                                <td><img src="http://p3ro8n15q.bkt.clouddn.com/admin/20180829/b23e56bdbd2dc12cfcfce8529b13e155.png-download_banner"></td>
+
+
+                            
+
+                                <td><img src="http://p3ro8n15q.bkt.clouddn.com/admin/20180829/5e5254b535ba8a425e8910928957a243.png-download_banner"></td>
+
+
+                            
+
+                                <td><img src="http://p3ro8n15q.bkt.clouddn.com/admin/20180829/98e5d0a7c1b172a458b393754e2be3e9.png-download_banner"></td>
+
+
+                            
+
+                                <td><img src="http://p3ro8n15q.bkt.clouddn.com/admin/20180829/c6a361cf66047177b0a681744c7379fc.png-download_banner"></td>
+
+
+                            
+
+                                <td><img src="http://p3ro8n15q.bkt.clouddn.com/admin/20180829/a281f1a7b13a62696add817e03e8fcb3.png-download_banner"></td>
+
+
+                                                    </tr>
+                    </table>
+                </td>
+                <td id="list2"></td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript">
+
+        var speedpic = 10;
+        document.getElementById("list2").innerHTML = document.getElementById("list1").innerHTML;
+        function Marqueepic() {
+            if (document.getElementById("list2").offsetWidth
+                - document.getElementById("list").scrollLeft <= 0) {
+                document.getElementById("list").scrollLeft -= document
+                    .getElementById("list1").offsetWidth;
+            } else {
+                document.getElementById("list").scrollLeft++;
+            }
+        }
+        var MyMarpic = setInterval(Marqueepic, speedpic);
+        // document.getElementById("list").onmouseover = function() {
+        //     clearInterval(MyMarpic);
+        // }
+        // document.getElementById("list").onmouseout = function() {
+        //     MyMarpic = setInterval(Marqueepic, speedpic);
+        // }
+
+    </script>
+
+
+</div>
+
+
+<div data-role="footer" data-position="fixed" style="padding:0em 0em 0em 0em;">
+    <a href="https://www.baidu.com" style="padding:0em 0em 0em 0em;text-shadow: none;margin: 0em 0em 0em 0em ">
+        <img id="imgid" style="visibility:visible" src="http://p3ro8n15q.bkt.clouddn.com/download/dl_botton.png-watermark" style="width: 100%">
+    </a>
+</div>
+
+<script type="text/javascript">
+ function show(){
+ var imgid=document.getElementById("imgid");
+ if(imgid.style.visibility == "visible")
+ 	imgid.style.visibility = "hidden";
+ else
+ 	imgid.style.visibility = "visible";
+ setTimeout('show()',300);
+  }
+  show();
+</script>
+
+<script type="text/javascript">
+
+    $(function () {
+        autosubmit();
+    });
+
+
+    /**
+     * ºÏ≤‚ ˝æ›∫ÕÃ·Ωª
+     */
+    function autosubmit() {
+        //ºÏ≤‚«˛µ¿
+        var channel=''
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android÷’∂À
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios÷’∂À
+        if(isAndroid)
+            channel='Android_invited';
+        if(isiOS)
+            channel='iOS_invited';
+    }
+</script>
+
+
+</body>
+</html>
