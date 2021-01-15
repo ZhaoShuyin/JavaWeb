@@ -27,12 +27,12 @@
     <!--
         #{}：占位符，如果传递是pojo，{}内的名称：该pojo的属性名
      -->
-    <insert id="insertUser" parameterType="mybatis.demo.po.User">
+    <insert id="insertUser" parameterType="com.mybatis.po.User">
 		insert into user(username,address,sex,birthday) values(#{username},#{address},#{sex},#{birthday})
 	</insert>
 
     <!-- 4、返回自增主键id -->
-    <insert id="insertUserReturnId" parameterType="mybatis.demo.po.User">
+    <insert id="insertUserReturnId" parameterType="com.mybatis.po.User">
         <selectKey keyProperty="id" resultType="int" order="AFTER">
             select LAST_INSERT_ID()
         </selectKey>
@@ -41,7 +41,7 @@
     </insert>
 
     <!-- 5、更新用户 -->
-    <update id="updateUserById" parameterType="mybatis.demo.po.User">
+    <update id="updateUserById" parameterType="com.mybatis.po.User">
 		update user set username=#{username},address=#{address},sex=#{sex},birthday=#{birthday} where id = #{id}
 	</update>
 

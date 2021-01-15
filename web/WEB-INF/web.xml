@@ -4,11 +4,10 @@
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
     version="4.0">
 
-   <!-- <servlet>
+    <!--<servlet>
         <servlet-name>Boot</servlet-name>
         <servlet-class>cn.zsy.web.BootServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>Boot</servlet-name>
         <url-pattern>/boot</url-pattern>
@@ -19,13 +18,12 @@
         <servlet-name>Upload</servlet-name>
         <servlet-class>cn.zsy.web.UploadServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>Upload</servlet-name>
         <url-pattern>/upload</url-pattern>
     </servlet-mapping>
 
-    &lt;!&ndash;Ajax接口&ndash;&gt;
+
     <servlet>
         <servlet-name>Ajax</servlet-name>
         <servlet-class>cn.zsy.ajax.AjaxServlet</servlet-class>
@@ -33,49 +31,20 @@
     <servlet-mapping>
         <servlet-name>Ajax</servlet-name>
         <url-pattern>/ajax</url-pattern>
-    </servlet-mapping>
-
-    &lt;!&ndash;&ndash;&gt;
-    <servlet>
-        <servlet-name>Ajax01</servlet-name>
-        <servlet-class>cn.zsy.ajax.VerifyServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Ajax01</servlet-name>
-        <url-pattern>/ajax01</url-pattern>
-    </servlet-mapping>
-
-    &lt;!&ndash;请求转发接口&ndash;&gt;
-    <servlet>
-        <servlet-name>Agency</servlet-name>
-        <servlet-class>cn.zsy.AgencyServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Agency</servlet-name>
-        <url-pattern>/agency</url-pattern>
     </servlet-mapping>-->
 
-
-    <!-- 配置前端控制器 -->
     <servlet>
-        <servlet-name>springmvc</servlet-name>
+        <servlet-name>dispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:springmvc/springmvc.xml</param-value>
+            <param-value>classpath*:springmvc-web.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
-
-    <!-- 配置拦截的url -->
     <servlet-mapping>
-        <servlet-name>springmvc</servlet-name>
-        <!--
-            *.action:
-            /：RESTful
-            /*:error
-         -->
-        <url-pattern>*</url-pattern>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
 

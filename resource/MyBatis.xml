@@ -7,35 +7,35 @@
     <properties resource="db.properties"></properties>
 
     <!--设置参数配置-->
-    <settings>
-        <!-- 开启延迟加载功能 -->
+    <!--<settings>
+        &lt;!&ndash; 开启延迟加载功能 &ndash;&gt;
         <setting name="lazyLoadingEnabled" value="true" />
-        <!--开启二级缓存-->
-        <setting name="cacheEnabled" value="true"/>
-    </settings>
+        &lt;!&ndash;开启二级缓存&ndash;&gt;
+        <setting name="cacheEnabled" value="true" />
+    </settings>-->
 
     <!--别名设置-->
     <typeAliases>
-         <!--单个别名的设置-->
-         <!--<typeAlias type="mybatis.demo.po.User" alias="user"/>-->
+        <!--单个别名的设置-->
+        <!--<typeAlias type="mybatis.demo.po.User" alias="user"/>-->
         <!-- 批量别名设置-->
-        <package name="mybatis.demo.po" />
+        <package name="com.mybatis.po" />
     </typeAliases>
 
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC" />
             <dataSource type="POOLED">
-                <property name="driver" value="${jdbc.driver}" />
-                <property name="url" value="${jdbc.url}" />
-                <property name="username" value="${jdbc.username}" />
-                <property name="password" value="${jdbc.password}" />
+                <property name="driver" value="${com.jdbc.driver}" />
+                <property name="url" value="${com.jdbc.url}" />
+                <property name="username" value="${com.jdbc.username}" />
+                <property name="password" value="${com.jdbc.password}" />
             </dataSource>
         </environment>
     </environments>
 
     <mappers>
-        <mapper resource="mappers/User.xml" />
+        <mapper resource="sqlMap/User.xml" />
 
         <!-- 加载映射文件 使用xml文件
         <mapper resource="sqlMap/UserMapper.xml"/>
@@ -48,6 +48,6 @@
         <!--  name：包名(设置mapper.xml文件路径)   不支持统配符
          <package name="mybatis.demo.mapper"/>
         -->
-        <package name="mybatis.demo.mapper"/>
+        <package name="com.mybatis.mapper" />
     </mappers>
 </configuration>

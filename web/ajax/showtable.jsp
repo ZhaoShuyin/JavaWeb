@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
-<%@ page import="cn.zsy.domain.*" %>
+<%@ page import="com.zsy.domain.*" %>
 <html>
 <head>
     <title>JSP显示表格</title>

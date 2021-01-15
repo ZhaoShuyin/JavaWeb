@@ -51,22 +51,14 @@
     </orderEntry>
     <orderEntry type="library" name="commons-fileupload-1.4" level="application" />
     <orderEntry type="library" name="commons-io-2.5" level="application" />
-    <orderEntry type="library" name="commons-beanutils-1.8.3" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-5.1.39" level="project" />
-    <orderEntry type="library" name="json-lib-2.4-jdk15" level="project" />
+    <orderEntry type="library" name="junit-4.9" level="application" />
     <orderEntry type="library" name="commons-dbutils-1.4" level="project" />
     <orderEntry type="library" name="commons-dbcp-1.4" level="project" />
-    <orderEntry type="library" name="commons-pool-1.6" level="project" />
-    <orderEntry type="library" name="junit-4.9" level="application" />
-    <orderEntry type="library" name="spring-aop-5.2.9.RELEASE (2)" level="project" />
-    <orderEntry type="library" name="spring-tx-5.2.9.RELEASE" level="project" />
-    <orderEntry type="library" name="spring-webmvc-portlet-4.3.29.RELEASE" level="project" />
-    <orderEntry type="library" name="spring-struts-3.2.18.RELEASE" level="project" />
-    <orderEntry type="library" name="spring-orm-5.2.9.RELEASE" level="project" />
-    <orderEntry type="library" name="spring-aspects-5.2.9.RELEASE" level="project" />
-    <orderEntry type="library" name="spring-instrument-tomcat-4.3.29.RELEASE" level="project" />
-    <orderEntry type="library" name="spring-oxm-5.2.9.RELEASE" level="project" />
-    <orderEntry type="library" name="mybatis-spring-2.0.5" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.39" level="project" />
     <orderEntry type="library" name="asm-7.1" level="project" />
+    <orderEntry type="library" name="jstl" level="project" />
+    <orderEntry type="library" name="mybatis-spring-2.0.5" level="project" />
+    <orderEntry type="library" name="asm-3.3.1" level="project" />
+    <orderEntry type="library" name="json-lib-2.4-jdk15" level="project" />
   </component>
 </module>

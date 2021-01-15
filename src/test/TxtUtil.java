@@ -1,14 +1,11 @@
 package test;
 
-import net.sf.json.JSON;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -19,11 +16,22 @@ import java.util.Map;
 
 public class TxtUtil {
 
+    public static int leadsNumber = 12;  //导联个数
 
-    public static boolean createTxt(String dataFile, String xmlFile) {
+    public static void main(String[] args) {
+        int[] txt = createTxt("D:/abc/test/origin.data", "D:/abc/test/222.txt");
+        System.out.println(Arrays.toString(txt));
+    }
+
+    /**
+     * @param dataFile
+     * @param xmlFile
+     * @return 返回 0:导联数据长度  1:导联数量
+     */
+    public static int[] createTxt(String dataFile, String xmlFile) {
         File file = new File(dataFile);
         if (!file.exists()) {
-            return false;
+            return null;
         }
         try {
             File xFile = new File(xmlFile);
@@ -36,7 +44,7 @@ public class TxtUtil {
             int length = (int) file.length();
             int le = length % 500;
             if (le != 0) {
-                return false;
+                return null;
             }
             byte[] bytes = new byte[length];
             inputStream.read(bytes);
@@ -47,67 +55,44 @@ public class TxtUtil {
                 for (int j = 0; j < 18; j++) {
                     index = i * 36 + j * 2;
                     read[j][i] = bytes[index] << 8 | bytes[index + 1] & 255;
-                    if (j < 12) {
+                    if (j < leadsNumber) {
                         writer.write(String.valueOf(read[j][i]));
-                        writer.write(" ");
+                        writer.write("\t");
                     }
                 }
                 writer.write("\n");
             }
             writer.close();
-            return true;
+            return new int[]{count, 500, leadsNumber, 500, 16, 0};
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return false;
+        return null;
     }
 
-    public static String result =
-            "HR= 54\n" +
-                    "P_width= 100\n" +
-                    "QRS_width= 139\n" +
-                    "axis_qrs= 22\n" +
-                    "PR= 150\n" +
-                    "RV5= 0.860667\n" +
-                    "SV1= -0.296222\n" +
-                    "QT= 554\n" +
-                    "QTc= 526\n" +
-                    "Conclusion= 窦性心律\n" +
-                    "\n" +
-                    "异常心电图\n" +
-                    "\n" +
-                    "窦性心动过缓\n" +
-                    "\n" +
-                    "不完全性右束支传导阻滞\n" +
-                    "异常Q波：II  III  avF  \n" +
-                    "T波倒置：II  III  avF  I  avL  V6  V1  V2  V3  V4  V5  ";
 
-
-    public static Map<String,String> getMap(String s) {
+    public static Map<String, String> getMap(String s) {
         Map<String, String> map = new HashMap<>();
+        if (s == null) {
+            return map;
+        }
         String[] split = s.split("\n");
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < split.length; i++) {
             String s1 = split[i];
             if (s1.contains("=")) {
                 String[] keyvalue = s1.split("=");
-                map.put(keyvalue[0], keyvalue[1]);
+                if (keyvalue.length == 2) {
+                    map.put(keyvalue[0], keyvalue[1].replace(" ", ""));
+                }
             } else {
-                builder.append(s1);
+                if (s1.length() != 0) {
+                    builder.append(s1 + "\r\n");
+                }
             }
         }
         map.put("analysis", builder.toString());
         return map;
     }
 
-
-    public static void main(String[] args) {
-//        Map<String,String> map = getMap(result);
-//        Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
-//        while (iterator.hasNext()){
-//            Map.Entry<String, String> next = iterator.next();
-//            System.out.println(next.getKey()+" >> "+next.getValue());
-//        }
-        createTxt("D:/Test/upload/新建文件夹/origin.data","D:/Test/upload/新建文件夹/origin.txt");
-    }
 }

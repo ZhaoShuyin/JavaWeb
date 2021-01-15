@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"><!-- 1、分类管理sql  2、其他  开发dao -->
+<mapper namespace="com.mybatis.mapper.UserMapper">
+
+    <!-- 设置数据库查询字段名和JavaBean变量名的映射 -->
+    <resultMap type="user" id="originUser">
+        <result column="name" property="username" />
+        <result column="addr" property="address" />
+    </resultMap>
+
+    <select id="queryUserById" parameterType="int" resultMap="originUser">
+		select id,username name,address addr,sex,birthday from user where id = #{id}
+	</select>
+
+    <!-- 、根据username查询用户信息  -->
+    <!--
+        传递包装类型的pojo  {}的名称：通过ognl表达式的方式获取值   xxx.xxx.xxx...
+     -->
+    <select id="queryUserByUserName" parameterType="userQuery" resultType="userCustom">
+		select * from user where username like '%${userCustom.username}%'
+	</select>
+
+    <!--使用自定义查询类使用map(自动使用get方法)设置查询参数-->
+    <select id="queryUserByMap" parameterType="userQuery" resultType="userCustom">
+		select * from user where id = #{map.user_id}
+	</select>
+
+    <!--查询用户数量-->
+    <select id="queryUsers" resultType="int">
+		select count(1) from user
+	</select>
+
+    <!--定义动态Sql语句-->
+    <sql id="query_where_user">
+        <if test="userCustom!=null">
+            <if test="userCustom.username!=null and userCustom.username!=''">
+                and username like '%${userCustom.username}%'
+            </if>
+        </if>
+    </sql>
+    <select id="queryUserByConditions" parameterType="userQuery" resultType="userCustom">
+        select * from user
+        <where>
+            <include refid="query_where_user" />
+        </where>
+    </select>
+
+    <!--内部定义动态SQL语句-->
+    <select id="queryUserByList" parameterType="userQuery" resultType="userCustom">
+        select * from user
+        <where>
+            <if test="ids!=null and ids.size()>0">
+                <foreach collection="ids" item="id" open="id in(" separator="," close=")">
+                    #{id}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+</mapper>

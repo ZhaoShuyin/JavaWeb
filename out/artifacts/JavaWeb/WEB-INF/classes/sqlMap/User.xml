@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 1、分类管理sql  2、其他  开发dao -->
+<mapper namespace="test">
+	<!-- 1、根据ID查询用户信息 -->
+	<!-- 
+		id:唯一标识
+		parameterType：参数类型
+		resultType：结果类型
+		#{}：占位符，如果传递是Java基本类型，{}内的名称：任意
+	 -->
+	<select id="queryUserById" parameterType="int" resultType="User">
+		select * from user where id = #{id}
+	</select>
+	
+	<!-- 2、根据username查询用户信息 -->
+	<!-- 
+		resultType:指定的单条记录的结果类型
+		${}:连接符，将条件不坐任何修饰的添加到sql中。
+	 -->
+	<select id="queryUserByUserName" parameterType="string" resultType="user">
+		select * from user where username like '%${value}%'
+	</select>
+	
+	<!-- 3、添加用户 -->
+	<!-- 
+		#{}：占位符，如果传递是pojo，{}内的名称：该pojo的属性名
+	 -->
+	<insert id="insertUser" parameterType="com.mybatis.po.User">
+		insert into user(username,address,sex,birthday) values(#{username},#{address},#{sex},#{birthday})
+	</insert>
+	
+	<!-- 4、返回自增主键id -->
+	<insert id="insertUserReturnId" parameterType="com.mybatis.po.User">
+		<selectKey keyProperty="id" resultType="int" order="AFTER">
+			select LAST_INSERT_ID()
+		</selectKey>
+		insert into user(username,address,sex,birthday) values(#{username},#{address},#{sex},#{birthday})
+	</insert>
+	
+	<!-- 5、更新用户 -->
+	<update id="updateUserById" parameterType="com.mybatis.po.User">
+		update user set username=#{username},address=#{address},sex=#{sex},birthday=#{birthday} where id = #{id}
+	</update>
+	
+	<!-- 6、删除用户 -->
+	<delete id="deleteUserById" parameterType="int">
+		delete from user where id = #{id}
+	</delete>
+	
+</mapper>
