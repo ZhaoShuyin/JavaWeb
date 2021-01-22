@@ -1,0 +1,21 @@
+Tomcat配置
+pfx文件配置
+<Connector  port="8443"
+				protocol="org.apache.coyote.http11.Http11NioProtocol"
+				SSLEnabled="true"
+				scheme="https"
+				secure="true"
+				clientAuth="false"
+				sslProtocol="TLS"
+				keystoreFile="C:/Service/apache-tomcat-9.0.22/cert/3583199_mg.pengyangyiliao.com.pfx"
+				keystorePass="XqC54PbH"
+				keystoreType="PKCS12" />
+
+
+
+				 <!--   <Connector
+                           protocol="org.apache.coyote.http11.Http11NioProtocol"
+                           port="8443" maxThreads="200"
+                           scheme="https" secure="true" SSLEnabled="true"
+                           keystoreFile="cert/tomcat.keystore" keystorePass="123456"
+                           clientAuth="false" sslProtocol="TLS"/>  -->

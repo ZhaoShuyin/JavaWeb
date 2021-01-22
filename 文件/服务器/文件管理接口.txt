@@ -1,0 +1,150 @@
+/directory
+请求参数
+{
+	"uid":1,               //账号uid
+    "operate":0,           //0:查看所有文件 1:创建目录 2:移动目录/文件 3删除文件/目录 4 文件列表
+    "node": {              //进行创建/移动/删除是传递参数
+                "path": "C:/Web/static/file"
+            },
+    "target":{             //进行移动是传递参数/移动的目标路径
+             "path": "C:/Web/static/file/1/2"
+             },
+     "create":"仙剑"       //进行创建目录的名称
+     "pageNo":1           //operate=4时分页查询
+     "pageSize":10        //operate=4时分页查询
+}
+
+//operate==0时响应文件/目录
+{
+    "code": 1,
+    "data": {
+        "isFile": false,
+        "list": [
+            {
+                "isFile": false,                 //是文件还是目录
+                "name": "1",                     //文件或者目录名称
+                "path": "C:/Web/static/file/1"   //文件路径(进行操作时传的参数)
+            },
+            {
+                "isFile": false,
+                "name": "123",
+                "path": "C:/Web/static/file/123"
+            },
+            {
+                "isFile": false,
+                "list": [                 //目录下的目录或者文件
+                    {
+                        "isFile": true,
+                        "name": "017.png",
+                        "path": "C:/Web/static/file/仙剑/017.png",
+                        "url": "http://39.101.177.253:8000/file/仙剑/017.png"
+                    },
+                    {
+                        "isFile": true,
+                        "name": "图片.png",
+                        "path": "C:/Web/static/file/仙剑/图片.png",
+                        "url": "http://39.101.177.253:8000/file/仙剑/图片.png" //文件访问地址
+                    }
+                ],
+                "name": "仙剑",
+                "path": "C:/Web/static/file/仙剑"
+            }
+        ],
+        "name": "根目录",
+        "path": "C:/Web/static/file"
+    },
+    "msg": " 成功"
+}
+
+//operate==4时响应文件日志
+{
+    "code": 1,
+    "data": [
+        {
+            "file_date": "2020-07-03 09:58:57",         //文件上传时日期
+            "file_id": 4,                               //id
+            "file_log": "文件更新日志",                   //文件上传时日志
+            "file_path": "C:/Web/static/file/仙剑/qrcode.png", //文件路径
+            "file_url": "http://39.101.177.253:8000/file/仙剑/qrcode.png"//文件访问地址
+        },
+        {
+            "file_date": "2020-07-03 09:35:18",
+            "file_id": 2,
+            "file_log": "文件日志",
+            "file_path": "",
+            "file_url": ""
+        },
+        {
+            "file_date": "2020-07-03 09:34:40",
+            "file_id": 1,
+            "file_log": "文件日志",
+            "file_path": "C:/Web/static/1593740080528.txt",
+            "file_url": "http://39.101.177.253:8000/1593740080528.txt"
+        }
+    ],
+    "msg": "查询文件日志列表:1 : 10 成功"
+}
+
+
+
+/file
+from-data形式
+参数1: path : 上传的路径
+参数2: upload : "qrcode.png"
+参数3: log : 文件更新日志
+
+响应
+{
+    "code": 1,
+    "data": {
+        "file_date": "2020-07-03 09:58:57",
+        "file_id": 0,
+        "file_log": "文件更新日志",
+        "file_path": "C:/Web/static/file/仙剑/qrcode.png",
+        "file_url": "http://39.101.177.253:8000/file/仙剑/qrcode.png"
+    },
+    "msg": "上传路径文件成功 成功"
+}
+
+任务用户反馈相关
+/task/feedback
+请求参数
+{
+	"uid":1,
+	"operate":2,             //1:查看某任务相关反馈 2:添加反馈信息 3,修改某个反馈信息的状态(只可修改状态)
+	"task_id":1,             //查询反馈列表时使用这个参数(查看哪个任务的相关反馈)
+	"feedback":{
+            "feedback_id": 2,                     //在修改反馈状态时传递这个参数
+            "feedback_info": "反馈描述555",        //反馈信息
+            "feedback_status": "反馈状态555",      //反馈状态
+            "pictures": [
+                "http://39.101.177.253:8000/1",   //反馈的图片截图
+                "http://39.101.177.253:8000/2",
+                "http://39.101.177.253:8000/3"
+            ],
+            "task_id": 1,                          //给哪个任务反馈
+            "task_title": "任务标题"                //任务的标题
+	}
+}
+响应
+{
+    "code": 1,
+    "data": [
+        {
+            "feedback_date": "2020-07-03 16:49:46.0",
+            "feedback_id": 3,
+            "feedback_info": "反馈描述555",
+            "feedback_name": "原始账号",
+            "feedback_status": "反馈状态555",
+            "feedback_uid": 1,
+            "pictures": [
+                "http://39.101.177.253:8000/1",
+                "http://39.101.177.253:8000/2",
+                "http://39.101.177.253:8000/3"
+            ],
+            "task_id": 1,                      //反馈关联任务id
+            "task_title": "任务标题"
+        }
+    ],
+    "msg": "查询反馈列表 成功"
+}

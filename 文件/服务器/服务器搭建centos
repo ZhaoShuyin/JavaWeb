@@ -1,0 +1,161 @@
+ git@github.com:ZhaoShuyin/ZsyAndroid.git
+
+ ==================================
+ https://downloads.mysql.com/archives/get/p/23/file/mysql-5.5.59-linux-glibc2.12-x86_64.tar.gz
+
+ tar -zxvf zcwyou.tar.gz -C /123/abc
+
+
+
+ ======================安装配置JSK=========================================
+ https://cloud.tencent.com/document/product/213/38234
+
+ mkdir /usr/java
+ tar xzf jdk-8u221-linux-x64.tar.gz -C /usr/java
+
+ vim /etc/profile
+
+export JAVA_HOME=/usr/java/jdk1.8.0_221
+export CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib
+export PATH=$JAVA_HOME/bin:$PATH
+
+按 “Esc”，输入 “:wq”，保存文件并返回。
+
+source /etc/profile
+
+java -version
+
+
+
+
+=================================安装配置TomCat=================================
+tar xzf apache-tomcat-9.0.22.tar.gz
+mv apache-tomcat-9.0.22 /usr/local/tomcat/
+
+vim /usr/local/tomcat/conf/server.xml
+appBase="/usr/local/tomcat/webapps"
+
+vi /usr/local/tomcat/bin/setenv.sh
+JAVA_OPTS='-Djava.security.egd=file:/dev/./urandom -server -Xms256m -Xmx496m -Dfile.encoding=UTF-8'
+
+
+
+
+
+
+===================================安装MySql=============================================
+https://www.cnblogs.com/wangxc20181130/p/10042603.html
+https://www.jianshu.com/p/276d59cbc529
+https://blog.csdn.net/weixin_38003389/article/details/90696337
+
+#####查询MySql
+rpm -qa | grep mysql
+查询卸载mariadb
+rpm -qa|grep mariadb
+  >> mariadb-libs-5.5.60-1.el7_5.x86_64
+rpm -e --nodeps mariadb-libs-5.5.60-1.el7_5.x86_64
+
+#####解压文件包
+tar -xvf mysql-5.5.59-linux-glibc2.12-x86_64.tar.gz
+mv mysql-5.5.59 /usr/local
+cd /usr/local
+
+#####设置配置文件
+vi /etc/my.cnf
+//////////////////////////////////////////
+[mysql]
+# 设置mysql客户端默认字符集
+default-character-set=utf8
+socket=/var/lib/mysql/mysql.sock
+
+[mysqld]
+skip-name-resolve
+#设置3306端口
+port = 3306
+socket=/var/lib/mysql/mysql.sock
+# 设置mysql的安装目录, 这里的目录一定要是你解压后并且改了名的目录哟..
+basedir=/usr/local/mysql-5.5.60
+# 设置mysql数据库的数据的存放目录, 这里的目录一定要是你解压后并且改了名的目录哟..
+datadir=/usr/local/mysql-5.5.60/data
+# 允许最大连接数
+max_connections=200
+# 服务端使用的字符集默认为8比特编码的latin1字符集
+character-set-server=utf8
+# 创建新表时将使用的默认存储引擎
+default-storage-engine=INNODB
+lower_case_table_name=1
+max_allowed_packet=16M
+////////////////////////////////////////////////////////////////////
+
+#####创建MySql用户组
+cd /usr/local/mysql-5.5.59
+# groupadd mysql
+# useradd -g mysql mysql
+# chown -R mysql:mysql ./
+
+
+#####安装MySql
+./scripts/mysql_install_db --user=mysql --basedir=/usr/local/mysql-5.5.59 --datadir=/usr/local/mysql-5.5.59/data
+
+#####安装依赖组件
+mysqld: error while loading shared libraries: libaio.so.1: cannot open shared object file: No such file or directory
+yum install  libaio-devel.x86_64
+
+
+#####启动
+service mysqld start
+
+https://blog.csdn.net/qq_32331073/article/details/76229420(目录不存在则创建)
+(# mkdir   /var/lib/mysql # chmod 777  /var/lib/mysq)
+
+#####设置连接密码
+mysql> use mysql
+mysql> update user set password=password('123456') where user='root' and host='localhost';
+mysql> flush privileges;
+
+mysql>grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option;
+
+#####远程连接1130
+https://blog.csdn.net/qq_35396905/article/details/82972618(远程连接1130)
+
+
+
+
+===============================安装Nginx======================
+https://www.cnblogs.com/FondWang/p/11666557.html
+https://blog.csdn.net/weixin_39588754/article/details/87873612
+yum -y install gcc pcre-devel zlib-devel openssl openssl-devel
+tar -zxvf nginx-1.9.9.tar.gz
+mv nginx-1.9.9 /usr/local/nginx
+mv nginx /usr/local
+cd /usr/local/nginx
+./configure
+./configure --prefix=/usr/local/nginx
+./configure --prefix=/usr/local/nginx --conf-path=/usr/local/nginx/nginx.conf
+make
+make install
+cd /usr/local/nginx/sbin
+./nginx 启动
+./nginx -s stop 关闭
+./nginx -s reload 重启
+
+
+============================防火墙================================
+https://www.cnblogs.com/rxbook/p/8110143.html
+
+
+===================远程Tomcat控制台查看======================
+https://www.cnblogs.com/chen-lhx/p/5620299.html
+
+
+=========================安装Redis==============================
+https://blog.csdn.net/slss01/article/details/88920845
+yum install gcc-c++
+
+tar -zxvf redis-5.0.5.tar.gz
+cd redis-5.0.5
+
+====================远程桌面=========================
+https://www.cnblogs.com/jpfss/p/10905340.html
+
+

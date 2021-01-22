@@ -23,7 +23,6 @@
         <url-pattern>/upload</url-pattern>
     </servlet-mapping>
 
-
     <servlet>
         <servlet-name>Ajax</servlet-name>
         <servlet-class>cn.zsy.ajax.AjaxServlet</servlet-class>

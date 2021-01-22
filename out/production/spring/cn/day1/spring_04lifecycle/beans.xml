@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+				http://www.springframework.org/schema/beans 
+				http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!--
+	     scope="singleton"
+	     init-method:指定一个方法名称，会在初始化时执行
+		 destroy-method:指定一个方法名称，在容器销毁时执行
+	 -->
+	<bean id="user"
+		scope="singleton"
+		class="cn.day1.spring_04lifecycle.UserImpl"
+		init-method="init"
+		destroy-method="destroy"
+		/>
+</beans>

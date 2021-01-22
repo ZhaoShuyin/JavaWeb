@@ -9,7 +9,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	<typeAliases>
 		<!-- <typeAlias type="cn.itcast.mybatis.po.User" alias="user"/> -->
 		<!-- 批量别名设置   name：包名   不支持统配符  类名   不区分大小写-->
-		<package name="cn.itcast.mybatis"/>
+		<package name="com.itcast.mybatis"/>
 	</typeAliases>
 	<environments default="development">
 		<environment id="development">
@@ -30,6 +30,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<!-- <mapper class="cn.itcast.mybatis.mapper.UserMapper"/> -->
 		
 		<!--  name：包名   不支持统配符 -->
-		<package name="cn.itcast.mybatis.mapper"/>
+		<package name="com.itcast.mybatis.mapper"/>
 	</mappers>
 </configuration>

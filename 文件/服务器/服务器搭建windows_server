@@ -1,0 +1,71 @@
+开启IIS
+https://www.cnblogs.com/abeam/p/9963503.html
+http://www.winwin7.com/JC/18953.html
+*****************默认网站参数*****************
+%SystemDrive%\inetpub\wwwroot
+ClearText
+DefaultAppPool
+False
+http
+**********************************
+
+//IIS web url复写问题
+https://www.cnblogs.com/zhoushuang0426/p/11350297.html
+
+//MySql5.7安装
+https://blog.csdn.net/weixin_41360517/article/details/86766302
+
+
+net start mysql
+net stop mysql
+mysql --version
+
+
+//重置密码
+use mysql;
+//Windosw
+update user set password = password('IW*ueQQ&jkl') where user = 'root';
+//Windosw-server
+update user set authentication_string=password('IW*ueQQjkl') where user='root';
+
+*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9
+
+lush privileges;
+
+
+//
+1130-host 'localhost' is not allowed to connect to this MySQL server
+//远程连接问题
+update user set Host='%' where User='root';
+//如有以下报错忽略
+ERROR 1062 (23000): Duplicate entry '%-root' for key 'PRIMARY'
+//刷新
+flush privileges;
+
+
+设置Tomcat作为后台服务启动
+https://blog.csdn.net/ytm15732625529/article/details/79121196
+
+
+
+//mysql for windows 5.7.19.0.msi官网下载地址
+https://blog.csdn.net/keji2008522/article/details/82319552
+
+
+//定时备份任务
+//执行计划任务时，如果设置为“不管用户是否登录都要运行”
+https://blog.csdn.net/weixin_33832340/article/details/89759860
+//脚本文件
+****************************************************************************
+@echo off
+
+set "yMd=%date:~,4%%date:~5,2%%date:~8,2%"
+set "hms=%time:~,2%%time:~3,2%%time:~6,2%"
+
+forfiles /m *.sql
+
+cd C:/MySql/mysql-5.7.29-winx64/bin
+mysqldump -uroot -pIW*ueQQjkl managedb>D:/123/mysql/managedb-%yMd%-%hms%.sql
+
+echo on
+******************************************************************************
