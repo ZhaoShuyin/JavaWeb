@@ -1,6 +1,6 @@
 package cn.day2.proxy.jdk;
 
-public class SpringBrother implements Human{
+public class Actor implements Human{
 
 	public void sing(float money) {
 		System.out.println("拿到钱："+money+"开唱");

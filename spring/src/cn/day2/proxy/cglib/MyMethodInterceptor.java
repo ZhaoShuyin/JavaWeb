@@ -7,9 +7,9 @@ import net.sf.cglib.proxy.MethodProxy;
 
 //代理对象：拦截的功能
 public class MyMethodInterceptor implements MethodInterceptor {
-    private SpringBrother h;//被代理对象
+    private Actor h;//被代理对象
 
-    public MyMethodInterceptor(SpringBrother h) {
+    public MyMethodInterceptor(Actor h) {
         this.h = h;
     }
 

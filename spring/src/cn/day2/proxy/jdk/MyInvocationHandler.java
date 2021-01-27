@@ -20,6 +20,8 @@ public class MyInvocationHandler implements InvocationHandler {
 	 */
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
+		System.out.println("代理方法");
+//		System.out.println("代理 <" + proxy + "> 的 [" + method.getName() + "] 方法");
 		//拿到被调用方法的参数
 		float money = (Float)args[0];
 		if("sing".equals(method.getName())){

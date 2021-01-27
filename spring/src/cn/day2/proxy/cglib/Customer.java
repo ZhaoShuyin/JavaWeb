@@ -9,15 +9,17 @@ public class Customer {
 
     public static void main(String[] args) {
 
-        SpringBrother h = new SpringBrother();//目标对象：被代理对象
-
-        Enhancer e = new Enhancer();//增强
-        e.setSuperclass(SpringBrother.class);//指定代理类的父类
-
+        Actor h = new Actor();//目标对象：被代理对象
+        System.out.println("调用sing方法");
+        h.sing(500f);
+        System.out.println("调用dance方法");
+        h.dance(500f);
+        System.out.println("=======================================");
+        Enhancer e = new Enhancer();           //增强
+        e.setSuperclass(Actor.class);  //指定代理类的父类
         e.setCallback(new MyMethodInterceptor(h));
-
         //基于子类的代理。代理对象可以看成父类
-        SpringBrother proxy = (SpringBrother) e.create();
+        Actor proxy = (Actor) e.create();
         System.out.println("调用sing方法");
         proxy.sing(10000f);
         System.out.println("调用dance方法");

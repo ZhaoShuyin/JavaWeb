@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+				http://www.springframework.org/schema/beans 
+				http://www.springframework.org/schema/beans/spring-beans.xsd
+				http://www.springframework.org/schema/aop 
+				http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<bean id="accountService" class="cn.day2.spring._03argsRtValue.AccountServiceImpl"></bean>
+	<bean id="transactionManager" class="cn.day2.spring._03argsRtValue.TransactionManager"></bean>
+	<aop:config>
+		<aop:pointcut expression="execution(* cn.day2.spring._03argsRtValue.*.*(..))" id="pt1"/>
+		<aop:aspect ref="transactionManager">
+			<aop:after-throwing method="rollback" throwing="e" pointcut-ref="pt1"/>
+		</aop:aspect>
+	</aop:config>
+</beans>
