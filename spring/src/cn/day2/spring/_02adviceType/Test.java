@@ -7,9 +7,10 @@ public class Test {
 
 	public static void main(String[] args) {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("cn/day2/spring/_02adviceType/beans.xml");
-		AccountServiceImpl accountService = (AccountServiceImpl)ac.getBean("accountService");
+		ServiceImpl accountService = (ServiceImpl)ac.getBean("accountService");
 		accountService.transfer();
-//		accountService.transfer1();
+		System.out.println("==============================");
+		accountService.transfer1();
 	}
 
 }

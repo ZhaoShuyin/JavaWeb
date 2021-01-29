@@ -22,5 +22,6 @@
     <orderEntry type="library" name="mysql-connector-java-5.0.8-bin" level="project" />
     <orderEntry type="library" name="aspectjrt-1.9.5" level="project" />
     <orderEntry type="library" name="aspectjweaver-1.9.5" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

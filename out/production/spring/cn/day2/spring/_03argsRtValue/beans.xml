@@ -7,7 +7,7 @@
 				http://www.springframework.org/schema/beans/spring-beans.xsd
 				http://www.springframework.org/schema/aop 
 				http://www.springframework.org/schema/aop/spring-aop.xsd">
-	<bean id="accountService" class="cn.day2.spring._03argsRtValue.AccountServiceImpl"></bean>
+	<bean id="accountService" class="cn.day2.spring._03argsRtValue.ServiceImpl"></bean>
 	<bean id="transactionManager" class="cn.day2.spring._03argsRtValue.TransactionManager"></bean>
 	<aop:config>
 		<aop:pointcut expression="execution(* cn.day2.spring._03argsRtValue.*.*(..))" id="pt1"/>

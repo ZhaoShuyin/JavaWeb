@@ -8,13 +8,15 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 @Component
-@Aspect//把类声明为切面(通知类)
+@Aspect   //@Aspect把类声明为切面(通知类)
 public class TransactionManager {
-	
+
+	//
 	@Before(value="PointCut1.pt1()")
 	public void startTransaction(){
 		System.out.println("开启事务....");
 	}
+
 	@AfterReturning(value="PointCut1.pt1()",returning="rtValue")
 	public void commit(String rtValue){
 		System.out.println("返回值:"+rtValue);

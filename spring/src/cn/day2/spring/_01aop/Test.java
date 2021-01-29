@@ -7,7 +7,7 @@ public class Test {
 
     public static void main(String[] args) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("cn/day2/spring/_01aop/beans.xml");
-        AccountServiceImpl accountService = (AccountServiceImpl) ac.getBean("accountService");
+        ServiceImpl accountService = (ServiceImpl) ac.getBean("accountService");
         System.out.println(accountService);
         accountService.transfer();
         accountService.transfer1();
