@@ -82,6 +82,7 @@
 	<bean id="aDao" class="cn.day3.springjdbc._03tx.DaoImpl">
 		<property name="dataSource" ref="driverManagerDataSource"></property>
 	</bean>
+
 	<bean id="driverManagerDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
 		<property name="url" value="jdbc:mysql://localhost:3306/spring"></property>

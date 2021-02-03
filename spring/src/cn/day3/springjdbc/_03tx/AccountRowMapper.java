@@ -12,7 +12,7 @@ public class AccountRowMapper implements RowMapper<Account> {
 
 	//封装结果集到JavaBean中
 	public Account mapRow(ResultSet rs, int rowNum) throws SQLException {
-		System.out.println("================== mapRow");
+//		System.out.println("================== mapRow");
 		Account a = new Account();
 		a.setId(rs.getInt("id"));
 		a.setName(rs.getString("name"));

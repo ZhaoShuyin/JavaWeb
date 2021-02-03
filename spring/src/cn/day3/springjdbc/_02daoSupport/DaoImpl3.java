@@ -44,7 +44,6 @@ public class DaoImpl3 extends JdbcDaoSupport {
         Account account = getJdbcTemplate().queryForObject(
                 "select * from accounts limit 1",
                 new org.springframework.jdbc.core.RowMapper<Account>() {
-
                     @Override
                     public Account mapRow(ResultSet resultSet, int i) throws SQLException {
                         Account a = new Account();
