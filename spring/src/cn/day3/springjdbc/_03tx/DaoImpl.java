@@ -15,9 +15,10 @@ public class DaoImpl extends JdbcDaoSupport implements IDao {
         return list.size() == 0 ? null : list.get(0);
     }
 
-    public void updateAccount(Account sAccount) {
+    public int updateAccount(Account sAccount) {
         System.out.println(" DaoImpl ======================= updateAccount()");
-        getJdbcTemplate().update("update accounts set amount=? where id=?", sAccount.getAmount(), sAccount.getId());
+        int update = getJdbcTemplate().update("update accounts set amount=? where id=?", sAccount.getAmount(), sAccount.getId());
+        return update;
     }
 
 }

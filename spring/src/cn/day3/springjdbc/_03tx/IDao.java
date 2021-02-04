@@ -5,6 +5,6 @@ public interface IDao {
 
 	Account findAccount(String sourceAccountName);
 
-	void updateAccount(Account sAccount);
+	int updateAccount(Account sAccount);
 
 }

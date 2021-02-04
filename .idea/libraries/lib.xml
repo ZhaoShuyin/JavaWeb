@@ -1,15 +1,10 @@
 <component name="libraryTable">
   <library name="lib">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/spring/lib/commons-dbcp-1.4.jar!/" />
-      <root url="jar://$PROJECT_DIR$/spring/lib/commons-pool-1.6.jar!/" />
-      <root url="file://$PROJECT_DIR$/spring/lib" />
+      <root url="jar://$PROJECT_DIR$/web-app/web/WEB-INF/lib/commons-io-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-app/web/WEB-INF/lib/commons-fileupload-1.4.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="file://$PROJECT_DIR$/spring/lib" />
-    </SOURCES>
-    <jarDirectory url="file://$PROJECT_DIR$/spring/lib" recursive="false" />
-    <jarDirectory url="file://$PROJECT_DIR$/spring/lib" recursive="false" type="SOURCES" />
+    <SOURCES />
   </library>
 </component>

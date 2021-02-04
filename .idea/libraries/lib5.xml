@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="lib5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/java-sql/lib/asm-3.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/java-sql/lib/mysql-connector-java-5.1.39.jar!/" />
+      <root url="jar://$PROJECT_DIR$/java-sql/lib/c3p0-0.9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/java-sql/lib/commons-dbutils-1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/java-sql/lib/commons-dbcp-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/java-sql/lib/commons-pool-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/java-sql/lib/cglib-2.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -23,26 +23,33 @@ public class ServiceImpl implements IService {
         this.accountDao = accountDao;
     }
 
-    //编程式事务：Spring要求，把处于同一个事务之中的代码写在 transactionTemplate.execute(同一个事务中的代码)
-    public void transfer1(
+    /**
+     * 编程式事务：Spring要求，把处于同一个事务之中的代码写在 transactionTemplate.execute(同一个事务中的代码)
+     */
+    public void transferTransaction(
             final String sourceAccountName,
             final String targetAccountName,
             final float money) {
-        System.out.println(" ServiceImpl ====== transfer(transaction) ============== 方法");
+        System.out.println(" ServiceImpl ====== transfer(TransactionCallback) ============== 方法");
         TransactionCallback tc = new TransactionCallbackWithoutResult() {
             protected void doInTransactionWithoutResult(TransactionStatus status) {
-                Account sAccount = accountDao.findAccount(sourceAccountName);// 每条语句都处于单独的JDBC事务中
-                Account tAccount = accountDao.findAccount(targetAccountName);// 每条语句都处于单独的JDBC事务中
+                Account sAccount = accountDao.findAccount(sourceAccountName);
+                Account tAccount = accountDao.findAccount(targetAccountName);
                 sAccount.setAmount(sAccount.getAmount() - money);
                 tAccount.setAmount(tAccount.getAmount() + money);
-                accountDao.updateAccount(sAccount);// 每条语句都处于单独的JDBC事务中
+                accountDao.updateAccount(sAccount);
 //				 int i=1/0;
-                accountDao.updateAccount(tAccount);// 每条语句都处于单独的JDBC事务中
+                accountDao.updateAccount(tAccount);
             }
         };
-        transactionTemplate.execute(tc);//执行事务控制的代码
+        Object execute = transactionTemplate.execute(tc);//执行事务控制的代码
+        System.out.println(execute == null ? "null" : execute.getClass().getName());
     }
 
+
+    /**
+     *
+     */
     public void transfer(
             String sourceAccountName,
             String targetAccountName,
@@ -53,7 +60,7 @@ public class ServiceImpl implements IService {
         sAccount.setAmount(sAccount.getAmount() - money);
         tAccount.setAmount(tAccount.getAmount() + money);
         accountDao.updateAccount(sAccount);                          // 每条语句都处于单独的JDBC事务中
-				 int i=1/0;
+//        int i = 1 / 0;
         accountDao.updateAccount(tAccount);                          // 每条语句都处于单独的JDBC事务中
     }
 
@@ -68,7 +75,7 @@ public class ServiceImpl implements IService {
     //
     public void m2() {
         System.out.println("====================== m2() 方法");
-        m1();
+//        m1();
     }
 
 }

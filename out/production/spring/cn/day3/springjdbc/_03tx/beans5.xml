@@ -15,7 +15,12 @@
 				http://www.springframework.org/schema/tx 
 				http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-	<!--
+	<!-- 事务管理的通知 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<!-- 事务的属性：对应事务的定义信息 -->
+		<tx:attributes>
+			<!-- 事务要控制在什么方法上 :更加精细的控制方法上的事务的属性-->
+			<!-- 
 				tx:method:
 					name:方法的名称。支持通配符*
 					read-only:是否是只读事务。默认值是false(读写)。
@@ -27,47 +32,53 @@
 					rollback-for：指定异常的名称（类全名）。遇到该异常回滚
 					propagation:事务的传播行为。默认值是REQUIRED(绝大多数使用该值)
 							比如：m2方法中调用m1.<tx:method name="m2" propagation="MANDATORY"/>
-									传播行为 	       m1  		 m2
-									REQUIRED      后者必须有事务
-									REQUIRES_NEW  后者必须使用新事务
-									SUPPORTS	  后者追随前者事务
-									NOT_SUPPORTED 后者必须无事务
-									MANDATORY	  前者必须使用事务
-									NEVER         两者(前者)都必须没有事务
-                                    NESTED        事务回滚点
+									传播行为 	m1  		 m2
+									REQURIED    tx1			tx1
+												没有			开启新事务
+									REQUIRES_NEW
+												tx1			开启新事务
+												没有			开启新事务
+									SUPPORTS	tx1			tx1
+												没有			没有
+									NOT_SUPPORTED
+												tx1			报错
+												没有			没有
+									MANDATORY	tx1			tx1
+												没有			报错
+									
 			 -->
-
-	<!--通过xml进行事物配置 AOP-->
-	<tx:advice id="txAdvice" transaction-manager="tManager">
-		<tx:attributes>
-			<tx:method name="m1" propagation="REQUIRED" />
-			<tx:method name="m2" />
+<!-- 			<tx:method name="find*" read-only="true"/> -->
+			<tx:method name="m2" propagation="NESTED"/>
 		</tx:attributes>
 	</tx:advice>
 
-	<!--配置切面-->
+
+	<!-- 配置切面：AOP  advice-ref:引用通知  pointcut：切入点 -->
 	<aop:config>
 		<aop:advisor advice-ref="txAdvice" pointcut="execution(* cn.day3.springjdbc._03tx.ServiceImpl.*(..))"/>
 	</aop:config>
 
-	<!--Service 配置-->
+
+	<!--内部变量(accountDao使用)-->
 	<bean id="accountService" class="cn.day3.springjdbc._03tx.ServiceImpl">
-		<!--成员变量-->
-		<property name="accountDao" ref="aDao"/>
-		<!--成员变量 (使用aop后则不须使用管理模板)-->
-		<property name="transactionTemplate" ref="transactionTemplate"/>
+		<property name="accountDao" ref="aDao"></property>
+		<!-- 注入事务管理的模板 -->
+<!-- 		<property name="transactionTemplate" ref="transactionTemplate"></property> -->
 	</bean>
+	<!-- 事务管理模板 -->
+<!-- 	<bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate"> -->
+		<!-- 注入事务管理器 -->
+<!-- 		<property name="transactionManager" ref="transactionManager"></property> -->
+<!-- 	</bean> -->
 
-	<!--事物管理模板-->
-	<bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
-		<property name="transactionManager" ref="tManager"/>
+
+	<!-- 事务管理器 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<!-- 给事务管理器注入数据源 -->
+		<property name="dataSource" ref="driverManagerDataSource"></property>
 	</bean>
-
-	<!--事物管理器-->
-	<bean id="tManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="driverManagerDataSource"/>
-	</bean>
-
+	
+	
 	<bean id="aDao" class="cn.day3.springjdbc._03tx.DaoImpl">
 		<property name="dataSource" ref="driverManagerDataSource"></property>
 	</bean>

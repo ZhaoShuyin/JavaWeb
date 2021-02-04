@@ -11,8 +11,9 @@ public class Test {
 						"cn/day3/springjdbc/_03tx/beans.xml"
 				);
 		IService s = (IService)ac.getBean("accountService");
-		s.transfer("aaa", "bbb", 1f);
-//		s.m2();
+//		s.transferTransaction("aaa", "bbb", 1f);
+//		s.transfer("aaa", "bbb", 1f);
+		s.m1();
 	}
 
 }
