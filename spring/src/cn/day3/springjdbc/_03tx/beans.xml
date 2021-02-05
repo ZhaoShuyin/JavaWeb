@@ -27,23 +27,32 @@
                     propagation:事务的传播行为。默认值是REQUIRED(绝大多数使用该值)
                             比如：m2方法中调用m1.<tx:method name="m2" propagation="MANDATORY"/>
                                     传播行为 	       m1  		 m2
-                                    REQUIRED      后者必须有事务
-                                    REQUIRES_NEW  后者必须使用新事务
+                                    REQUIRED      当前保证有事务
                                     SUPPORTS	  后者追随前者事务
+                                    REQUIRES_NEW  前者追随后者使用新事务
                                     NOT_SUPPORTED 后者必须无事务
                                     MANDATORY	  前者必须使用事务
                                     NEVER         两者(前者)都必须没有事务
-                                    NESTED        事务回滚点
+                                    NESTED        后者单独事务 事务回滚点
              -->
 
-    <!--通过xml进行事物配置 AOP-->
+    <!--通过xml进行事物配置 AOP attributes 必须再次配置哪些方法进行AOP-->
     <tx:advice id="txAdvice" transaction-manager="tManager">
+        <!--详细方法配置-->
         <tx:attributes>
-            <tx:method name="*" />
+            <tx:method name="transfer" propagation="REQUIRED" />
+            <tx:method name="m1" propagation="REQUIRED" />
+            <tx:method name="m2" propagation="NOT_SUPPORTED" />
         </tx:attributes>
     </tx:advice>
 
-    <!--配置切面-->
+    <!-- REQUIRED REQUIRED 事务 -->
+    <!-- NEVER    REQUIRED 不事务 -->
+    <!-- REQUIRED    NEVER 事务 -->
+    <!-- REQUIRED SUPPORTS 事务 -->
+    <!-- NEVER    SUPPORTS 不事务 -->
+
+    <!--配置切面,哪些方法进行动态代理-->
     <aop:config>
         <aop:advisor advice-ref="txAdvice"
             pointcut="execution(* cn.day3.springjdbc._03tx.ServiceImpl.*(..))" />

@@ -1,0 +1,8 @@
+git fetch --all
+
+git reset --hard gitee/master
+
+netstat -ano
+tasklist
+
+netstat -p tcp -ano | findstr :1099

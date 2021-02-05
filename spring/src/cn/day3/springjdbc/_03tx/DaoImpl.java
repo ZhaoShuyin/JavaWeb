@@ -10,14 +10,15 @@ import org.springframework.jdbc.core.support.JdbcDaoSupport;
 public class DaoImpl extends JdbcDaoSupport implements IDao {
 
     public Account findAccount(String sourceAccountName) {
-        System.out.println(" DaoImpl ======================= findAccount()");
         List<Account> list = getJdbcTemplate().query("select * from accounts where name=?", new AccountRowMapper(), sourceAccountName);
-        return list.size() == 0 ? null : list.get(0);
+        Account account = list.size() == 0 ? null : list.get(0);
+        System.out.println(" DaoImpl ====== findAccount() { " + account.getName() + ":" + account.getAmount() + " }");
+        return account;
     }
 
     public int updateAccount(Account sAccount) {
-        System.out.println(" DaoImpl ======================= updateAccount()");
         int update = getJdbcTemplate().update("update accounts set amount=? where id=?", sAccount.getAmount(), sAccount.getId());
+        System.out.println(" DaoImpl ======= updateAccount() { " + sAccount.getName() + ":" + sAccount.getAmount() + " } >> ( "+update+" )");
         return update;
     }
 

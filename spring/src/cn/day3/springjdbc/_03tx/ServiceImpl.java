@@ -68,14 +68,31 @@ public class ServiceImpl implements IService {
     //<tx:method name="m2" propagation="MANDATORY"/>
     //m2上必须有事务
     public void m1() {
+
         System.out.println("====================== m1() 方法");
-//		m2();
+
+        Account sAccount = accountDao.findAccount("aaa");
+        Account tAccount = accountDao.findAccount("bbb");
+        sAccount.setAmount(sAccount.getAmount() - 10);
+        tAccount.setAmount(tAccount.getAmount() + 10);
+        accountDao.updateAccount(sAccount);
+//        int i = 1 / 0;
+        accountDao.updateAccount(tAccount);
+
+        m2();
     }
 
     //
     public void m2() {
         System.out.println("====================== m2() 方法");
-//        m1();
+
+        Account sAccount = accountDao.findAccount("aaa");// 每条语句都处于单独的JDBC事务中
+        Account tAccount = accountDao.findAccount("bbb");// 每条语句都处于单独的JDBC事务中
+        sAccount.setAmount(sAccount.getAmount() - 1);
+        tAccount.setAmount(tAccount.getAmount() + 1);
+        accountDao.updateAccount(sAccount);                          // 每条语句都处于单独的JDBC事务中
+        int i = 1 / 0;
+        accountDao.updateAccount(tAccount);                          // 每条语句都处于单独的JDBC事务中
     }
 
 }
