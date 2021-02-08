@@ -10,7 +10,7 @@ public interface IService {
 	 * @param targetAccountName 转入账户名
 	 * @param money 金额
 	 */
-	void transfer(String sourceAccountName, String targetAccountName, float money);
+	boolean transfer(String sourceAccountName, String targetAccountName, float money);
 
 	void m1();
 

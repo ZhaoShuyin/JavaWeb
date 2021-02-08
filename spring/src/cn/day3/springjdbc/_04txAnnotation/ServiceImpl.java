@@ -14,15 +14,16 @@ public class ServiceImpl implements IService {
 		System.out.println("构造函数 : ServiceImpl");
 	}
 
-	public void transfer(String sourceAccountName, String targetAccountName,
+	public boolean transfer(String sourceAccountName, String targetAccountName,
 						 float money) {
 		Account sAccount = dao.findAccount(sourceAccountName);
 		Account tAccount = dao.findAccount(targetAccountName);
 		sAccount.setAmount(sAccount.getAmount() - money);
 		tAccount.setAmount(tAccount.getAmount() + money);
 		dao.updateAccount(sAccount);
-//				 int i=1/0;
+				 int i=1/0;
 		dao.updateAccount(tAccount);
+		return true;
 	}
 
 	public void m1(){

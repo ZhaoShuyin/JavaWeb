@@ -3,12 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-hibernate/java-hibernate.iml" filepath="$PROJECT_DIR$/java-hibernate/java-hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-mybatis/java-mybatis.iml" filepath="$PROJECT_DIR$/java-mybatis/java-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-sql/java-sql.iml" filepath="$PROJECT_DIR$/java-sql/java-sql.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring.iml" filepath="$PROJECT_DIR$/spring/spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/spring-mvc.iml" filepath="$PROJECT_DIR$/spring-mvc/spring-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-app/web-app.iml" filepath="$PROJECT_DIR$/web-app/web-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-front/web-front.iml" filepath="$PROJECT_DIR$/web-front/web-front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-struts/web-struts.iml" filepath="$PROJECT_DIR$/web-struts/web-struts.iml" />
     </modules>
   </component>
 </project>
