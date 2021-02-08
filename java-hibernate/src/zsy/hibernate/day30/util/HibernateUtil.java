@@ -1,4 +1,4 @@
-package cn.itcast.util;
+package zsy.hibernate.day30.util;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

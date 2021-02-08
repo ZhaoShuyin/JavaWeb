@@ -1,12 +1,12 @@
 <ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="../config/ehcache.xsd">
-	<!-- 如果要缓存的数据超出了约定，磁盘缓存的位置
-		java.io.tmpdir:系统环境变量。  操作系统的临时文件的存放目录
-	 -->
-	<diskStore path="java.io.tmpdir" />
+    xsi:noNamespaceSchemaLocation="../config/ehcache.xsd">
+    <!-- 如果要缓存的数据超出了约定，磁盘缓存的位置
+        java.io.tmpdir:系统环境变量。  操作系统的临时文件的存放目录
+     -->
+    <diskStore path="java.io.tmpdir" />
 
-	<defaultCache maxElementsInMemory="10000" eternal="false"
-		timeToIdleSeconds="120" timeToLiveSeconds="120" overflowToDisk="true"
-		maxElementsOnDisk="10000000" diskPersistent="false"
-		diskExpiryThreadIntervalSeconds="120" memoryStoreEvictionPolicy="LRU" />
+    <defaultCache maxElementsInMemory="10000" eternal="false" timeToIdleSeconds="120"
+        timeToLiveSeconds="120" overflowToDisk="true" maxElementsOnDisk="10000000"
+        diskPersistent="false" diskExpiryThreadIntervalSeconds="120"
+        memoryStoreEvictionPolicy="LRU" />
 </ehcache>

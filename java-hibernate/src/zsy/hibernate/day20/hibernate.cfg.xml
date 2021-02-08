@@ -30,6 +30,6 @@ dtd的位置：hibernate3.jar\org\hibernate\hibernate-configuration-3.0.dtd
 		 -->
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		<!-- 指定要管理的映射文件 -->
-		<mapping resource="cn/itcast/domain/Customer.hbm.xml"/>
+		<mapping resource="zsy/hibernate/day20/domain/Customer.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

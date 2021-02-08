@@ -1,11 +1,11 @@
-package cn.itcast.test;
+package zsy.hibernate.day23.test;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.junit.Test;
 
-import cn.itcast.domain.Category;
-import cn.itcast.util.HibernateUtil;
+import zsy.hibernate.day23.domain.Category;
+import zsy.hibernate.day23.util.HibernateUtil;
 public class Test1 {
 	
 	@Test

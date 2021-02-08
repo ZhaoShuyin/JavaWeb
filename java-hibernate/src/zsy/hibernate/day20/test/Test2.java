@@ -1,4 +1,4 @@
-package cn.itcast.test;
+package zsy.hibernate.day20.test;
 
 import java.util.Date;
 import java.util.List;
@@ -9,8 +9,8 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.junit.Test;
 
-import cn.itcast.domain.Customer;
-import cn.itcast.util.HibernateUtil;
+import zsy.hibernate.day20.domain.Customer;
+import zsy.hibernate.day20.util.HibernateUtil;
 public class Test2 {
 	//save和persist的区别
 	@Test

@@ -1,12 +1,12 @@
-package cn.itcast.test;
+package zsy.hibernate.day30.test;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.junit.Test;
 
-import cn.itcast.domain.Student;
-import cn.itcast.domain.Teacher;
-import cn.itcast.util.HibernateUtil;
+import zsy.hibernate.day30.domain.Student;
+import zsy.hibernate.day30.domain.Teacher;
+import zsy.hibernate.day30.util.HibernateUtil;
 //多对多相关操作
 public class Test1 {
 	//删除：不要配置级联删除

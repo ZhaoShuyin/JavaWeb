@@ -1,4 +1,4 @@
-package cn.itcast.test;
+package zsy.hibernate.day33.test;
 
 import java.util.List;
 
@@ -7,9 +7,9 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.junit.Test;
 
-import cn.itcast.domain.Customer;
-import cn.itcast.domain.Order;
-import cn.itcast.util.HibernateUtil;
+import zsy.hibernate.day33.domain.Customer;
+import zsy.hibernate.day33.domain.Order;
+import zsy.hibernate.day33.util.HibernateUtil;
 public class Test1 {
 	@Test
 	public void test2(){

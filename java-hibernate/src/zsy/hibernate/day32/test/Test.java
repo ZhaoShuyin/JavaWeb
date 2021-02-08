@@ -1,39 +1,39 @@
-package cn.itcast.test;
+package zsy.hibernate.day32.test;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import cn.itcast.domain.Employee;
-import cn.itcast.domain.HourlyEmployee;
-import cn.itcast.domain.SalaryEmployee;
-import cn.itcast.util.HibernateUtil;
+import zsy.hibernate.day32.domain.Employee;
+import zsy.hibernate.day32.domain.HourlyEmployee;
+import zsy.hibernate.day32.domain.SalaryEmployee;
+import zsy.hibernate.day32.util.HibernateUtil;
 
 public class Test {
-//	单表操作
-	public static void main(String[] args) {
-		Employee ee = new Employee();
-		ee.setName("陈涔");
-		
-		HourlyEmployee he = new HourlyEmployee();
-		he.setName("杜巍锋");
-		he.setRate(100f);
-		
-		SalaryEmployee se = new SalaryEmployee();
-		se.setName("何亮");
-		se.setSalary(10000f);
-		
-		Session s = HibernateUtil.openSession();
-		Transaction tx = s.beginTransaction();
-		
-		s.save(ee);
-		s.save(he);
-		s.save(se);
-		
-		tx.commit();
-		s.close();
-	}
-	//多态查询
+    //	单表操作
+    public static void main(String[] args) {
+        Employee ee = new Employee();
+        ee.setName("陈涔");
+
+        HourlyEmployee he = new HourlyEmployee();
+        he.setName("杜巍锋");
+        he.setRate(100f);
+
+        SalaryEmployee se = new SalaryEmployee();
+        se.setName("何亮");
+        se.setSalary(10000f);
+
+        Session s = HibernateUtil.openSession();
+        Transaction tx = s.beginTransaction();
+
+        s.save(ee);
+        s.save(he);
+        s.save(se);
+
+        tx.commit();
+        s.close();
+    }
+    //多态查询
 //	public static void main(String[] args) {
 //		Session s = HibernateUtil.openSession();
 //		Transaction tx = s.beginTransaction();

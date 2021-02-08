@@ -1,4 +1,4 @@
-package cn.itcast.test;
+package zsy.hibernate.day20.test;
 
 import java.util.Calendar;
 
@@ -8,8 +8,8 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.junit.Test;
 
-import cn.itcast.domain.Customer;
-import cn.itcast.util.HibernateUtil;
+import zsy.hibernate.day20.domain.Customer;
+import zsy.hibernate.day20.util.HibernateUtil;
 public class Test1 {
 	//多次更新，会合并同步，减少与数据库的交互次数。  同步时机
 	@Test

@@ -1,56 +1,59 @@
-package cn.itcast.domain;
+package zsy.hibernate.day23.domain;
 
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
+
 //自我一对多：商品分类
 public class Category implements Serializable {
-	private Integer id;
-	private String name;
-	
-	private Category parentCategory;//父类型：多对一
-	
-	private Set<Category> childCategory = new HashSet<Category>(0);//关联的子类：一对多
 
-	
-	public Category(){}
-	
-	public Category(String name) {
-		super();
-		this.name = name;
-	}
+    private Integer id;
+    private String name;
 
-	public Integer getId() {
-		return id;
-	}
+    private Category parentCategory;//父类型：多对一
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    private Set<Category> childCategory = new HashSet<Category>(0);//关联的子类：一对多
 
-	public String getName() {
-		return name;
-	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public Category() {
+    }
 
-	public Category getParentCategory() {
-		return parentCategory;
-	}
+    public Category(String name) {
+        super();
+        this.name = name;
+    }
 
-	public void setParentCategory(Category parentCategory) {
-		this.parentCategory = parentCategory;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public Set<Category> getChildCategory() {
-		return childCategory;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setChildCategory(Set<Category> childCategory) {
-		this.childCategory = childCategory;
-	}
-	
-	
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Category getParentCategory() {
+        return parentCategory;
+    }
+
+    public void setParentCategory(Category parentCategory) {
+        this.parentCategory = parentCategory;
+    }
+
+    public Set<Category> getChildCategory() {
+        return childCategory;
+    }
+
+    public void setChildCategory(Set<Category> childCategory) {
+        this.childCategory = childCategory;
+    }
+
+
 }
