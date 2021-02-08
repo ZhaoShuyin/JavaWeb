@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.itcast.domain">
+	<class name="Category" table="CATEGORIES">
+		<id name="id" column="ID">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="NAME"/>
+		<!-- 多对一 -->
+		<many-to-one name="parentCategory"
+			cascade="save-update"
+			column="P_ID"
+			class="Category"
+		/>
+		<!-- 一对多 -->
+		<set name="childCategory" cascade="save-update" inverse="true">
+			<key column="P_ID"></key>
+			<one-to-many class="Category"/>
+		</set>
+	</class>
+</hibernate-mapping>

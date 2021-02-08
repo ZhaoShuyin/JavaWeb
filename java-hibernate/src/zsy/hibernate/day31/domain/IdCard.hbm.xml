@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.itcast.domain">
+	<class name="IdCard" table="IDCARDS">
+		<id name="id" column="ID">
+			<generator class="native"></generator>
+		</id>
+		<property name="num" column="NUM"/>
+		<!-- 不加constrained，就没有外键约束 -->
+		<one-to-one name="person" constrained="true"></one-to-one>
+	</class>
+</hibernate-mapping>
