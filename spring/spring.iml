@@ -8,7 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="lib2" level="project" />
-    <orderEntry type="library" name="动态代理" level="project" />
     <orderEntry type="library" name="lib6" level="project" />
     <orderEntry type="library" name="lib5" level="project" />
     <orderEntry type="library" name="spring-529" level="project" />
@@ -16,7 +15,6 @@
     <orderEntry type="library" name="lib7" level="project" />
     <orderEntry type="library" name="spring" level="project" />
     <orderEntry type="library" name="lib1" level="project" />
-    <orderEntry type="library" name="junit-4.12" level="project" />
     <orderEntry type="library" name="dbutils" level="project" />
     <orderEntry type="library" name="lib4" level="project" />
     <orderEntry type="library" name="lib9" level="project" />

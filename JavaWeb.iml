@@ -75,5 +75,6 @@
     <orderEntry type="library" name="lib5" level="project" />
     <orderEntry type="library" name="lib10" level="project" />
     <orderEntry type="library" name="lib1" level="project" />
+    <orderEntry type="library" name="junit-4.12 (3)" level="application" />
   </component>
 </module>

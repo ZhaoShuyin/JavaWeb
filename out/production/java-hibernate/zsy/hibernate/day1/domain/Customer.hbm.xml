@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dtd位置：
+	hibernate3.jar\org\hibernate\hibernate-mapping-3.0.dtd
+ -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="zsy.hibernate.day1.domain">
+	<!-- 映射类和表的关系：
+		name:类的全名
+		table：类对应的表名（表名类名不一样，必须指定）。
+			如果省略，默认使用类的简单名称
+	 -->
+	<class name="Customer" table="T_CUSTOMERS">
+		<!-- 映射主键字段：实体完整性 -->
+		<id name="id" column="ID">
+			<!-- 主键生成策略 -->
+			<generator class="native"></generator>
+		</id>
+		<!-- 映射非主键字段 -->
+		<property name="name" column="NAME" type="string"/>
+		<property name="birthday" column="BIRTHDAY" type="date"></property>
+		<!-- 映射派生属性：
+			formula：必须写在小括号内，sql语句。
+				如果字段不加别名，用的是当前表格。如果加上了，Hibernate就不会加了
+		 -->
+		<property name="totalMoney" formula="(select sum(o.money) from orders o where id=1)"></property>
+	</class>
+</hibernate-mapping>

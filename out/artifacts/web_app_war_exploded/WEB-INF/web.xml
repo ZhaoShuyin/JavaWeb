@@ -13,4 +13,13 @@
         <url-pattern>/upload</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Cycle</servlet-name>
+        <servlet-class>com.zsy.servlet.ServletDemo3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cycle</servlet-name>
+        <url-pattern>/cycle</url-pattern>
+    </servlet-mapping>
+
 </web-app>
