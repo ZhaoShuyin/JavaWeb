@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="zsy.hibernate.day22.domain">
+    <class name="Customer" table="CUSTOMERS">
+        <id name="id" column="ID">
+            <generator class="native"></generator>
+        </id>
+        <property name="name" column="NAME" />
+        <!-- 一对多 -->
+        <set name="orders" inverse="true" cascade="save-update">
+            <!-- 指定关联外键字段 -->
+            <key column="CUSTOMER_ID"></key>
+            <!-- 描述关系 -->
+            <one-to-many class="Order" />
+        </set>
+    </class>
+</hibernate-mapping>

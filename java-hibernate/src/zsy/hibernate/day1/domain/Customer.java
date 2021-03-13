@@ -2,17 +2,14 @@ package zsy.hibernate.day1.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
-/*
-create database day31;
-use day31;
-create table T_CUSTOMERS(
-	ID int primary key auto_increment,
-	NAME varchar(200),
-	BIRTHDAY date
-); 
+/**
+ *
  */
 public class Customer implements Serializable {
+
     private Integer id;
     private String name;
     private Date birthday;

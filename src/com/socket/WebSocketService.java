@@ -16,6 +16,7 @@ import java.nio.ByteBuffer;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
 import java.util.Timer;
@@ -31,62 +32,66 @@ public class WebSocketService extends WebSocketServer {
 
     public WebSocketService(int port, Draft d) throws UnknownHostException {
         super(new InetSocketAddress(port), Collections.singletonList(d));
-        System.out.println(TAG+" ======== 构造方法 ");
+        System.out.println(TAG + " ======== 构造方法 ");
     }
 
     public WebSocketService(InetSocketAddress address, Draft d) {
         super(address, Collections.singletonList(d));
-        System.out.println(TAG+" ======== 构造方法 1");
+        System.out.println(TAG + " ======== 构造方法 1");
     }
 
     @Override
     public void onOpen(WebSocket conn, ClientHandshake handshake) {
         counter++;
-        System.out.println(TAG+" Opened " + counter);
-        System.out.println(TAG+" onOpen Address :" + conn.getRemoteSocketAddress().getAddress().getHostAddress());
+        System.out.println(TAG + " Opened " + counter);
+        System.out.println(TAG + " onOpen Address :" + conn.getRemoteSocketAddress().getAddress().getHostAddress());
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
                 String format = dateFormat.format(new Date());
                 conn.send(format);
-                System.out.println("conn.send "+format);
+                System.out.println("conn.send " + format);
             }
-        },5000,20000);
+        }, 5000, 20000);
     }
 
     @Override
     public void onClose(WebSocket conn, int code, String reason, boolean remote) {
-        System.out.println(TAG+" closed Address :" + conn.getRemoteSocketAddress().getAddress().getHostAddress());
+        System.out.println(TAG + " closed Address :" + conn.getRemoteSocketAddress().getAddress().getHostAddress());
     }
 
     @Override
     public void onError(WebSocket conn, Exception ex) {
         ex.printStackTrace();
-        System.out.println(TAG+"WebSocket Error:" + ex.getMessage());
+        System.out.println(TAG + "WebSocket Error:" + ex.getMessage());
     }
 
     @Override
     public void onStart() {
-        System.out.println(TAG+" started!");
+        System.out.println(TAG + " started!");
     }
 
     @Override
     public void onMessage(WebSocket conn, String message) {
-        System.out.println(TAG+" onMessage message : "+message);
-        conn.send("res -> "+message);
+        System.out.println(TAG + " onMessage message : " + message);
+//        conn.send("res -> "+message);
     }
 
     @Override
     public void onMessage(WebSocket conn, ByteBuffer blob) {
-        System.out.println(TAG+" onMessage blob : "+blob);
-        conn.send(blob);
+        byte[] array = blob.array();
+        System.out.println(TAG + " onMessage array : " + Arrays.toString(array));
+//        conn.send(blob);
     }
+
 
     public void onWebsocketMessageFragment(WebSocket conn, Framedata frame) {
         FramedataImpl1 builder = (FramedataImpl1) frame;
         builder.setTransferemasked(false);
         conn.sendFrame(frame);
     }
+
+
 
 
     public static void main(String[] args) {

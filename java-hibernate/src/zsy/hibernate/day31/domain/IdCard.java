@@ -6,7 +6,7 @@ public class IdCard implements Serializable {
 
     private Integer id;
     private String num;
-    private Person person;
+    private IPerson person;
 
     public Integer getId() {
         return id;
@@ -24,11 +24,11 @@ public class IdCard implements Serializable {
         this.num = num;
     }
 
-    public Person getPerson() {
+    public IPerson getPerson() {
         return person;
     }
 
-    public void setPerson(Person person) {
+    public void setPerson(IPerson person) {
         this.person = person;
     }
 

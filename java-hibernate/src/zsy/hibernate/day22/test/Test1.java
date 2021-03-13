@@ -51,13 +51,13 @@ public class Test1 {
     @Test
     public void test1() {
         Customer c = new Customer();
-        c.setName("杜巍锋");
+        c.setName("用户3");
 
         Order o1 = new Order();
-        o1.setMoney(1000f);
-
+        o1.setMoney(1001f);
         Order o2 = new Order();
-        o2.setMoney(200f);
+        o2.setMoney(2002f);
+
         //订单关联客户
         o1.setCustomer(c);
         o2.setCustomer(c);
@@ -65,17 +65,14 @@ public class Test1 {
         c.getOrders().add(o1);
         c.getOrders().add(o2);
 
-
         Session s = HibernateUtil.openSession();
         Transaction tx = s.beginTransaction();
 
         s.save(c);
-//		s.save(o1);
-//		s.save(o2);
-
+        s.save(o1);
+        s.save(o2);
 
         tx.commit();
         s.close();
-
     }
 }

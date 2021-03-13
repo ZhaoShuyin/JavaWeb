@@ -9,38 +9,38 @@ import zsy.hibernate.day30.domain.Teacher;
 import zsy.hibernate.day30.util.HibernateUtil;
 //多对多相关操作
 public class Test1 {
+
 	//删除：不要配置级联删除
-		//因为删除老师（或学生）：默认先删除关系表相关记录。再删除老师（或学生）记录。
-	
+	//因为删除老师（或学生）：默认先删除关系表相关记录。再删除老师（或学生）记录。
+	//cascade="delete" 配置这个后关联数据也会被删除
 	@Test
 	public void test2(){
-		
 		Session s = HibernateUtil.openSession();
 		Transaction tx = s.beginTransaction();
 		Teacher t3 = (Teacher)s.get(Teacher.class, 5);
+		System.out.println(t3);
 		s.delete(t3);
 		tx.commit();
 		s.close();
-		
 	}
+
 	//保存:不要双向建立关联关系
-		
 	@Test
 	public void test1(){
 		Teacher t1 = new Teacher();
-		t1.setName("HQY");
+		t1.setName("T5");
 		t1.setSalary(10000f);
 		
 		Teacher t2 = new Teacher();
-		t2.setName("ZY");
+		t2.setName("T6");
 		t2.setSalary(10000f);
 		
 		Student s1 = new Student();
-		s1.setName("dwf");
+		s1.setName("S5");
 		s1.setGrade("A");
 		
 		Student s2 = new Student();
-		s2.setName("cc");
+		s2.setName("S6");
 		s2.setGrade("A");
 		
 		//建立关联关系：双向关联（不要）
@@ -64,6 +64,5 @@ public class Test1 {
 		
 		tx.commit();
 		s.close();
-		
 	}
 }

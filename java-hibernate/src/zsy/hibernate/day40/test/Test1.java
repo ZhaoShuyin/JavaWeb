@@ -13,7 +13,6 @@ import zsy.hibernate.day40.util.HibernateUtil;
 public class Test1 {
     @Test
     public void save() {
-
         Customer customer = new Customer();
         customer.setName("aaa");
         customer.setAge(18);
@@ -22,6 +21,6 @@ public class Test1 {
         s.save(customer);
         tx.commit();
         s.close();
-
     }
+
 }

@@ -9,7 +9,9 @@ public class HibernateUtil {
 	private static final SessionFactory sessionFactory;//唯一
 	//初始化
 	static{
-		sessionFactory = new Configuration().configure().buildSessionFactory();
+		sessionFactory = new Configuration()
+				.configure("zsy/hibernate/day30/hibernate.cfg.xml")
+				.buildSessionFactory();
 	}
 	public static Session openSession(){
 		return sessionFactory.openSession();

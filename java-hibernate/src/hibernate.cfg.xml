@@ -29,10 +29,5 @@ dtd的位置：hibernate3.jar\org\hibernate\hibernate-configuration-3.0.dtd
 				validate：验证映射和目前的表结构是否一致
 		 -->
 		<property name="hibernate.hbm2ddl.auto">update</property>
-		<!-- 指定要管理的映射文件 -->
-		<mapping resource="zsy/hibernate/day1/domain/Customer.hbm.xml"/>
-		<mapping resource="zsy/hibernate/day1/domain/Student.hbm.xml"/>
-		<mapping resource="zsy/hibernate/day1/domain/Person.hbm.xml"/>
-		<mapping resource="zsy/hibernate/day1/domain/Teacher.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-mapping PUBLIC 
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE hibernate-mapping PUBLIC
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="cn.itcast.domain">
-	<class name="Person" table="T_PERSONS">
-		<id name="id" column="ID">
-			<generator class="native"></generator>
-		</id>
-		<property name="name" column="NAME" type="string"/>
-		<!-- 一旦添加完成将不能修改 -->
-		<property name="idcard" column="IDCARD" update="false"></property>
-		<!-- 时间戳：不允许用户指定。数据库取的当前的时间 -->
-		<property name="registDate" type="timestamp" insert="false" column="REGISTDATE"></property>
-	</class>
+<hibernate-mapping package="zsy.hibernate.day1.domain">
+    <class name="zsy.hibernate.day1.domain.Person" table="T_PERSONS">
+        <id name="id" column="ID">
+            <generator class="native"></generator>
+        </id>
+        <property name="name" column="NAME" type="java.lang.String" />
+        <!-- 一旦添加完成将不能修改 -->
+        <property name="idcard" column="IDCARD" update="false"></property>
+        <!-- 时间戳：不允许用户指定。数据库取的当前的时间 -->
+        <property name="registDate" type="timestamp" insert="false" column="REGISTDATE"></property>
+    </class>
 </hibernate-mapping>

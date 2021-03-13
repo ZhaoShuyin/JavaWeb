@@ -10,9 +10,9 @@ dtd的位置：hibernate3.jar\org\hibernate\hibernate-configuration-3.0.dtd
     <session-factory>
         <!-- 数据库基本的配置 -->
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql:///day34_1</property>
+        <property name="hibernate.connection.url">jdbc:mysql:///hibernate</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">sorry</property>
+        <property name="hibernate.connection.password">123456</property>
 
         <!-- 让hibernate把Session绑定到当前线程上 -->
         <property name="hibernate.current_session_context_class">thread</property>

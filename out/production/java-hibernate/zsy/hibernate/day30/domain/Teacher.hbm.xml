@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="zsy.hibernate.day30.domain">
+    <class name="Teacher" table="TEACHERS">
+        <id name="id" column="ID">
+            <generator class="native"></generator>
+        </id>
+        <property name="name" column="NAME" />
+        <property name="salary" column="SALARY" />
+        <!--
+         inverse="true"则先删除关系表数据否则报错
+         cascade="delete" 配置这个后关联数据也会被删除
+         -->
+        <set name="students" table="TEACHER_STUDENT" inverse="false">
+            <!-- 本实体在第三方表中的外键 -->
+            <key column="TEACHER_ID"></key>
+            <!-- 关联的对方的类型，及对方类型在第三方表中的关联外键 -->
+            <many-to-many class="Student" column="STUDENT_ID"></many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

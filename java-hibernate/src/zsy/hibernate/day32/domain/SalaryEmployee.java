@@ -1,5 +1,8 @@
 package zsy.hibernate.day32.domain;
 
+/**
+ *
+ */
 public class SalaryEmployee extends Employee {
     private Float salary;
 

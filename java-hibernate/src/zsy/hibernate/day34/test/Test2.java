@@ -17,6 +17,41 @@ import zsy.hibernate.day34.util.HibernateUtil;
 
 //各种查询：QBC
 public class Test2 {
+
+
+    /**
+     * QBC设置查询参数
+     */
+    @Test
+    public void test1() {
+        Session s = HibernateUtil.openSession();
+        Transaction tx = s.beginTransaction();
+        Criteria c = s.createCriteria(Customer.class);              //告知查询的实体
+        c.add(Restrictions.eq("id", 1));         //添加条件Criterion
+        c.add(Restrictions.eq("name", "张三"));
+        List<Customer> cs = c.list();
+        for (Customer cus : cs)
+            System.out.println(cus);
+        tx.commit();
+        s.close();
+    }
+
+    /**
+     * QBC:模糊查询
+     */
+    @Test
+    public void test2() {
+        Session s = HibernateUtil.openSession();
+        Transaction tx = s.beginTransaction();
+        Criteria c = s.createCriteria(Customer.class);//告知查询的实体
+        c.add(Restrictions.ilike("name", "%张%"));
+        List<Customer> cs = c.list();
+        for (Customer cus : cs)
+            System.out.println(cus);
+        tx.commit();
+        s.close();
+    }
+
     //QBE:模板查询
     //使用前提：
     //实体类中的所有字段都使用包装类型（不能使用基本类型）
@@ -26,7 +61,7 @@ public class Test2 {
     public void test3() {
         //准备Example
         Customer example = new Customer();
-        example.setName("客户1");
+        example.setName("张三");
 
         Session s = HibernateUtil.openSession();
         Transaction tx = s.beginTransaction();
@@ -36,43 +71,9 @@ public class Test2 {
         for (Customer cus : cs)
             System.out.println(cus);
 
-
         tx.commit();
         s.close();
-
     }
 
-    //QBC:模糊查询
-    @Test
-    public void test2() {
-        Session s = HibernateUtil.openSession();
-        Transaction tx = s.beginTransaction();
-        Criteria c = s.createCriteria(Customer.class);//告知查询的实体
-        c.add(Restrictions.eq("name", "%客户%"));
-        List<Customer> cs = c.list();
-        for (Customer cus : cs)
-            System.out.println(cus);
 
-
-        tx.commit();
-        s.close();
-
-    }
-
-    //QBC设置查询参数
-    @Test
-    public void test1() {
-        Session s = HibernateUtil.openSession();
-        Transaction tx = s.beginTransaction();
-        Criteria c = s.createCriteria(Customer.class);//告知查询的实体
-        c.add(Restrictions.eq("id", 1));//添加条件Criterion
-        c.add(Restrictions.eq("name", "客户1"));
-        List<Customer> cs = c.list();
-        for (Customer cus : cs)
-            System.out.println(cus);
-
-        tx.commit();
-        s.close();
-
-    }
 }

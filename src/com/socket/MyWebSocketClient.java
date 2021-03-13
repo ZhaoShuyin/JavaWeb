@@ -6,6 +6,7 @@ import org.java_websocket.handshake.ServerHandshake;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Arrays;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -30,6 +31,7 @@ public class MyWebSocketClient extends WebSocketClient {
     @Override
     public void onOpen(ServerHandshake serverHandshake) {
         System.out.println(TAG + " onOpen ");
+        send("2");
     }
 
     @Override
@@ -49,21 +51,9 @@ public class MyWebSocketClient extends WebSocketClient {
 
     public static void main(String[] args) {
         try {
-            MyWebSocketClient client = new MyWebSocketClient(new URI("ws://192.168.0.154:50000"));
+            MyWebSocketClient client = new MyWebSocketClient(new URI("ws://192.168.1.142:9001"));//192.168.1.125
             client.connect();
             System.out.println(TAG + " client.connect()");
-            new Timer().schedule(new TimerTask() {
-                @Override
-                public void run() {
-                    if (!client.isClosed()) {
-                        String text = String.valueOf(System.currentTimeMillis());
-                        client.send(text);
-                        System.out.println("client.send " + text);
-                    } else {
-                        System.out.println("未连接");
-                    }
-                }
-            }, 5000);
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }

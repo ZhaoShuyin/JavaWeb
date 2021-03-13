@@ -10,6 +10,8 @@ import zsy.hibernate.day32.domain.SalaryEmployee;
 import zsy.hibernate.day32.util.HibernateUtil;
 
 public class Test {
+
+
     //	单表操作
     public static void main(String[] args) {
         Employee ee = new Employee();
@@ -45,7 +47,7 @@ public class Test {
 ////		System.out.println(e2);
 //		
 ////		Query q = s.createQuery("from java.lang.Object");//3个：多态查询
-//		Query q = s.createQuery("from Employee");//3个：多态查询
+//		Query q = s.createQuery("from Employee");            //3个：多态查询
 //		System.out.println(q.list());
 //		
 //		tx.commit();

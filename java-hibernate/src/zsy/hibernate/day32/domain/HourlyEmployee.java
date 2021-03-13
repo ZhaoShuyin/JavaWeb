@@ -1,5 +1,8 @@
 package zsy.hibernate.day32.domain;
 
+/**
+ * 小时工
+ */
 public class HourlyEmployee extends Employee {
     private Float rate;
 

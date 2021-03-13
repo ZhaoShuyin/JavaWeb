@@ -13,6 +13,6 @@
             class：关联的实体的类型
             cascade:save-update级联保存和更新
          -->
-        <many-to-one name="customer" column="CUSTOMER_ID" class="Customer" />
+        <many-to-one name="customer" column="CUSTOMER_ID" class="Customer" cascade="save-update" />
     </class>
 </hibernate-mapping>

@@ -11,32 +11,38 @@ import org.junit.Test;
 import zsy.hibernate.day33.domain.Customer;
 import zsy.hibernate.day33.domain.Order;
 import zsy.hibernate.day33.util.HibernateUtil;
+
 //关联检索策略：根据多的一方检索少的一方
 public class Test4 {
-	@Test
-	public void test2(){
-		Session s = HibernateUtil.openSession();
-		Transaction tx = s.beginTransaction();
-		Query q = s.createQuery("from Order");
-		List<Order> os = q.list();//会加载关联的客户
-		for(Order o:os)
-			System.out.println(o.getCustomer());
-		tx.commit();
-		s.close();
-		
-	}
-	//查询OID=1的订单（类级别）
-	//把他所属客户也查询出来（关联级别）
-	@Test
-	public void test1(){
-		Session s = HibernateUtil.openSession();
-		Transaction tx = s.beginTransaction();
-		Order o1 = (Order)s.get(Order.class, 1);
-		Customer c = o1.getCustomer();
-		System.out.println(c);
-		
-		tx.commit();
-		s.close();
-		
-	}
+
+    //查询OID=1的订单（类级别）
+    //把他所属客户也查询出来（关联级别）
+    @Test
+    public void test1() {
+        Session s = HibernateUtil.openSession();
+        Transaction tx = s.beginTransaction();
+        Order o1 = (Order) s.get(Order.class, 1);
+
+        Customer c = o1.getCustomer();
+        System.out.println(c);
+
+        tx.commit();
+        s.close();
+    }
+
+
+    @Test
+    public void test2() {
+        Session s = HibernateUtil.openSession();
+        Transaction tx = s.beginTransaction();
+        Query q = s.createQuery("from Order");
+        List<Order> os = q.list();//会加载关联的客户
+        for (Order o : os) {
+            System.out.println(o.getCustomer());
+        }
+        tx.commit();
+        s.close();
+
+    }
+
 }

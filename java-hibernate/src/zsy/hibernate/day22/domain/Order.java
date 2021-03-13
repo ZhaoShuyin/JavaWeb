@@ -3,7 +3,6 @@ package zsy.hibernate.day22.domain;
 import java.io.Serializable;
 
 public class Order implements Serializable {
-
     private Integer id;
     private Float money;
     private Customer customer;

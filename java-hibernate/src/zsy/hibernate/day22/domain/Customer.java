@@ -6,7 +6,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Customer implements Serializable {
-
     private Integer id;
     private String name;
     private Set<Order> orders = new HashSet<Order>(0);

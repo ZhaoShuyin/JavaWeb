@@ -5,6 +5,16 @@ import java.io.Serializable;
 public class Student implements Serializable {
 
     private Integer id;
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
+    private String uid;
     private String firstName;
     private String lastName;
 

@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-mapping PUBLIC
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE hibernate-mapping PUBLIC
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="zsy.hibernate.day30.domain">
-	<class name="Student" table="STUDENTS">
-		<id name="id" column="ID">
-			<generator class="native"></generator>
-		</id>
-		<property name="name" column="NAME"/>
-		<property name="grade" column="GRADE"/>
-		<set name="teachers" table="TEACHER_STUDENT">
-			<!-- 本实体在第三方表中的外键 -->
-			<key column="STUDENT_ID"></key>
-			<!-- 关联的对方的类型，及对方类型在第三方表中的关联外键 -->
-			<many-to-many class="Teacher" column="TEACHER_ID"></many-to-many>
-		</set>
-	</class>
+    <class name="Student" table="STUDENTS">
+        <id name="id" column="ID">
+            <generator class="native"></generator>
+        </id>
+        <property name="name" column="NAME" />
+        <property name="grade" column="GRADE" />
+        <set name="teachers" table="TEACHER_STUDENT">
+            <!-- 本实体在第三方表中的外键 -->
+            <key column="STUDENT_ID"></key>
+            <!-- 关联的对方的类型，及对方类型在第三方表中的关联外键 -->
+            <many-to-many class="Teacher" column="TEACHER_ID"></many-to-many>
+        </set>
+    </class>
 </hibernate-mapping>

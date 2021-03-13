@@ -13,22 +13,11 @@ import zsy.hibernate.day34.util.HibernateUtil;
 
 //各种查询：原生SQL
 public class Test3 {
-    //使用原生SQL,让Hibernate把结果封装到实体中
-    @Test
-    public void test2() {
-        Session s = HibernateUtil.openSession();
-        Transaction tx = s.beginTransaction();
-        SQLQuery query = s.createSQLQuery("select * from customers").addEntity(Customer.class);//SQL
-        List<Customer> list = query.list();
-        for (Customer c : list) {
-            System.out.println(c);
-        }
 
-        tx.commit();
-        s.close();
 
-    }
-
+    /**
+     * 查询Object结果集
+     */
     @Test
     public void test1() {
         Session s = HibernateUtil.openSession();
@@ -43,9 +32,29 @@ public class Test3 {
             for (Object obj : objs)
                 System.out.println(obj);
         }
-
         tx.commit();
         s.close();
-
     }
+
+
+    /**
+     * 使用原生SQL,让Hibernate把结果封装到实体中
+     * 使用SQl语句并配置结果类
+     */
+    @Test
+    public void test2() {
+        Session s = HibernateUtil.openSession();
+        Transaction tx = s.beginTransaction();
+        SQLQuery query = s
+                .createSQLQuery("select * from customers")
+                .addEntity(Customer.class);//SQL
+        List<Customer> list = query.list();
+        for (Customer c : list) {
+            System.out.println(c);
+        }
+        tx.commit();
+        s.close();
+    }
+
+
 }

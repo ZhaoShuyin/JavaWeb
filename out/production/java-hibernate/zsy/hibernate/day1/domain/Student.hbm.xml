@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-mapping PUBLIC 
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE hibernate-mapping PUBLIC
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="cn.itcast.domain">
-	<class name="Student" table="T_STUDENTS">
-		<id name="id" column="ID">
-			<generator class="native"></generator>
-		</id>
-		<property name="name" column="NAME" type="string"/>
-	</class>
+<hibernate-mapping package="zsy.hibernate.day1.domain">
+    <class name="zsy.hibernate.day1.domain.Student" table="T_STUDENTS">
+        <id name="uid" column="UID">
+            <generator class="uuid"></generator>
+        </id>
+        <property name="id" column="ID" type="java.lang.Integer" />
+        <property name="name" column="NAME" type="java.lang.String" />
+    </class>
 </hibernate-mapping>
