@@ -9,7 +9,8 @@ import zsy.hibernate.day21.domain.Order;
 import zsy.hibernate.day21.util.HibernateUtil;
 
 /**
- * 重点  cascade="save-update"
+ * 重点  cascade="save-update" 关联同步
+ * 多对一 关联关系
  */
 public class Test1 {
 
@@ -37,7 +38,6 @@ public class Test1 {
 
         tx.commit();//2次update。update orders set customer_id=1 where ....
         s.close();
-
     }
 
 
@@ -96,11 +96,7 @@ public class Test1 {
 
         tx.commit();
         s.close();
-
     }
-
-
-
 
 
 }

@@ -11,6 +11,10 @@ import zsy.hibernate.day40.domain.Customer;
 import zsy.hibernate.day40.util.HibernateUtil;
 
 public class Test1 {
+
+    /**
+     *
+     */
     @Test
     public void save() {
         Customer customer = new Customer();

@@ -13,8 +13,8 @@ import cn.springmvc.po.Items;
 
 /**
  * 第一个Controller
- *
- * @author JD
+ * <p>
+ * 第一种方法:实现 Controller 接口
  */
 public class Controller1 implements Controller {
 

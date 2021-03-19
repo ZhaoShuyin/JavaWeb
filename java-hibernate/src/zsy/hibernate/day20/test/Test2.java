@@ -8,15 +8,18 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.junit.Test;
 
-import zsy.hibernate.day1.domain.Customer;
+import zsy.hibernate.day20.domain.Customer;
 import zsy.hibernate.day20.util.HibernateUtil;
 
 /**
- * Hibernate一级缓存测试
+ * Hibernate一级缓存相关操作测试
  */
 public class Test2 {
 
-    //flush();//手动清理
+    /**
+     * flush();//手动清理
+     * 同步到快照
+     */
     @Test
     public void test1() {
         Session session = HibernateUtil.openSession();
@@ -25,10 +28,10 @@ public class Test2 {
         Customer c1 = (Customer) session.get(Customer.class, 1);
         c1.setName("陈涔12111456789");
         //从缓存中刷新数据
-        session.flush();           //1:清理缓存, 2:同步数据库(执行SQL)
-//        session.clear();         //清空缓存不同步到数据库
-        //提交
-        tx.commit();         //不清理
+        session.flush();           //同步到库按照
+//        session.clear();         //清空缓存
+//        session.refresh(c1);     //从数据库同步
+        tx.commit();               //不清理
         session.close();
     }
 
@@ -96,7 +99,10 @@ public class Test2 {
         s.close();
     }
 
-    //save和persist的区别
+    //save
+    // 和
+    //persist
+    // 的区别
     @Test
     public void test6() {
         Customer c = new Customer();

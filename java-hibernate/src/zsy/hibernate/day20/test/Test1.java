@@ -39,7 +39,7 @@ public class Test1 {
         Customer c1 = (Customer) session.get(Customer.class, 1);//查询对象：会加入到Session的一级缓存
         System.out.println(c1);
         c1.setName("陈涔123");
-        transaction.commit();//默认时，此时进行同步（把内存---->数据库中）
+        transaction.commit();//默认时，此时进行同步(比较该对象和快照对象)（把内存---->数据库中(同步)）
         session.close();
     }
 
@@ -62,7 +62,6 @@ public class Test1 {
         Customer customer = new Customer();
         customer.setName("陈涔");
         Calendar c = Calendar.getInstance();
-        c.set(1993, 1, 18);
         customer.setBirthday(c.getTime());
 
         //加载hibernate.cfg.xml配置文件

@@ -8,7 +8,7 @@ import zsy.hibernate.day1.domain.Teacher;
 import zsy.hibernate.day1.util.HibernateUtil;
 
 /**
- *
+ * 动态修改/映射对象标识符（OID） ObjectID
  */
 public class Test5 {
     @Test
@@ -16,11 +16,11 @@ public class Test5 {
         Teacher t = new Teacher();
         t.setName("名称");
         t.setSalary(100000F);
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 5; i++) {
             Session session = HibernateUtil.openSession();
             Transaction tx = session.beginTransaction();
             session.save(t);
-            tx.commit();//提交事务
+            tx.commit();    //提交事务
             session.close();//释放资源
         }
     }
@@ -41,7 +41,7 @@ public class Test5 {
         Session session = HibernateUtil.openSession();
         Transaction tx = session.beginTransaction();
         Teacher t = (Teacher) session.get(Teacher.class, 1);
-        t.setSalary(100000f);
+        t.setSalary(1000000f);
         tx.commit();//提交事务
         session.close();//释放资源
     }

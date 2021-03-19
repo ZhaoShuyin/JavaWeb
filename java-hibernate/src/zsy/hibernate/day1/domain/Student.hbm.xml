@@ -6,7 +6,7 @@
         <id name="uid" column="UID">
             <generator class="uuid"></generator>
         </id>
-        <property name="id" column="ID" type="java.lang.Integer" />
-        <property name="name" column="NAME" type="java.lang.String" />
+        <property name="id" column="ID" type="integer" />
+        <property name="name" column="NAME" type="string" />
     </class>
 </hibernate-mapping>

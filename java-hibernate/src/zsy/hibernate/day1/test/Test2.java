@@ -1,5 +1,6 @@
 package zsy.hibernate.day1.test;
 
+import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -24,9 +25,8 @@ public class Test2 {
     @Test
     public void testSave() {
         Customer customer = new Customer();
-        customer.setName("陈涔");
+        customer.setName("姓名");
         Calendar c = Calendar.getInstance();
-        c.set(1993, 1, 18);
         customer.setBirthday(c.getTime());
 
         Session session = null;
@@ -34,7 +34,8 @@ public class Test2 {
         try {
             session = HibernateUtil.openSession();
             tx = session.beginTransaction();
-            session.save(customer);
+            Serializable save = session.save(customer);
+            System.out.println("save: " + save + " (" + save.getClass().getName() + ")");//返回新建自增ID主键
             tx.commit();
         } catch (HibernateException e) {
             e.printStackTrace();
@@ -56,7 +57,7 @@ public class Test2 {
         try {
             session = HibernateUtil.openSession();
             tx = session.beginTransaction();
-            Customer c = (Customer) session.get(Customer.class, 10);
+            Customer c = (Customer) session.get(Customer.class, 1);
             //Class entityClass:实体类型（找打对应的表）
             //Serializable pk:主键
             System.out.println(c);
@@ -105,7 +106,7 @@ public class Test2 {
         try {
             session = HibernateUtil.openSession();
             tx = session.beginTransaction();
-            Customer c = (Customer) session.get(Customer.class, 5);//有性能问题（加载策略）
+            Customer c = (Customer) session.get(Customer.class, 4);//有性能问题（加载策略）
             session.delete(c);
             tx.commit();
         } catch (HibernateException e) {

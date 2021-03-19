@@ -3,6 +3,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="zsy.hibernate.day40.domain">
     <class name="Customer" table="CUSTOMERS">
+        <!--自增ID-->
         <id name="id" column="ID">
             <generator class="native"></generator>
         </id>

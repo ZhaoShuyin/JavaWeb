@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-mapping PUBLIC 
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE hibernate-mapping PUBLIC
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="zsy.hibernate.day20.domain">
-	<class name="Customer" table="T_CUSTOMERS">
-		<id name="id" column="ID" unsaved-value="100">
-			<generator class="native"></generator>
-		</id>
-		<property name="name" column="NAME" type="string"/>
-		<property name="birthday" column="BIRTHDAY" type="date"></property>
-	</class>
+    <!--select-before-update="true"-->
+    <class name="Customer" table="T_CUSTOMERS" select-before-update="true">
+        <id name="id" column="ID" unsaved-value="100">
+            <generator class="native"></generator>
+        </id>
+        <property name="name" column="NAME" type="string" />
+        <property name="birthday" column="BIRTHDAY" type="date"></property>
+    </class>
 </hibernate-mapping>

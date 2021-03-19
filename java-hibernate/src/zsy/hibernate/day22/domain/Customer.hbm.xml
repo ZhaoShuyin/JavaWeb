@@ -7,7 +7,7 @@
             <generator class="native"></generator>
         </id>
         <property name="name" column="NAME" />
-        <!-- 一对多 -->
+        <!-- 一对多 inverse="true" 表示关联关系由对方处理-->
         <set name="orders" inverse="true" cascade="save-update">
             <!-- 指定关联外键字段 -->
             <key column="CUSTOMER_ID"></key>

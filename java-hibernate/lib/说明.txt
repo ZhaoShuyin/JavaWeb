@@ -1,0 +1,26 @@
+日志使用slf4j的jar包
+搭建开发环境
+
+antlr-2.7.6.jar 创建表结构
+
+commons-collections-3.1.jar 对JDK集合扩展
+
+dom4j-1.6.1.jar  用来读写XML文件的
+
+hibernate3.jar  核心jar包
+
+hibernate-jpa-2.0-api-1.0.1.Final.jar JPA规范
+
+javassist-3.12.0.GA.jar 代码生成(字节码)工具动态代理
+
+jta-1.1.jar  事务控制标准
+
+slf4j-api-1.6.1.jar  日志标准
+log4j-1.2.17.jar         从属jar包
+slf4j-log4j12-1.7.5.jar  从属jar包(实现)
+
+
+mysql-connector-java-5.0.8-bin.jar java JDBC
+
+
+

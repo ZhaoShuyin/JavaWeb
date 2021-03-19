@@ -24,7 +24,7 @@ public class Test2 {
         Session s = HibernateUtil.openSession();
         Transaction tx = s.beginTransaction();
         Customer c2 = (Customer) s.get(Customer.class, 2);
-        Order o3 = (Order) s.get(Order.class, 3);
+        Order o3 = (Order) s.get(Order.class, 4);
         c2.getOrders().remove(o3);
         o3.setCustomer(null);
 

@@ -25,7 +25,7 @@ public class Test1 {
         c1.getOrders().add(o3);
         o3.setCustomer(c1);//双向建立关联关系
 
-        tx.commit();//清理
+        tx.commit();       //清理
         s.close();
 
     }
@@ -51,7 +51,7 @@ public class Test1 {
     @Test
     public void test1() {
         Customer c = new Customer();
-        c.setName("用户3");
+        c.setName("用户1");
 
         Order o1 = new Order();
         o1.setMoney(1001f);

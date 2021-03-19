@@ -14,6 +14,39 @@ import zsy.hibernate.day40.util.HibernateUtil;
 
 //丢失更新
 public class Test2 {
+
+
+
+    /**
+     *
+     */
+    @Test
+    public void test10() {
+        Session s = HibernateUtil.openSession();
+        Transaction tx = s.beginTransaction();
+        Customer c = (Customer) s.get(Customer.class, 1, LockOptions.UPGRADE);//独占锁
+        c.setName("bbb");
+        tx.commit();
+        s.close();
+    }
+
+    /**
+     * 修改
+     */
+    @Test
+    public void test11() {
+        Session s = HibernateUtil.openSession();
+        Transaction tx = s.beginTransaction();
+        Customer c = (Customer) s.get(Customer.class, 1, LockOptions.UPGRADE);
+        c.setAge(28);
+        tx.commit();
+        s.close();
+    }
+
+
+    /**
+     *
+     */
     @Test
     public void test20() {
         Session s = HibernateUtil.openSession();
@@ -22,9 +55,11 @@ public class Test2 {
         c.setName("bbb");
         tx.commit();
         s.close();
-
     }
 
+    /**
+     *
+     */
     @Test
     public void test21() {
         try {
@@ -38,28 +73,6 @@ public class Test2 {
             e.printStackTrace();
             //提示：请刷新后再试
         }
-
     }
 
-    @Test
-    public void test10() {
-        Session s = HibernateUtil.openSession();
-        Transaction tx = s.beginTransaction();
-        Customer c = (Customer) s.get(Customer.class, 1, LockOptions.UPGRADE);//独占锁
-        c.setName("bbb");
-        tx.commit();
-        s.close();
-
-    }
-
-    @Test
-    public void test11() {
-        Session s = HibernateUtil.openSession();
-        Transaction tx = s.beginTransaction();
-        Customer c = (Customer) s.get(Customer.class, 1, LockOptions.UPGRADE);
-        c.setAge(28);
-        tx.commit();
-        s.close();
-
-    }
 }

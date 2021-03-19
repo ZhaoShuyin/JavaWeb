@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import cn.springmvc.po.Items;
 
-
+/**
+ * 第二种方法:实现 HttpRequestHandler 接口
+ */
 public class Controller2 implements HttpRequestHandler {
 
 	@Override

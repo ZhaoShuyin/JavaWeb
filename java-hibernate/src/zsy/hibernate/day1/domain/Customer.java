@@ -6,14 +6,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- *
+ * 客户类 通过类自动创建表结构
  */
 public class Customer implements Serializable {
 
     private Integer id;
     private String name;
     private Date birthday;
-    private Double totalMoney;//当前客户购买的商品的总价
+    private Double totalMoney; //派生属性
 
     public Integer getId() {
         return id;

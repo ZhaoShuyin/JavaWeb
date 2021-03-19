@@ -9,6 +9,9 @@ import java.io.Serializable;
 import zsy.hibernate.day1.domain.Student;
 import zsy.hibernate.day1.util.HibernateUtil;
 
+/**
+ * Getter方法取值 Setter方法赋值
+ */
 public class Test3 {
     @Test
     public void testSave() {
