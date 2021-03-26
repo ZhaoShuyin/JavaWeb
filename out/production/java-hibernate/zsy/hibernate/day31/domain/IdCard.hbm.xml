@@ -8,6 +8,7 @@
         </id>
         <property name="num" column="NUM" />
         <!-- 不加constrained，就没有外键约束 -->
+        <!---->
         <one-to-one name="person" constrained="true" cascade="save-update"></one-to-one>
     </class>
 </hibernate-mapping>

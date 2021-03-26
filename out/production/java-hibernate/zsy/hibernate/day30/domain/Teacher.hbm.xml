@@ -12,7 +12,7 @@
          inverse="true"则先删除关系表数据否则报错
          cascade="delete" 配置这个后关联数据也会被删除
          -->
-        <set name="students" table="TEACHER_STUDENT" inverse="false">
+        <set name="students" table="TEACHER_STUDENT" cascade="delete">
             <!-- 本实体在第三方表中的外键 -->
             <key column="TEACHER_ID"></key>
             <!-- 关联的对方的类型，及对方类型在第三方表中的关联外键 -->

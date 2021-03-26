@@ -9,14 +9,18 @@ public class HibernateUtil {
 	private static final SessionFactory sessionFactory;//唯一
 	//初始化
 	static{
-		sessionFactory = new Configuration().configure().buildSessionFactory();
+		sessionFactory = new Configuration()
+				.configure("zsy/hibernate/day42/hibernate.cfg.xml")
+				.buildSessionFactory();
 	}
 	public static Session openSession(){
 		return sessionFactory.openSession();//开启新的Session：手工
 	}
+
 	public static Session getCurrentSession(){
 		return sessionFactory.getCurrentSession();//从当前线程上获取
 	}
+
 	public static void main(String[] args) {
 		Session s = openSession();//初始化一次，产生表结构
 		s.close();

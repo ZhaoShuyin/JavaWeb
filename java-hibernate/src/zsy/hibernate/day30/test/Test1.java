@@ -17,30 +17,32 @@ public class Test1 {
 	public void test2(){
 		Session s = HibernateUtil.openSession();
 		Transaction tx = s.beginTransaction();
-		Teacher t3 = (Teacher)s.get(Teacher.class, 5);
+		Teacher t3 = (Teacher)s.get(Teacher.class, 3);
 		System.out.println(t3);
 		s.delete(t3);
 		tx.commit();
 		s.close();
 	}
 
-	//保存:不要双向建立关联关系
+	/**
+	 * 保存:不要双向建立关联关系
+	 */
 	@Test
 	public void test1(){
 		Teacher t1 = new Teacher();
-		t1.setName("T5");
+		t1.setName("T1");
 		t1.setSalary(10000f);
 		
 		Teacher t2 = new Teacher();
-		t2.setName("T6");
+		t2.setName("T2");
 		t2.setSalary(10000f);
 		
 		Student s1 = new Student();
-		s1.setName("S5");
+		s1.setName("S1");
 		s1.setGrade("A");
 		
 		Student s2 = new Student();
-		s2.setName("S6");
+		s2.setName("S2");
 		s2.setGrade("A");
 		
 		//建立关联关系：双向关联（不要）
@@ -49,10 +51,10 @@ public class Test1 {
 		t2.getStudents().add(s1);
 		t2.getStudents().add(s2);
 		
-		s1.getTeachers().add(t1);
-		s1.getTeachers().add(t2);
-		s2.getTeachers().add(t1);
-		s2.getTeachers().add(t2);
+//		s1.getTeachers().add(t1);
+//		s1.getTeachers().add(t2);
+//		s2.getTeachers().add(t1);
+//		s2.getTeachers().add(t2);
 		
 		Session s = HibernateUtil.openSession();
 		Transaction tx = s.beginTransaction();

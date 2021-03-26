@@ -31,4 +31,8 @@ public class Order implements Serializable {
         this.customer = customer;
     }
 
+    @Override
+    public String toString() {
+        return "{ id:" + id + ", money" + money + " }";
+    }
 }

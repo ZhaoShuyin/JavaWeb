@@ -1,5 +1,6 @@
 package zsy.hibernate.day33.test;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -22,12 +23,17 @@ public class Test1 {
         Session s = HibernateUtil.openSession();
         Transaction tx = s.beginTransaction();
         Customer c1 = (Customer) s.get(Customer.class, 1);
-        System.out.println(c1);
-        System.out.println("======= 延迟 查询 Orders");
-        Set<Order> orders = c1.getOrders();
-        for (Order order : orders) {
-            System.out.println(order);//导航查询
-        }
+        System.out.println("======= 先查询到用户信息" + c1);
+        System.out.println("======= 根据需要再查询关联订单");
+       /* Set<Order> orders = c1.getOrders();
+        Iterator<Order> iterator = orders.iterator();
+        while (iterator.hasNext()){
+            Order next = iterator.next();
+            System.out.println("=======" + next);
+        }*/
+       /* for (Order order : orders) {
+            System.out.println("=======" + order);       //导航查询
+        }*/
         tx.commit();
         s.close();
     }

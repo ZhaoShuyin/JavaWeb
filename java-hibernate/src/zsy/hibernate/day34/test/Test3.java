@@ -1,5 +1,6 @@
 package zsy.hibernate.day34.test;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.hibernate.Query;
@@ -29,8 +30,7 @@ public class Test3 {
         //每一个数组：Object[]{1,"客户1"}
         for (Object[] objs : list) {
             System.out.println("-------------");
-            for (Object obj : objs)
-                System.out.println(obj);
+            System.out.println(Arrays.toString(objs));
         }
         tx.commit();
         s.close();
@@ -46,7 +46,7 @@ public class Test3 {
         Session s = HibernateUtil.openSession();
         Transaction tx = s.beginTransaction();
         SQLQuery query = s
-                .createSQLQuery("select * from customers")
+                .createSQLQuery("select * from customers order by id desc")
                 .addEntity(Customer.class);//SQL
         List<Customer> list = query.list();
         for (Customer c : list) {

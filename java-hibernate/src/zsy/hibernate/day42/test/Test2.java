@@ -11,24 +11,7 @@ import zsy.hibernate.day42.domain.Customer;
 import zsy.hibernate.day42.util.HibernateUtil;
 
 public class Test2 {
-    //Query只能存，但不能取二级缓存中的数据
-    @Test
-    public void test2() {
-        Session s1 = HibernateUtil.openSession();
-        Transaction tx1 = s1.beginTransaction();
-        Customer c1 = (Customer) s1.get(Customer.class, 1);
-        System.out.println(c1.getOrders());//会去查询订单。同时把订单放入1和2级缓存
-        tx1.commit();
-        s1.close();//1级缓存关闭了
 
-        Session s2 = HibernateUtil.openSession();
-        Transaction tx2 = s2.beginTransaction();
-        Customer c2 = (Customer) s2.get(Customer.class, 1);//可以从2级缓存中取出来（类区）
-        System.out.println(c2.getOrders());//会从2级缓存中取出订单
-        tx2.commit();
-        s2.close();
-
-    }
 
 
     @Test
@@ -50,4 +33,27 @@ public class Test2 {
         System.out.println(c1.equals(c2));//equals方法就是比较对象的内存地址。String：该类覆盖了equals方法而已
         System.out.println(c1 == c2);//不是同一个对象
     }
+
+    //Query只能存，但不能取二级缓存中的数据
+    @Test
+    public void test2() {
+        Session s1 = HibernateUtil.openSession();
+        Transaction tx1 = s1.beginTransaction();
+        Customer c1 = (Customer) s1.get(Customer.class, 1);
+        System.out.println(c1.getOrders());//会去查询订单。同时把订单放入1和2级缓存
+        tx1.commit();
+        s1.close();//1级缓存关闭了
+
+        System.out.println("================== 1级缓存关闭了");
+
+        Session s2 = HibernateUtil.openSession();
+        Transaction tx2 = s2.beginTransaction();
+        Customer c2 = (Customer) s2.get(Customer.class, 1);//可以从2级缓存中取出来（类区）
+        System.out.println(c2.getOrders());                          //会从2级缓存中取出订单
+        tx2.commit();
+        s2.close();
+
+    }
+
+
 }

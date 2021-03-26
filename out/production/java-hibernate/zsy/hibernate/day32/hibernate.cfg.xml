@@ -28,6 +28,8 @@ dtd的位置：hibernate3.jar\org\hibernate\hibernate-configuration-3.0.dtd
          -->
         <property name="hibernate.hbm2ddl.auto">update</property>
         <!-- 指定要管理的映射文件 -->
-        <mapping resource="zsy/hibernate/day32/domain/Employee.hbm.xml" />
+        <!--<mapping resource="zsy/hibernate/day32/domain/plan1/Employee.hbm.xml" />-->
+       <!-- <mapping resource="zsy/hibernate/day32/domain/plan2/Employee.hbm.xml" />-->
+        <mapping resource="zsy/hibernate/day32/domain/plan3/Employee.hbm.xml" />
     </session-factory>
 </hibernate-configuration>

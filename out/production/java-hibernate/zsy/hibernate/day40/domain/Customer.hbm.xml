@@ -9,6 +9,7 @@
         </id>
         <!-- 给hibernate框架用的 -->
         <version name="version"></version>
+
         <property name="name" column="NAME" />
         <property name="age" column="AGE" />
     </class>

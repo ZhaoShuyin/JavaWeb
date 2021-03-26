@@ -8,7 +8,7 @@
         </id>
         <property name="money" column="MONEY" />
         <!---->
-        <many-to-one name="customer" column="CUSTOMER_ID" class="Customer" lazy="proxy"
-            fetch="join" />
+        <many-to-one name="customer" column="CUSTOMER_ID" class="Customer" lazy="false"
+            fetch="select" />
     </class>
 </hibernate-mapping>

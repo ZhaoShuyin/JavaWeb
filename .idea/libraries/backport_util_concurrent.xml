@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="backport-util-concurrent">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/java-hibernate/lib/backport-util-concurrent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/java-hibernate/lib/commons-logging.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -12,7 +12,9 @@ import zsy.hibernate.day33.domain.Customer;
 import zsy.hibernate.day33.domain.Order;
 import zsy.hibernate.day33.util.HibernateUtil;
 
-//类级别的检索策略
+/**
+ * 类级别的检索策略
+ */
 public class Test2 {
 
     /**
@@ -33,6 +35,8 @@ public class Test2 {
         System.out.println(c1.getId());
         System.out.println("===========");
         System.out.println(c1.getName());
+        System.out.println("===========");
+        System.out.println(c1.getOrders());
         tx.commit();
         s.close();
     }
@@ -44,13 +48,16 @@ public class Test2 {
     public void test2() {
         Customer c = findCustomerById(1);
         System.out.println(c.getName());
+        System.out.println(c.getOrders());
     }
 
     public static Customer findCustomerById(Integer customerId) {
         Session s = HibernateUtil.openSession();
         Transaction tx = s.beginTransaction();
         Customer c1 = (Customer) s.load(Customer.class, customerId);//立即检索
+        System.out.println("目前还未查询");
         Hibernate.initialize(c1);      //初始化代理对象：原来只有OID，初始化后所有数据都有了
+        System.out.println("执行initialize 查询");
         tx.commit();
         s.close();
         return c1;
@@ -63,8 +70,8 @@ public class Test2 {
     public void test3() {
         Session s = HibernateUtil.openSession();
         Transaction tx = s.beginTransaction();
-        Order o3 = (Order) s.get(Order.class, 3);
-        Customer c1 = (Customer) s.get(Customer.class, 1);
+        Order o3 = (Order) s.get(Order.class, 2);
+        Customer c1 = (Customer) s.get(Customer.class, 2);
 
 //        c1.getOrders().add(o3);   // 无效的
         o3.setCustomer(c1);         // 有效的

@@ -2,7 +2,8 @@
 <!DOCTYPE hibernate-mapping PUBLIC 
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="cn.itcast.domain">
+<hibernate-mapping package="zsy.hibernate.day32.domain">
+	<!--使用多个表 主表/从表的形式-->
 	<class name="Employee" table="EMPLOYEES">
 		<id name="id" column="ID">
 			<generator class="native"></generator>

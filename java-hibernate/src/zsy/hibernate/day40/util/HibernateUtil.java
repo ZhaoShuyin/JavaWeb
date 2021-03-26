@@ -19,8 +19,11 @@ public class HibernateUtil {
         return sessionFactory.openSession();//开启新的Session：手工
     }
 
+    /**
+     * 从当前线程上获取
+     */
     public static Session getCurrentSession() {
-        return sessionFactory.getCurrentSession();//从当前线程上获取
+        return sessionFactory.getCurrentSession();
     }
 
     public static void main(String[] args) {

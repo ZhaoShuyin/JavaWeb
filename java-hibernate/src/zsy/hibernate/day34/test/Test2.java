@@ -15,7 +15,9 @@ import org.junit.Test;
 import zsy.hibernate.day34.domain.Customer;
 import zsy.hibernate.day34.util.HibernateUtil;
 
-//各种查询：QBC
+/**
+ * 各种查询：QBC
+ */
 public class Test2 {
 
 
@@ -59,15 +61,18 @@ public class Test2 {
     //按照实体的多个字段进行查询时比较有用
     @Test
     public void test3() {
-        //准备Example
+        //准备Example(查询模板)(查询条件)
         Customer example = new Customer();
-        example.setName("张三");
+        example.setName("一号");
 
         Session s = HibernateUtil.openSession();
         Transaction tx = s.beginTransaction();
+
         Criteria c = s.createCriteria(Customer.class);//告知查询的实体
         c.add(Example.create(example));//select * from customers where name="客户1"
+
         List<Customer> cs = c.list();
+
         for (Customer cus : cs)
             System.out.println(cus);
 

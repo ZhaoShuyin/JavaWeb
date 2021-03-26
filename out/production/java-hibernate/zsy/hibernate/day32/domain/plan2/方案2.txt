@@ -1,0 +1,1 @@
+使用三个表 主表/从表的形式 joined-subclass

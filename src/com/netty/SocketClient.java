@@ -40,9 +40,9 @@ public class SocketClient {
             @Override
             public void run() {
 //                client.sendMessage(String.valueOf(System.currentTimeMillis()));
-                client.sendBytes(new byte[]{1,2,3});
+                client.sendBytes(new byte[1000*2]);
             }
-        }, 1000, 5000);
+        }, 1000, 6000);
     }
 
     public Channel channel;
@@ -60,7 +60,8 @@ public class SocketClient {
             ByteBuf buf = Unpooled.copiedBuffer(writeBuffer);   // 转为ByteBuf
             channel.writeAndFlush(buf);                         // 写消息到管道
             writeBuffer.clear();                                // 清理缓冲区
-            System.out.println("发送: "+Arrays.toString(bytes));
+            System.out.println("发送 "+bytes.length);
+//            System.out.println("发送: "+Arrays.toString(bytes));
         }
     }
 

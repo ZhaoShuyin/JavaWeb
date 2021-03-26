@@ -42,9 +42,9 @@ public class Test1 {
 		Session session = HibernateUtil.openSession();
 		Transaction transaction = session.beginTransaction();
 		session.save(teacher1);
-//		session.save(teacher2);
-//		session.save(student1);
-//		session.save(student2);
+		session.save(teacher2);
+		session.save(student1);
+		session.save(student2);
 		transaction.commit();
 		session.close();
 	}

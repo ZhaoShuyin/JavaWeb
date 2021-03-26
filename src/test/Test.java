@@ -7,7 +7,8 @@ package test;
 public class Test {
 
     public static void main(String[] args) {
-        System.out.println(test());
+        byte[] bytes = {0x3f, 0x3f};
+        System.out.println(bytes[0] << 8 | bytes[1] & 255);//0,3855,16191,3855,0
     }
 
     public static int test() {

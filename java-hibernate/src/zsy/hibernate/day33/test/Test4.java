@@ -21,8 +21,9 @@ public class Test4 {
     public void test1() {
         Session s = HibernateUtil.openSession();
         Transaction tx = s.beginTransaction();
+        System.out.println("============== 首先查询订单");
         Order o1 = (Order) s.get(Order.class, 1);
-
+        System.out.println("============== 根据订单查询关联的客户");
         Customer c = o1.getCustomer();
         System.out.println(c);
 
@@ -30,7 +31,9 @@ public class Test4 {
         s.close();
     }
 
-
+    /**
+     * 如果客户已经查询过,则重复使用,不再查询
+     */
     @Test
     public void test2() {
         Session s = HibernateUtil.openSession();
@@ -38,7 +41,9 @@ public class Test4 {
         Query q = s.createQuery("from Order");
         List<Order> os = q.list();//会加载关联的客户
         for (Order o : os) {
-            System.out.println(o.getCustomer());
+            System.out.println("============订单 :  " + o);
+            Customer customer = o.getCustomer();
+            System.out.println("=========================  " + customer);
         }
         tx.commit();
         s.close();

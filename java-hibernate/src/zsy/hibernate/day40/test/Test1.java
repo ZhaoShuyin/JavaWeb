@@ -10,6 +10,9 @@ import org.junit.Test;
 import zsy.hibernate.day40.domain.Customer;
 import zsy.hibernate.day40.util.HibernateUtil;
 
+/**
+ *
+ */
 public class Test1 {
 
     /**

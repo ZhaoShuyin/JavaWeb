@@ -11,6 +11,7 @@ import zsy.hibernate.day42.domain.Customer;
 import zsy.hibernate.day42.util.HibernateUtil;
 
 public class Test4 {
+
     @Test
     public void test2() {
         Session s1 = HibernateUtil.openSession();
@@ -32,6 +33,19 @@ public class Test4 {
         System.out.println("c22:" + c22);
         tx2.commit();
         s2.close();
+
+    }
+
+    public static void main(String[] args) {
+        AA aa = new AA();
+        //getClass().getName() + "@" + Integer.toHexString(hashCode())
+        System.out.println(aa);
+        System.out.println(Integer.toHexString(aa.hashCode()));
+        System.out.println(System.identityHashCode(aa));
+        System.out.println(Integer.toHexString(System.identityHashCode(aa)));
+    }
+
+    public static class AA {
 
     }
 }

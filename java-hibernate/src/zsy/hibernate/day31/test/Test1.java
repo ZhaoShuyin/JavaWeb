@@ -34,4 +34,15 @@ public class Test1 {
         session.close();
     }
 
+    @Test
+    public void TestDelete(){
+        Session session = HibernateUtil.openSession();
+        Transaction transaction = session.beginTransaction();
+        IPerson iPerson = (IPerson)session.get(IPerson.class, 1);
+        iPerson.setId(2);
+        session.save(iPerson);
+        transaction.commit();
+        session.close();
+    }
+
 }

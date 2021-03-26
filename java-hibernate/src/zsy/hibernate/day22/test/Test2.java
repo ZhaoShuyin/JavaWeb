@@ -47,4 +47,14 @@ public class Test2 {
         s.close();
 
     }
+
+    @Test
+    public void query(){
+        Session s = HibernateUtil.openSession();
+        Transaction tx = s.beginTransaction();
+        Object o = s.get(Customer.class, 1);
+        tx.commit();
+        s.close();
+    }
+
 }
