@@ -106,6 +106,11 @@ public class SocketServer {
 
         @Override
         public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+            byte[] response = new byte[10];
+            ByteBuf encoded = ctx.alloc().buffer(response.length * 2);
+            encoded.writeBytes(response);
+            ctx.write(encoded);
+            ctx.flush();
         }
 
         @Override

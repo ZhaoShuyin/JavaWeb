@@ -10,7 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/spring-mvc.iml" filepath="$PROJECT_DIR$/spring-mvc/spring-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-app/web-app.iml" filepath="$PROJECT_DIR$/web-app/web-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-front/web-front.iml" filepath="$PROJECT_DIR$/web-front/web-front.iml" />
-      <module fileurl="file://$PROJECT_DIR$/web-struts/web-struts.iml" filepath="$PROJECT_DIR$/web-struts/web-struts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-struts2/web-struts2.iml" filepath="$PROJECT_DIR$/web-struts2/web-struts2.iml" />
     </modules>
   </component>
 </project>

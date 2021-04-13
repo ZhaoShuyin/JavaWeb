@@ -6,7 +6,12 @@ import org.java_websocket.handshake.ServerHandshake;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -18,25 +23,36 @@ public class MyWebSocketClient extends WebSocketClient {
 
     private static String TAG = "客户端";
 
-    public MyWebSocketClient(URI serverUri) {
-        super(serverUri);
+    public MyWebSocketClient(URI serverUri, Map<String, String> httpHeaders) {
+        super(serverUri, httpHeaders);
         System.out.println(TAG + " ======== 构造方法 ");
     }
 
-    public MyWebSocketClient(URI serverUri, Draft protocolDraft) {
-        super(serverUri, protocolDraft);
+    public MyWebSocketClient(URI serverUri, Draft protocolDraft, Map<String, String> httpHeaders) {
+        super(serverUri, protocolDraft, httpHeaders);
         System.out.println(TAG + " ======== 构造方法 ");
     }
 
     @Override
     public void onOpen(ServerHandshake serverHandshake) {
         System.out.println(TAG + " onOpen ");
-        send("2");
+        send("device:0001");
     }
 
     @Override
     public void onMessage(String s) {
         System.out.println(TAG + " onMessage " + s);
+    }
+
+    @Override
+    public void onMessage(ByteBuffer buffer) {
+        super.onMessage(buffer);
+        int offset = buffer.arrayOffset();
+        System.out.println(TAG + " offset: " + offset);
+        if (buffer.hasArray()) {
+            byte[] array = buffer.array();
+            System.out.println(TAG + " onMessage \n" + Arrays.toString(array));
+        }
     }
 
     @Override
@@ -51,7 +67,9 @@ public class MyWebSocketClient extends WebSocketClient {
 
     public static void main(String[] args) {
         try {
-            MyWebSocketClient client = new MyWebSocketClient(new URI("ws://192.168.1.142:9001"));//192.168.1.125
+            Map<String, String> httpHeaders = new HashMap<>();
+            httpHeaders.put("zzz", "123");
+            MyWebSocketClient client = new MyWebSocketClient(new URI("ws://127.0.0.1:9002"), httpHeaders);//192.168.1.125
             client.connect();
             System.out.println(TAG + " client.connect()");
         } catch (URISyntaxException e) {

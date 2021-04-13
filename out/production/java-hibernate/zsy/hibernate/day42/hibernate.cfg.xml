@@ -21,6 +21,7 @@
         <property name="hibernate.cache.use_second_level_cache">true</property>
         <!-- 指定二级缓存提供商 -->
         <property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+
         <!-- 开启查询缓存区 -->
         <property name="hibernate.cache.use_query_cache">true</property>
 

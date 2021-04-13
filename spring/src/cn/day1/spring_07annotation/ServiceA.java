@@ -11,7 +11,7 @@ public class ServiceA implements IService {
 	@Qualifier("user")
 	private UserImpl userDao;
 	/* (non-Javadoc)
-	 * @see cn.itcast.spring_07annotation.UserService#regist()
+	 * @see cn.struts.day2.regist.spring_07annotation.UserService#regist()
 	 */
 
 	public ServiceA() {

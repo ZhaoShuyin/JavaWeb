@@ -19,6 +19,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
+import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -44,13 +45,15 @@ public class WebSocketService extends WebSocketServer {
     public void onOpen(WebSocket conn, ClientHandshake handshake) {
         counter++;
         System.out.println(TAG + " Opened " + counter);
+        String zzz = handshake.getFieldValue("zzz");
+        System.out.println("===================================== zzz: "+zzz);
         System.out.println(TAG + " onOpen Address :" + conn.getRemoteSocketAddress().getAddress().getHostAddress());
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                String format = dateFormat.format(new Date());
-                conn.send(format);
-                System.out.println("conn.send " + format);
+                int anInt = new Random().nextInt(10);
+                System.out.println(TAG + " ============> " + anInt);
+                conn.send(new byte[anInt]);
             }
         }, 5000, 20000);
     }

@@ -19,7 +19,7 @@ public class ServletDemo1 extends GenericServlet {
 	 * 第三步：配置。
 	 * 	<servlet>
  		<servlet-name>ServletDemo1</servlet-name>
- 		<servlet-class>cn.itcast.servlet</servlet-class>
+ 		<servlet-class>cn.struts.day2.regist.servlet</servlet-class>
 	 	</servlet>
 	 	<servlet-mapping>
 	 		<servlet-name>ServletDemo1</servlet-name>

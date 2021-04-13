@@ -10,10 +10,15 @@ import org.junit.Test;
 import zsy.hibernate.day42.domain.Customer;
 import zsy.hibernate.day42.util.HibernateUtil;
 
+/**
+ * 查询缓存区
+ *
+ *  <property name="hibernate.cache.use_query_cache">true</property>
+ */
 public class Test4 {
 
     @Test
-    public void test2() {
+    public void test() {
         Session s1 = HibernateUtil.openSession();
         Transaction tx1 = s1.beginTransaction();
         Query q1 = s1.createQuery("from Customer c where c.id=1");
@@ -26,11 +31,15 @@ public class Test4 {
         Session s2 = HibernateUtil.openSession();
         Transaction tx2 = s2.beginTransaction();
         Query q2 = s2.createQuery("from Customer c where c.id=1");
+        //
         q2.setCacheable(true);
         Customer c21 = (Customer) s2.get(Customer.class, 1);//可以从二级缓存中取。不会查询
-        Customer c22 = (Customer) q2.uniqueResult();//不会查询，Query从二级缓存中（查询缓存区）取数据
         System.out.println("c21:" + c21);
+
+        //<property name="hibernate.cache.use_query_cache">true</property>
+        Customer c22 = (Customer) q2.uniqueResult();//不会查询，Query从二级缓存中（查询缓存区）取数据
         System.out.println("c22:" + c22);
+
         tx2.commit();
         s2.close();
 
@@ -46,6 +55,9 @@ public class Test4 {
     }
 
     public static class AA {
-
+        @Override
+        public int hashCode() {
+            return 1;
+        }
     }
 }

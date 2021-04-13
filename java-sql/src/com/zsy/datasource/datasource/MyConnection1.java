@@ -1,4 +1,4 @@
-//package cn.itcast.datasource;
+//package cn.struts.day2.regist.datasource;
 //
 //import java.sql.Array;
 //import java.sql.Blob;

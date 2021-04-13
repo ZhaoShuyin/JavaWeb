@@ -15,7 +15,7 @@ public class ServiceB implements IService {
 	}
 
 	/* (non-Javadoc)
-	 * @see cn.itcast.spring_07annotation.UserService#regist()
+	 * @see cn.struts.day2.regist.spring_07annotation.UserService#regist()
 	 */
 	public void regist(){
 		System.out.println("ServiceB regist 方法 (调用成员变量User.save)");

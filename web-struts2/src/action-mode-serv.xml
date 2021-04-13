@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd"><!---->
+<struts>
+    <!--package配置-->
+    <package name="demo1" namespace="/" extends="default">
+        <action name="hello" class="cn.struts.day1.action.HelloAction" method="sayHello">
+            <result name="success">
+                /jsp/result.jsp
+            </result>
+        </action>
+        <action name="hi1" class="cn.struts.day1.action.ImplAction" />
+        <action name="hi2" class="cn.struts.day1.action.SupportAction" method="save">
+            <!--拦截器-->
+        </action>
+
+        <!--第一个* {1} 第二个* {2}-->
+        <action name="*_*" class="cn.struts.action.{1}Action" method="{2}"></action>
+    </package>
+
+    <!---->
+    <package name="p1" namespace="/model1" extends="default">
+        <action name="action1" class="cn.struts.day1.mode.Demo1Action">
+            <result name="success" type="chain">
+                <param name="namespace">/model2</param>
+                <param name="actionName">action2</param>
+            </result>
+        </action>
+    </package>
+
+    <package name="p2" namespace="/model2" extends="default">
+        <action name="action2" class="cn.struts.day1.mode.Demo2Action">
+            <result name="success" type="dispatcher">
+                /jsp/diapatcher.jsp
+            </result>
+        </action>
+    </package>
+
+    <!---->
+    <package name="serv" namespace="/" extends="default">
+        <action name="serv1" class="cn.struts.day1.servlet.Servlet1Action" method="m1"/>
+        <action name="serv2" class="cn.struts.day1.servlet.Servlet2Action" method="m1"/>
+    </package>
+</struts>

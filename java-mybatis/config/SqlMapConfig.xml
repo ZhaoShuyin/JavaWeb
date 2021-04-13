@@ -5,7 +5,7 @@
     <properties resource="db.properties"></properties>
 
     <typeAliases>
-        <!-- <typeAlias type="cn.itcast.mybatis.po.User" alias="user"/> -->
+        <!-- <typeAlias type="cn.struts.day2.regist.mybatis.po.User" alias="user"/> -->
         <!-- 批量别名设置   name：包名   不支持统配符  类名   不区分大小写-->
         <package name="com.itcast.mybatis" />
     </typeAliases>
@@ -26,7 +26,7 @@
         <mapper resource="sqlMap/User.xml" />
         <!-- <mapper resource="sqlMap/UserMapper.xml"/> -->
 
-        <!-- <mapper class="cn.itcast.mybatis.mapper.UserMapper"/> -->
+        <!-- <mapper class="cn.struts.day2.regist.mybatis.mapper.UserMapper"/> -->
 
         <!--  name：包名   不支持统配符 -->
         <package name="com.itcast.mybatis.mapper" />

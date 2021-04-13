@@ -7,10 +7,8 @@
           <element id="module-output" name="web-app" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="lib3" />
           <element id="library" level="project" name="lib4" />
           <element id="library" level="project" name="lib" />
-          <element id="library" level="project" name="struts2" />
           <element id="library" level="project" name="lib1" />
           <element id="library" level="project" name="lib8" />
         </element>

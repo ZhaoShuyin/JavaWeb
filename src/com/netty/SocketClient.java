@@ -1,6 +1,8 @@
 package com.netty;
 
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.Timer;
@@ -26,7 +28,38 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 
 public class SocketClient {
 
+    /**
+     * 十六进制转int
+     *
+     * @param c
+     * @return
+     */
+    private static int toByte(char c) {
+        if (c >= '0' && c <= '9') return (c - '0');
+        if (c >= 'A' && c <= 'F') return (c - 'A' + 10);
+        if (c >= 'a' && c <= 'f') return (c - 'a' + 10);
+        throw new RuntimeException("Invalid hex char '" + c + "'");
+    }
+
+    /**
+     * 十六进制字符串转字节数组
+     *
+     * @param hexString 如：FE00120F0E
+     * @return
+     */
+    public static byte[] hexStringToByteArray(String hexString) {
+        int length = hexString.length();
+        byte[] buffer = new byte[length / 2];
+
+        for (int i = 0; i < length; i += 2) {
+            buffer[i / 2] = (byte) ((toByte(hexString.charAt(i)) << 4) | toByte(hexString.charAt(i + 1)));
+        }
+
+        return buffer;
+    }
+
     public static void main(String[] args) {
+
         SocketClient client = new SocketClient();
         new Thread(new Runnable() {
             @Override
@@ -35,14 +68,29 @@ public class SocketClient {
                 client.connect("127.0.0.1", 9000);
             }
         }).start();
-        //客户端发送数据
+
+
+
+//        客户端发送数据
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-//                client.sendMessage(String.valueOf(System.currentTimeMillis()));
-                client.sendBytes(new byte[1000*2]);
+                try {
+                    FileReader reader = new FileReader("D:/Test/apk/4G_1.txt");
+                    int numbwre = 0;
+                    char[] cbuf = new char[3];
+                    byte[] byt1 = new byte[42210];
+                    while (reader.read(cbuf) != -1) {
+                        byt1[numbwre++] = (byte) ((toByte(cbuf[0]) << 4) | toByte(cbuf[1]));
+                    }
+                    System.out.println("numbwre : " + numbwre);
+                    reader.close();
+                    client.sendBytes(byt1);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
-        }, 1000, 6000);
+        }, 10000);
     }
 
     public Channel channel;
@@ -60,7 +108,7 @@ public class SocketClient {
             ByteBuf buf = Unpooled.copiedBuffer(writeBuffer);   // 转为ByteBuf
             channel.writeAndFlush(buf);                         // 写消息到管道
             writeBuffer.clear();                                // 清理缓冲区
-            System.out.println("发送 "+bytes.length);
+            System.out.println("发送 " + bytes.length);
 //            System.out.println("发送: "+Arrays.toString(bytes));
         }
     }
@@ -117,6 +165,44 @@ public class SocketClient {
             cause.printStackTrace();
             ctx.close();
         }
+    }
+
+
+    private static byte[] getBytes() {
+        byte[] bytes = new byte[938];
+
+        bytes[0] = 0x77;          //报头
+        bytes[1] = (byte) 0xcc;   //报头
+
+        bytes[2] = 0x00;
+        bytes[3] = 0x00;
+        bytes[4] = 0x00;
+        bytes[5] = 0x01;
+
+        bytes[6] = 0x00;   //报计数
+        bytes[7] = 0x00;
+        bytes[8] = 0x01;
+
+        bytes[9] = 0x09;  //电池电量
+
+
+        bytes[10] = (byte) 0xff;   //导联
+        bytes[11] = (byte) 0xff;   //导联
+        int index = 12;
+        for (int i = 0; i < 14; i++) {
+            for (int j = 0; j < 66; j++) {
+                if (j > 1) {
+                    bytes[index] = 0x05;
+                } else {
+                    bytes[index] = 0x01;
+                }
+                index++;
+            }
+        }
+        bytes[936] = (byte) 0xff;
+        bytes[937] = (byte) 0xa3;
+
+        return bytes;
     }
 
 }

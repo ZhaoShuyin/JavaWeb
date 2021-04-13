@@ -1,15 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE struts PUBLIC
-    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
-    "http://struts.apache.org/dtds/struts-2.0.dtd">
-
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd"><!---->
 <struts>
-
-    <package name="default" extends="struts-default" namespace="/">
-        <action name="action1" class="com.zsy.struts.Action1" method="test01">
-            <result name="SUCCESS">/success.jsp</result>
-        </action>
+    <!--核心配置文件-->
+    <!--DEBUG模式-->
+    <constant name="struts.devMode" value="true" />
+    <!--后缀识别-->
+    <constant name="struts.action.extension" value="action,," />
+    <!--开启DMI http://localhost:8080/struts/hi2!update -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <!--国际化-->
+    <constant name="struts.custom.i18n.resources" value="res.message" />
+    <!--定义全局-->
+    <package name="default" extends="struts-default">
+        <global-results>
+            <result name="success">
+                /jsp/result.jsp
+            </result>
+        </global-results>
     </package>
+
+    <include file="action-mode-serv.xml" />
+
+    <include file="param-regist-valid-218n.xml" />
+
+    <include file="intercepter.xml" />
+
+    <include file="upload-ognl.xml" />
+
 
 </struts>
