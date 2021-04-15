@@ -60,4 +60,26 @@
         </action>
     </package>
 
+    <!--OGNL2-->
+    <package name="ognl2" namespace="/ognl2" extends="default">
+        <action name="action1" class="cn.struts.day4.ognl.action.Demo1Action">
+            <result>/jsp/ognl2/1.jsp</result>
+        </action>
+        <action name="action2" class="cn.struts.day4.ognl.action.Demo2Action">
+            <result>/jsp/ognl2/2.jsp</result>
+        </action>
+        <action name="action3" class="cn.struts.day4.ognl.action.Demo3Action">
+            <result>/jsp/ognl2/3.jsp</result>
+        </action>
+        <action name="action4" class="cn.struts.day4.ognl.action.Demo4Action">
+            <result>/jsp/ognl2/4.jsp</result>
+        </action>
+        <action name="action5" class="cn.struts.day4.ognl.action.Demo5Action">
+            <result>/jsp/ognl2/5.jsp</result>
+        </action>
+        <action name="action6" class="cn.struts.day4.ognl.action.Demo6Action">
+            <result>/jsp/ognl2/6.jsp</result>
+        </action>
+    </package>
+
 </struts>

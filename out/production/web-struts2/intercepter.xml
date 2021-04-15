@@ -39,4 +39,20 @@
             <result>/jsp/intercepter/index.jsp</result>
         </action>
     </package>
+
+
+    <package name="resubmit" namespace="/resubmit" extends="default">
+        <interceptors>
+            <interceptor-stack name="myDefaultStack">
+                <interceptor-ref name="defaultStack"></interceptor-ref>
+                <interceptor-ref name="token"></interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="myDefaultStack"></default-interceptor-ref>
+        <action name="action1" class="cn.struts.day4.resubmit.action.Demo1Action">
+            <result>/jsp/resubmit/success.jsp</result>
+            <result name="invalid.token">/jsp/resubmit/message.jsp</result>
+        </action>
+    </package>
+
 </struts>

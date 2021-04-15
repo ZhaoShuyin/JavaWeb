@@ -69,7 +69,7 @@ public class MyWebSocketClient extends WebSocketClient {
         try {
             Map<String, String> httpHeaders = new HashMap<>();
             httpHeaders.put("zzz", "123");
-            MyWebSocketClient client = new MyWebSocketClient(new URI("ws://127.0.0.1:9002"), httpHeaders);//192.168.1.125
+            MyWebSocketClient client = new MyWebSocketClient(new URI("ws://127.0.0.1:9003"), httpHeaders);//192.168.1.125
             client.connect();
             System.out.println(TAG + " client.connect()");
         } catch (URISyntaxException e) {

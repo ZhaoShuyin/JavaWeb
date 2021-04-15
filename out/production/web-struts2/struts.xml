@@ -5,6 +5,8 @@
     <!--核心配置文件-->
     <!--DEBUG模式-->
     <constant name="struts.devMode" value="true" />
+    <!-- 更改整个应用的主题：simple。开发中建议的 -->
+    <!--<constant name="struts.ui.theme" value="xhtml" />-->
     <!--后缀识别-->
     <constant name="struts.action.extension" value="action,," />
     <!--开启DMI http://localhost:8080/struts/hi2!update -->
@@ -27,6 +29,8 @@
     <include file="intercepter.xml" />
 
     <include file="upload-ognl.xml" />
+
+    <include file="struts-example.xml" />
 
 
 </struts>
