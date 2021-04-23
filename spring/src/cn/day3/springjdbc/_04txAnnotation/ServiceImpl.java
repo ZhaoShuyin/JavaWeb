@@ -21,7 +21,7 @@ public class ServiceImpl implements IService {
 		sAccount.setAmount(sAccount.getAmount() - money);
 		tAccount.setAmount(tAccount.getAmount() + money);
 		dao.updateAccount(sAccount);
-				 int i=1/0;
+//				 int i=1/0;
 		dao.updateAccount(tAccount);
 		return true;
 	}

@@ -20,6 +20,8 @@
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="location" value="classpath:dbcfg.properties"></property>
 	</bean>
+
+	<!--这个是spring内置的数据源  (DriverManagerDataSource) -->
 	<bean id="driverManagerDataSource1" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="${driverClassName}"></property>
 		<property name="url" value="${url}"></property>
@@ -34,6 +36,7 @@
 		<property name="user" value="root"></property>
 		<property name="password" value="sorry"></property>
 	</bean>
+
 	<!-- 让Spring容器管理DBCP数据源 -->
 	<bean id="basicDataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
@@ -41,6 +44,7 @@
 		<property name="username" value="root"></property>
 		<property name="password" value="sorry"></property>
 	</bean>
+
 	<!-- 让Spring容器管理数据源：DriverManagerDataSource spring框架内置的数据源 -->
 	<bean id="driverManagerDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>

@@ -10,15 +10,15 @@
 				http://www.springframework.org/schema/aop 
 				http://www.springframework.org/schema/aop/spring-aop.xsd">
     <!-- 2、把核心业务代码和共有（通知）代码交给Spring容器管理 -->
-    <bean id="accountService" class="cn.day2.spring._01aop.ServiceImpl"></bean>
-    <bean id="transactionManager" class="cn.day2.spring._01aop.TransactionManager"></bean>
+    <bean id="service" class="cn.day2.spring._01aop.ServiceImpl"></bean>
+    <bean id="transaction" class="cn.day2.spring._01aop.TransactionManager"></bean>
     <!-- 3配置AOP -->
     <aop:config>
         <!-- 配置切面（某一方面）
             ref:指定通知
         -->
         <aop:pointcut expression="execution(* cn.day2.spring..*Impl.*(..))" id="pt1" />
-        <aop:aspect ref="transactionManager">
+        <aop:aspect ref="transaction">
             <!-- 一个通知类中有好多的方法，哪个方法在什么地方执行（通知类型）？ -->
             <!-- before：通知类型，前置通知。指定的通知方法会在核心业务代码执行前执行
                         method：通知中的方法
