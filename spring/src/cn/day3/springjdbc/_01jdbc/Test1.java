@@ -2,7 +2,10 @@ package cn.day3.springjdbc._01jdbc;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-//自己手工写的代码
+
+/**
+ * 自己手工写的代码创建数据源
+ */
 public class Test1 {
 
 	public static void main(String[] args) {

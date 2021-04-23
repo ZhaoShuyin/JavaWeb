@@ -29,5 +29,7 @@
     <orderEntry type="library" name="lib (2)" level="project" />
     <orderEntry type="library" name="jstl" level="project" />
     <orderEntry type="library" name="struts2-json-plugin-2.3.15.1" level="project" />
+    <orderEntry type="library" name="struts2-json-plugin-2.5.8" level="project" />
+    <orderEntry type="library" name="fastjson-1.2.59 (2)" level="project" />
   </component>
 </module>

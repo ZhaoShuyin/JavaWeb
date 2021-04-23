@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="lib11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web-service/lib/jaxws-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/woodstox-core-asl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/gmbal-api-only.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/saaj-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/jaxb-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/mimepull.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/streambuffer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/jaxws-rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/policy.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/jaxb-xjc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/stax-ex.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/FastInoset.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/ha-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/jaxws-tools.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/management-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/ksoap2-android-assembly-3.5.0-jar-with-dependencies.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/stax2-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/saaj-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/jsr181-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web-service/lib/jaxb-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

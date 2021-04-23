@@ -32,5 +32,24 @@
 
     <include file="struts-example.xml" />
 
+    <package name="json" namespace="/json" extends="default,json-default">
+        <!--通过插件返回json形式数据-->
+        <action name="action1" class="cn.struts.json.JsonAction" method="objectJson">
+            <result type="json">
+                <param name="root">user</param>
+            </result>
+        </action>
+        <!--使用 PrintWriter -->
+        <action name="action2" class="cn.struts.json.JsonAction" method="writeJson"/>
+        <!--获取json形式数据-->
+        <action name="action3" class="cn.struts.json.JsonAction" method="getJsonReqData">
+            <result type="json">
+                <param name="noCache">true</param>
+                <param name="includeProperties">
+                    reqUser\.username,reqUser\.nickname,reqUser\.filename
+                </param>
+            </result>
+        </action>
+    </package>
 
 </struts>

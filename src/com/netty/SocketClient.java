@@ -1,6 +1,8 @@
 package com.netty;
 
 
+import com.util.HexUtil;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.nio.ByteBuffer;
@@ -28,39 +30,8 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 
 public class SocketClient {
 
-    /**
-     * 十六进制转int
-     *
-     * @param c
-     * @return
-     */
-    private static int toByte(char c) {
-        if (c >= '0' && c <= '9') return (c - '0');
-        if (c >= 'A' && c <= 'F') return (c - 'A' + 10);
-        if (c >= 'a' && c <= 'f') return (c - 'a' + 10);
-        throw new RuntimeException("Invalid hex char '" + c + "'");
-    }
-
-    /**
-     * 十六进制字符串转字节数组
-     *
-     * @param hexString 如：FE00120F0E
-     * @return
-     */
-    public static byte[] hexStringToByteArray(String hexString) {
-        int length = hexString.length();
-        byte[] buffer = new byte[length / 2];
-
-        for (int i = 0; i < length; i += 2) {
-            buffer[i / 2] = (byte) ((toByte(hexString.charAt(i)) << 4) | toByte(hexString.charAt(i + 1)));
-        }
-
-        return buffer;
-    }
-
     public static void main(String[] args) {
-
-        SocketClient client = new SocketClient();
+        SocketClient client = new SocketClient("1");
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -68,9 +39,6 @@ public class SocketClient {
                 client.connect("127.0.0.1", 9000);
             }
         }).start();
-
-
-
 //        客户端发送数据
         new Timer().schedule(new TimerTask() {
             @Override
@@ -81,7 +49,7 @@ public class SocketClient {
                     char[] cbuf = new char[3];
                     byte[] byt1 = new byte[42210];
                     while (reader.read(cbuf) != -1) {
-                        byt1[numbwre++] = (byte) ((toByte(cbuf[0]) << 4) | toByte(cbuf[1]));
+                        byt1[numbwre++] = (byte) ((HexUtil.toByte(cbuf[0]) << 4) | HexUtil.toByte(cbuf[1]));
                     }
                     System.out.println("numbwre : " + numbwre);
                     reader.close();
@@ -91,6 +59,37 @@ public class SocketClient {
                 }
             }
         }, 10000);
+    }
+
+    private String TAG;
+    private String name;
+    private byte[] bytes = new byte[3];
+
+    public SocketClient(String name) {
+        this.name = name;
+        TAG = "name:" + name + "  ";
+        int i = Integer.parseInt(name);
+        bytes[0] = (byte) i;
+        bytes[1] = (byte) i;
+        bytes[2] = (byte) i;
+    }
+
+    private Timer timer = new Timer();
+
+    public void start() {
+        System.out.println(TAG + " =====> start()" );
+        timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                sendBytes(bytes);
+                System.out.println(TAG + " =====>" + Arrays.toString(bytes));
+            }
+        }, 1000, 3000);
+    }
+
+    public void stop() {
+        timer.cancel();
     }
 
     public Channel channel;
@@ -129,17 +128,17 @@ public class SocketClient {
             }
         });
         try {
-            System.out.println("客户端启动");
+            System.out.println(TAG + " 客户端启动");
             ChannelFuture sync = boot.connect(host, port).sync();
             channel = sync.channel();
-            System.out.println("客户端连接");
+            System.out.println(TAG + " 客户端连接");
             channel.closeFuture().sync();
-            System.out.println("客户端关闭");
-        } catch (InterruptedException e) {
+            System.out.println(TAG + " 客户端关闭");
+        } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("客户端异常:" + e.toString());
+            System.out.println(TAG + " 客户端异常:" + e.toString());
         } finally {
-            System.out.println("客户端关闭...");
+            System.out.println(TAG + " 客户端关闭...");
             group.shutdownGracefully();
         }
     }
@@ -164,45 +163,8 @@ public class SocketClient {
         public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
             cause.printStackTrace();
             ctx.close();
+            System.out.println(cause.getMessage());
         }
-    }
-
-
-    private static byte[] getBytes() {
-        byte[] bytes = new byte[938];
-
-        bytes[0] = 0x77;          //报头
-        bytes[1] = (byte) 0xcc;   //报头
-
-        bytes[2] = 0x00;
-        bytes[3] = 0x00;
-        bytes[4] = 0x00;
-        bytes[5] = 0x01;
-
-        bytes[6] = 0x00;   //报计数
-        bytes[7] = 0x00;
-        bytes[8] = 0x01;
-
-        bytes[9] = 0x09;  //电池电量
-
-
-        bytes[10] = (byte) 0xff;   //导联
-        bytes[11] = (byte) 0xff;   //导联
-        int index = 12;
-        for (int i = 0; i < 14; i++) {
-            for (int j = 0; j < 66; j++) {
-                if (j > 1) {
-                    bytes[index] = 0x05;
-                } else {
-                    bytes[index] = 0x01;
-                }
-                index++;
-            }
-        }
-        bytes[936] = (byte) 0xff;
-        bytes[937] = (byte) 0xa3;
-
-        return bytes;
     }
 
 }
