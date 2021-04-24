@@ -12,6 +12,7 @@
 				http://www.springframework.org/schema/context/spring-context.xsd">
     <!-- 指定spring管理的资源的扫描路径 -->
     <context:component-scan base-package="cn.day2.spring._04annotationAOP"></context:component-scan>
+
     <!-- 开启自动代理:面向切面的注解才会生效 -->
     <aop:aspectj-autoproxy />
 </beans>

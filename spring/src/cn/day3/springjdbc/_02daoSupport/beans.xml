@@ -11,9 +11,6 @@
 				http://www.springframework.org/schema/context 
 				http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="Impl3" class="cn.day3.springjdbc._02daoSupport.DaoImpl3">
-        <property name="dataSource" ref="dmDataSource"></property>
-    </bean>
 
     <!-- 让Spring容器管理数据源：DriverManagerDataSource spring框架内置的数据源 -->
     <bean id="dmDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -22,6 +19,24 @@
         <property name="username" value="root"></property>
         <property name="password" value="123456"></property>
     </bean>
+
+    <!-- Impl1 成员变量jdbcTemplate 使用jdbcT -->
+    <bean id="Impl1" class="cn.day3.springjdbc._02daoSupport.DaoImpl1">
+        <property name="jdbcTemplate" ref="jdbcT"></property>
+    </bean>
+    <!-- jdbcT实例 -->
+    <bean id="jdbcT" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dmDataSource"></property>
+    </bean>
+
+
+
+
+    <bean id="Impl3" class="cn.day3.springjdbc._02daoSupport.DaoImpl3">
+        <property name="dataSource" ref="dmDataSource"></property>
+    </bean>
+
+
 
     <!-- 	<bean id="Impl2" class="cn.day3.springjdbc._02daoSupport.AccountDaoImpl2"> -->
     <!-- 		<property name="jdbcTemplate" ref="jdbcTemplate"></property> -->
@@ -32,14 +47,6 @@
         <property name="dataSource" ref="dmDataSource"></property>
     </bean>
 
-    <!-- Impl1 成员变量jdbcTemplate 使用jdbcT -->
-    <bean id="Impl1" class="cn.day3.springjdbc._02daoSupport.DaoImpl1">
-        <property name="jdbcTemplate" ref="jdbcT"></property>
-    </bean>
 
-    <!-- 让spring管理JdbcTemplate -->
-    <bean id="jdbcT" class="org.springframework.jdbc.core.JdbcTemplate">
-        <property name="dataSource" ref="dmDataSource"></property>
-    </bean>
 
 </beans>

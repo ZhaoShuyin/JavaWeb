@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * import xml文件
+ */
 public class Test {
 
     public static void main(String[] args) {

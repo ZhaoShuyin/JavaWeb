@@ -7,23 +7,23 @@ import org.aspectj.lang.ProceedingJoinPoint;
 public class TransactionManager {
 
     public void startTransaction() {
-        System.out.println("开启事务....");
+        System.out.println("********开启事务....");
     }
 
     public void startTransaction1() {
-        System.out.println("开启事务1....");
+        System.out.println("********开启事务1....");
     }
 
     public void commit() {
-        System.out.println("提交事务....");
+        System.out.println("********提交事务....");
     }
 
     public void rollback() {
-        System.out.println("回滚事务....");
+        System.out.println("********回滚事务....");
     }
 
     public void release() {
-        System.out.println("释放资源....");
+        System.out.println("********释放资源....");
     }
 
     //环绕通知：提供的一个自由编写的入口

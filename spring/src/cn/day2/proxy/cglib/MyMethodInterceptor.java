@@ -25,7 +25,7 @@ public class MyMethodInterceptor implements MethodInterceptor {
         //拿到被调用方法的参数
         float money = (Float) args[0];
         String name = method.getName();
-        System.out.println("过滤方法 : "+name);
+        System.out.println("过滤方法 : " + name + " , value: " + money);
         if ("sing".equals(name)) {
             if (money >= 10000)
                 method.invoke(h, money / 2);

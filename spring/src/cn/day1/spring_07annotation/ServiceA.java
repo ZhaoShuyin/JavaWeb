@@ -4,6 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+/**
+ * 使用 @Service("ServiceA")
+ * 使用
+ *    @Autowired
+ *    @Qualifier("user")
+ *    注解成员变量
+ */
 @Service("ServiceA")
 public class ServiceA implements IService {
 

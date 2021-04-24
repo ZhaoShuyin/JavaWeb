@@ -10,14 +10,14 @@
      -->
     <bean id="bean1" class="cn.day1.spring_05DI.Bean1">
         <constructor-arg index="1" type="int" value="18"></constructor-arg>
-        <constructor-arg index="0" type="java.lang.String" value="姓名"></constructor-arg>
+        <constructor-arg index="0" type="java.lang.String" value="配置构造参数"></constructor-arg>
     </bean>
 
     <!--
         setter属性注入： ref：注入spring管理的其他对象。引用值
     -->
     <bean id="bean2" class="cn.day1.spring_05DI.Bean2">
-        <property name="name" value="姓名"></property>
+        <property name="name" value="setter属性注入"></property>
         <property name="age" value="28"></property>
     </bean>
 
@@ -27,13 +27,15 @@
     -->
     <bean id="now" class="java.util.Date" scope="prototype"></bean>
 
-    <bean id="bean3" class="cn.day1.spring_05DI.Bean3" p:birthday-ref="now" p:name="姓名"
+    <bean id="bean3" class="cn.day1.spring_05DI.Bean3" p:birthday-ref="now" p:name="使用p名称空间"
         p:age="38" />
+
+
 
     <!-- SpEL:设定值 -->
     <bean id="bean4" class="cn.day1.spring_05DI.Bean4">
         <!-- SpEL:统一使用value指定，要写在井{SpEL} -->
-        <property name="name" value="姓名"></property>
+        <property name="name" value="SpEL:设定值"></property>
         <property name="age" value="19"></property>
         <property name="birthday" value="#{now}"></property>
     </bean>

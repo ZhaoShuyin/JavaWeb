@@ -1,9 +1,6 @@
 package cn.day3.springjdbc._03tx;
 
 public interface IService {
-
-	void transferTransaction(String sourceAccountName, String targetAccountName, float money);
-
 	/**
 	 * 转账
 	 * @param sourceAccountName 转出账户名
@@ -11,14 +8,6 @@ public interface IService {
 	 * @param money 金额
 	 */
 	void transfer(String sourceAccountName, String targetAccountName, float money);
-
-	/**
-	 *
-	 */
 	void m1();
-
-	/**
-	 *
-	 */
 	void m2();
 }

@@ -18,6 +18,7 @@
             ref:指定通知
         -->
         <aop:pointcut expression="execution(* cn.day2.spring..*Impl.*(..))" id="pt1" />
+
         <aop:aspect ref="transaction">
             <!-- 一个通知类中有好多的方法，哪个方法在什么地方执行（通知类型）？ -->
             <!-- before：通知类型，前置通知。指定的通知方法会在核心业务代码执行前执行
@@ -26,23 +27,29 @@
              -->
             <!--  <aop:before method="startTransaction"
                    pointcut="execution(public void cn.day2.spring._01aop.AccountServiceImpl.transfer())"/> -->
+
             <!-- 可以使用*通配符：此处统配方法的返回值类型为任意 -->
             <!--  <aop:before method="startTransaction"
                    pointcut="execution(* cn.day2.spring._01aop.AccountServiceImpl.transfer())"/> -->
+
             <!-- ..匹配包及子包 -->
             <!--  <aop:before method="startTransaction"
                    pointcut="execution(* cn.day2.spring..AccountServiceImpl.transfer())"/> -->
+
             <!-- 匹配类或接口 -->
             <!--  <aop:before method="startTransaction"
                    pointcut="execution(* cn.day2.spring..*Impl.transfer())"/> -->
+
             <!-- 匹配方法名：* -->
             <!--  <aop:before method="startTransaction"
                    pointcut="execution(* cn.day2.spring..*Impl.*())"/> -->
+
             <!-- 匹配方法的参数：参数任意.. -->
             <!-- 	<aop:before method="startTransaction"
                      pointcut="execution(* cn.day2.spring..*Impl.*(String))"/> -->
             <!-- 	<aop:before method="startTransaction"
                      pointcut="execution(* cn.day2.spring..*Impl.*(String,String))"/> -->
+
             <aop:before method="beforeMethod" pointcut-ref="pt1" />
             <aop:after method="afterMethod" pointcut-ref="pt1" />
         </aop:aspect>

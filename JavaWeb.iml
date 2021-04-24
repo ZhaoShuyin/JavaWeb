@@ -69,13 +69,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="dbcp" level="project" />
-    <orderEntry type="library" name="dbutils" level="project" />
     <orderEntry type="library" name="lib4" level="project" />
     <orderEntry type="library" name="lib5" level="project" />
     <orderEntry type="library" name="lib10" level="project" />
     <orderEntry type="library" name="lib1" level="project" />
-    <orderEntry type="library" name="junit-4.12 (3)" level="application" />
     <orderEntry type="library" name="Java-WebSocket-1.5.1" level="project" />
     <orderEntry type="library" name="netty-all-4.1.51.Final" level="project" />
     <orderEntry type="library" name="fastjson-1.2.59" level="project" />

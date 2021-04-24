@@ -5,19 +5,24 @@ import javax.annotation.PreDestroy;
 
 import org.springframework.stereotype.Component;
 
+/**
+ * 使用类名 bean2 获取Bean2实例
+ */
 @Component
 public class Bean2 {
-	//初始化方法：执行一次
-	@PostConstruct
-	public void init(){
-		System.out.println("Bean2 ....init");
-	}
-	public void save() {
-		System.out.println("Bean2 save....");
-	}
-	//销毁方法：销毁一次。spring容器关闭时.只有单例模式才有意义
-	@PreDestroy
-	public void destroy(){
-		System.out.println("Bean2....destroy");
-	}
+    //初始化方法：执行一次
+    @PostConstruct
+    public void init() {
+        System.out.println("Bean2 ....init");
+    }
+
+    public void save() {
+        System.out.println("Bean2 save....");
+    }
+
+    //销毁方法：销毁一次。spring容器关闭时.只有单例模式才有意义
+    @PreDestroy
+    public void destroy() {
+        System.out.println("Bean2....destroy");
+    }
 }

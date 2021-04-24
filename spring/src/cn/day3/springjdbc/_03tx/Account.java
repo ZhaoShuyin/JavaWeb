@@ -12,7 +12,6 @@ insert into accounts (name,amount) values ('aaa',1000);
 insert into accounts (name,amount) values ('bbb',1000);
  */
 public class Account implements Serializable {
-
 	private Integer id;
 	private String name;//账户，唯一
 	private Float amount;//余额

@@ -3,6 +3,9 @@ package cn.day2.spring._02adviceType;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * 测试代理的不同处理方法
+ */
 public class Test {
 
 	public static void main(String[] args) {

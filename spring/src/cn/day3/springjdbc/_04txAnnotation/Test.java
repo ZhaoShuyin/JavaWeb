@@ -14,7 +14,7 @@ public class Test {
         IService s = (IService) ac.getBean("accountService");
 
         System.out.println("Class >> " + s.getClass().getName());
-        boolean transfer = s.transfer("aaa", "bbb", 1f);
+        boolean transfer = s.transfer( "aaa", "bbb", 1f);
         System.out.println("transfer: " + transfer);
     }
 
