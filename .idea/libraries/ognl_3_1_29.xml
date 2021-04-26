@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ognl-3.1.29">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/demo-ssh/web/WEB-INF/lib/ognl-3.1.29.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

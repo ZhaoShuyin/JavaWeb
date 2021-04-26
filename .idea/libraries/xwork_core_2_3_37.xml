@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xwork-core-2.3.37">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/demo-ssh/web/WEB-INF/lib/xwork-core-2.3.37.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

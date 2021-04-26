@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx" xsi:schemaLocation="
+				http://www.springframework.org/schema/beans
+				http://www.springframework.org/schema/beans/spring-beans.xsd
+				http://www.springframework.org/schema/context
+				http://www.springframework.org/schema/context/spring-context.xsd
+                http://www.springframework.org/schema/aop
+                http://www.springframework.org/schema/aop/spring-aop.xsd
+                http://www.springframework.org/schema/tx
+                http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <bean id="testAction" class="com.zsy.ssh.action.TestAction" scope="prototype">
+        <property name="testService" ref="testService" />
+    </bean>
+    <bean id="testService" class="com.zsy.ssh.service.TestService">
+        <property name="testDao" ref="testDao" />
+        <property name="testDaoSupport" ref="testDaoSupport" />
+    </bean>
+    <bean id="testDao" class="com.zsy.ssh.dao.TestDao">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="testDaoSupport" class="com.zsy.ssh.dao.TestDaoSupport">
+        <property name="hibernateTemplate" ref="hibernateTemplate"></property>
+    </bean>
+
+    <!-- IOC容器注入，使用注解配置 -->
+    <context:annotation-config />
+    <!-- 告知spring扫描的包,还会扫描子包中的类 -->
+    <context:component-scan base-package="com.zsy.ssh" />
+    <!-- 启用 @AspectJ -->
+    <aop:aspectj-autoproxy />
+
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql:///ssh?useSSL=false" />
+        <property name="username" value="root" />
+        <property name="password" value="123456" />
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="hibernateProperties">
+            <props>
+                <!--方言-->
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <!--显示Sql语句-->
+                <prop key="hibernate.show_sql">true</prop>
+                <!--格式化SQL语句-->
+                <prop key="hibernate.format_sql">false</prop>
+                <!---->
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+            </props>
+        </property>
+        <property name="mappingDirectoryLocations">
+            <array>
+                <value>classpath:com/zsy/ssh/domain/</value>
+            </array>
+        </property>
+        <property name="annotatedClasses">
+            <list>
+                <value>com.zsy.ssh.domain.User</value>
+            </list>
+        </property>
+    </bean>
+
+    <!---->
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+
+    <!--AOP 配置-->
+    <aop:config>
+        <aop:pointcut expression="execution(* com.zsy.ssh.service.*.*(..))" id="ptServiceImpl" />
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="ptServiceImpl" />
+    </aop:config>
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="*" />
+        </tx:attributes>
+    </tx:advice>
+
+    <bean id="transactionManager"
+        class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+</beans>

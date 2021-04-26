@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-ssh/demo-ssh.iml" filepath="$PROJECT_DIR$/demo-ssh/demo-ssh.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-hibernate/java-hibernate.iml" filepath="$PROJECT_DIR$/java-hibernate/java-hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-mybatis/java-mybatis.iml" filepath="$PROJECT_DIR$/java-mybatis/java-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-sql/java-sql.iml" filepath="$PROJECT_DIR$/java-sql/java-sql.iml" />

@@ -11,7 +11,7 @@
     <title>$Title$</title>
 </head>
 <body>
-$END$
+$SSH$
 <h1>${message}</h1>
 </body>
 </html>
