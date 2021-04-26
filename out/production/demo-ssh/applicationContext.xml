@@ -22,6 +22,7 @@
     </bean>
     <bean id="testDao" class="com.zsy.ssh.dao.TestDao">
         <property name="sessionFactory" ref="sessionFactory"></property>
+        <property name="hibernateTemplate" ref="hibernateTemplate"></property>
     </bean>
     <bean id="testDaoSupport" class="com.zsy.ssh.dao.TestDaoSupport">
         <property name="hibernateTemplate" ref="hibernateTemplate"></property>

@@ -26,12 +26,6 @@ public class TestDao {
         this.sessionFactory = sessionFactory;
     }
 
-    private HibernateTemplate hibernateTemplate;
-
-    public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
-        this.hibernateTemplate = hibernateTemplate;
-    }
-
     public Account queryBy(Integer id){
         System.out.println("=================== TestDao.queryBy() ======= "+id);
         Session session = sessionFactory.openSession();
@@ -41,10 +35,14 @@ public class TestDao {
     }
 
 
+    private HibernateTemplate hibernateTemplate;
+
+    public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
+        this.hibernateTemplate = hibernateTemplate;
+    }
+
     public void transaction(Account account){
-//        Session session = sessionFactory.openSession();
-//        session.save(account);
-//        session.close();
+        System.out.println("============ TestDao ============ transaction() ");
         hibernateTemplate.save(account);
     }
 

@@ -13,12 +13,12 @@
                 /index.jsp
             </result>
         </action>
-        <action name="transaction" class="testAction" method="transaction">
+        <action name="tr1" class="testAction" method="transaction">
             <result name="success">
                 /index.jsp
             </result>
         </action>
-        <action name="trano" class="testAction" method="trano">
+        <action name="tr2" class="testAction" method="trano">
             <result name="success">
                 /index.jsp
             </result>
