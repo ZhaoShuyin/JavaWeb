@@ -1,13 +1,16 @@
 package cn.day3.springjdbc._03tx;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationEvent;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.transaction.support.TransactionSynchronizationAdapter;
+import org.springframework.transaction.support.TransactionSynchronizationManager;
 
 public class Test {
 
     public static void main(String[] args) {
 //		txTest1();
-//        aopTest();
+        aopTest();
     }
 
     private static void txTest1() {

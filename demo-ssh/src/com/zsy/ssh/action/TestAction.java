@@ -1,40 +1,23 @@
 package com.zsy.ssh.action;
 
-import com.opensymphony.xwork2.ActionSupport;
-import com.zsy.ssh.service.TestService;
 
-/**
- * @Title com.zsy.ssh.action
- * @date 2021/4/25
- * @autor Zsy
- */
+import com.opensymphony.xwork2.ActionSupport;
+import com.zsy.ssh.service.IService;
 
 public class TestAction extends ActionSupport {
 
-    public void setTestService(TestService testService) {
-        this.testService = testService;
-    }
+	private IService iService;
 
-    private TestService testService;
+	public void setiService(IService iService) {
+		this.iService = iService;
+	}
 
-    @Override
-    public String execute() throws Exception {
-        System.out.println("============= TestAction : " + TestAction.this + " , testService: " + testService);
-        System.out.println("========================================================================");
-        testService.test();
-        System.out.println("========================================================================");
-        testService.testSupport();
-        System.out.println("========================================================================");
-        return SUCCESS;
-    }
-
-    public String transaction(){
-        testService.transaction();
-        return SUCCESS;
-    }
-
-    public String trano(){
-        testService.trano();
-        return SUCCESS;
-    }
+	public String execute(){
+		iService.doSomething();
+		return SUCCESS;
+	}
+	public String saveTest(){
+		iService.saveTest();
+		return null;
+	}
 }

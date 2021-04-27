@@ -14,18 +14,13 @@
                 http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <bean id="testAction" class="com.zsy.ssh.action.TestAction" scope="prototype">
-        <property name="testService" ref="testService" />
+        <property name="iService" ref="testService" />
     </bean>
-    <bean id="testService" class="com.zsy.ssh.service.TestService">
-        <property name="testDao" ref="testDao" />
-        <property name="testDaoSupport" ref="testDaoSupport" />
+    <bean id="testService" class="com.zsy.ssh.service.impl.ServiceImpl">
+        <property name="iDao" ref="testDao" />
     </bean>
-    <bean id="testDao" class="com.zsy.ssh.dao.TestDao">
-        <property name="sessionFactory" ref="sessionFactory"></property>
-        <property name="hibernateTemplate" ref="hibernateTemplate"></property>
-    </bean>
-    <bean id="testDaoSupport" class="com.zsy.ssh.dao.TestDaoSupport">
-        <property name="hibernateTemplate" ref="hibernateTemplate"></property>
+    <bean id="testDao" class="com.zsy.ssh.dao.impl.DaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
     <!-- IOC容器注入，使用注解配置 -->
@@ -34,15 +29,14 @@
     <context:component-scan base-package="com.zsy.ssh" />
     <!-- 启用 @AspectJ -->
     <aop:aspectj-autoproxy />
-
-
+    <!---->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
         <property name="url" value="jdbc:mysql:///ssh?useSSL=false" />
         <property name="username" value="root" />
         <property name="password" value="123456" />
     </bean>
-
+    <!---->
     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="hibernateProperties">
@@ -69,15 +63,10 @@
         </property>
     </bean>
 
-    <!---->
-    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
-        <property name="sessionFactory" ref="sessionFactory" />
-    </bean>
-
 
     <!--AOP 配置-->
     <aop:config>
-        <aop:pointcut expression="execution(* com.zsy.ssh.service.*.*(..))" id="ptServiceImpl" />
+        <aop:pointcut expression="execution(* com.zsy.ssh.service.impl.*(..))" id="ptServiceImpl" />
         <aop:advisor advice-ref="txAdvice" pointcut-ref="ptServiceImpl" />
     </aop:config>
 
@@ -86,6 +75,11 @@
             <tx:method name="*" />
         </tx:attributes>
     </tx:advice>
+
+    <!--<bean name="openSessionInViewInterceptor" class="org.springframework.orm.hibernate5.support.OpenSessionInViewInterceptor">
+        <property name="sessionFactory" ref="sessionFactory">
+        </property>
+    </bean>-->
 
     <bean id="transactionManager"
         class="org.springframework.orm.hibernate5.HibernateTransactionManager">

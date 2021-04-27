@@ -13,6 +13,7 @@ public class ServiceImpl {
 
     public void transfer1() {//知道发生了什么异常
         System.out.println("业务实现代码....transfer1方法执行了");
-		int i=1/0;
+        int i = 1 / 0;
     }
+
 }
