@@ -19,7 +19,7 @@
     </bean>
 
     <bean id="xxxService" class="com.zsy.ssh.service.impl.ServiceImpl">
-        <property name="iDao" ref="xxxDao" />
+        <property name="testDao" ref="xxxDao" />
     </bean>
 
     <bean id="transactionManager"

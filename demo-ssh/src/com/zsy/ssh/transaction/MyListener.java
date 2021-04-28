@@ -5,6 +5,9 @@ import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
+/**
+ * 自动注册
+ */
 @Component
 public class MyListener implements ApplicationListener {
     private static final Logger LOGGER = Logger.getLogger(MyListener.class);

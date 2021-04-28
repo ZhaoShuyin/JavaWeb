@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="struts2-convention-plugin-2.5.25">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/demo-ssh/web/WEB-INF/lib/struts2-convention-plugin-2.5.25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

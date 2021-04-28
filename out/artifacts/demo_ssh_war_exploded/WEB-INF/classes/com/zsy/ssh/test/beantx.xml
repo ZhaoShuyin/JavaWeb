@@ -14,19 +14,47 @@
                 http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 
-    <bean id="xxxDao" class="com.zsy.ssh.dao.impl.Dao2">
-        <property name="jdbcTemplate" ref="jdbcTemplate" />
+    <!--1:Dao-->
+    <bean id="xxxDao" class="com.zsy.ssh.dao.impl.Dao33">
+        <!-- <property name="hibernateTemplate" ref="hibernateTemplate" />-->
+        <property name="sessionFactory" ref="sessionFactory" />
     </bean>
 
-    <bean id="xxxService" class="com.zsy.ssh.service.impl.ServiceImpl">
-        <property name="testDao" ref="xxxDao" />
+    <!--2:Service-->
+    <bean id="xxxService" class="com.zsy.ssh.service.impl.TxServiceImpl">
+        <property name="iDao" ref="xxxDao" />
     </bean>
 
+    <!--3:Template-->
+    <!--<bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>-->
+
+    <!--4:Transaction-->
     <bean id="transactionManager"
-        class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource" />
+        class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
     </bean>
 
+    <!--5:Factory-->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.format_sql">false</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+            </props>
+        </property>
+        <property name="mappingLocations">
+            <array>
+                <value>classpath:com/zsy/ssh/domain/*.hbm.xml</value>
+            </array>
+        </property>
+    </bean>
+
+    <!--6:tx-->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <!-- 事务的属性：对应事务的定义信息 -->
         <tx:attributes>
@@ -34,6 +62,7 @@
         </tx:attributes>
     </tx:advice>
 
+    <!--7:aop-->
     <aop:config>
         <!--AOP切入点-->
         <aop:pointcut expression="execution(* com.zsy.ssh.service.impl.*.*(..))" id="pt1" />
@@ -41,10 +70,7 @@
         <aop:advisor advice-ref="txAdvice" pointcut-ref="pt1" />
     </aop:config>
 
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <property name="dataSource" ref="dataSource" />
-    </bean>
-
+    <!--8:DataSource-->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
         <property name="url" value="jdbc:mysql:///ssh?useSSL=false" />

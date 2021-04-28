@@ -1,14 +1,12 @@
 package com.zsy.ssh.test;
 
-import com.zsy.ssh.service.IService;
+import com.zsy.ssh.service.TestService;
 import com.zsy.ssh.transaction.MyEvent;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.transaction.support.TransactionSynchronizationAdapter;
-import org.springframework.transaction.support.TransactionSynchronizationManager;
 
 /**
  * @Title com.zsy.ssh.test
@@ -24,12 +22,13 @@ public class Test {
      * @param args
      */
     public static void main(String[] args) {
-        test1();
+        ApplicationContext ac = new ClassPathXmlApplicationContext("/applicationContext.xml");
+        Object testService = ac.getBean("testService");
     }
 
     private static void test2() {
         ApplicationContext ac = new ClassPathXmlApplicationContext("com/zsy/ssh/test/bean33.xml");
-        IService service = (IService) ac.getBean("xxxService");
+        TestService service = (TestService) ac.getBean("xxxService");
 
         ((ClassPathXmlApplicationContext) ac).addApplicationListener(new ApplicationListener(){
             @Override
@@ -45,7 +44,7 @@ public class Test {
 
     private static void test1() {
         ApplicationContext ac = new ClassPathXmlApplicationContext("com/zsy/ssh/test/beantx.xml");
-        IService service = (IService) ac.getBean("xxxService");
+        TestService service = (TestService) ac.getBean("xxxService");
 
 //        TransactionSynchronizationManager.initSynchronization();
 //        TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronizationAdapter() {
@@ -62,7 +61,12 @@ public class Test {
 //            }
 //        });
 
+        service.saveTest();
+
         service.doSomething();
+
+
+
     }
 
 }

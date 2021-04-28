@@ -14,12 +14,12 @@
                 http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <bean id="testAction" class="com.zsy.ssh.action.TestAction" scope="prototype">
-        <property name="iService" ref="testService" />
+        <property name="testService" ref="testService" />
     </bean>
     <bean id="testService" class="com.zsy.ssh.service.impl.ServiceImpl">
-        <property name="iDao" ref="testDao" />
+        <property name="testDao" ref="implDao" />
     </bean>
-    <bean id="testDao" class="com.zsy.ssh.dao.impl.DaoImpl">
+    <bean id="implDao" class="com.zsy.ssh.dao.impl.DaoImpl">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
@@ -51,9 +51,9 @@
                 <prop key="hibernate.hbm2ddl.auto">update</prop>
             </props>
         </property>
-        <property name="mappingDirectoryLocations">
+        <property name="mappingLocations">
             <array>
-                <value>classpath:com/zsy/ssh/domain/</value>
+                <value>classpath:com/zsy/ssh/domain/*.hbm.xml</value>
             </array>
         </property>
         <property name="annotatedClasses">
@@ -63,10 +63,9 @@
         </property>
     </bean>
 
-
     <!--AOP 配置-->
     <aop:config>
-        <aop:pointcut expression="execution(* com.zsy.ssh.service.impl.*(..))" id="ptServiceImpl" />
+        <aop:pointcut expression="execution(* com.zsy.ssh.service.impl.*.*(..))" id="ptServiceImpl" />
         <aop:advisor advice-ref="txAdvice" pointcut-ref="ptServiceImpl" />
     </aop:config>
 
@@ -76,14 +75,13 @@
         </tx:attributes>
     </tx:advice>
 
-    <!--<bean name="openSessionInViewInterceptor" class="org.springframework.orm.hibernate5.support.OpenSessionInViewInterceptor">
-        <property name="sessionFactory" ref="sessionFactory">
-        </property>
-    </bean>-->
-
     <bean id="transactionManager"
         class="org.springframework.orm.hibernate5.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
 </beans>

@@ -1,7 +1,7 @@
 package com.zsy.ssh.dao.impl;
 
 import com.zsy.ssh.dao.RowMapper;
-import com.zsy.ssh.dao.IDao;
+import com.zsy.ssh.dao.TestDao;
 import com.zsy.ssh.domain.Account;
 
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
@@ -11,7 +11,7 @@ import java.util.List;
 /**
  *
  */
-public class Dao22 extends JdbcDaoSupport implements IDao {
+public class Dao22 extends JdbcDaoSupport implements TestDao {
 
     @Override
     public Account findAccount(int id) {

@@ -6,6 +6,7 @@
     <!--DEBUG模式-->
     <constant name="struts.devMode" value="true" />
 
+    <!--配置 Test 相关 的 Action -->
     <package name="test" namespace="/test" extends="struts-default">
         <!-- class="com.zsy.ssh.action.TestAction" 修改为 从spring获取 Action 实例-->
         <action name="test" class="testAction">
@@ -25,7 +26,7 @@
         </action>
     </package>
 
-    <package name="user" namespace="/user" extends="struts-default,json-default">
+    <!--<package name="user" namespace="/user" extends="struts-default,json-default">
         <action name="user" class="userQuery">
             <result type="json">
                 <param name="root">object</param>
@@ -36,5 +37,5 @@
                 <param name="root">object</param>
             </result>
         </action>
-    </package>
+    </package>-->
 </struts>

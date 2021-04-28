@@ -1,6 +1,6 @@
 package com.zsy.ssh.test;
 
-import com.zsy.ssh.service.IService;
+import com.zsy.ssh.service.TestService;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -15,7 +15,7 @@ public class Test30 {
 
     public static void main(String[] args) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("com/zsy/ssh/test/bean30.xml");
-        IService service = (IService) ac.getBean("xxxService");
+        TestService service = (TestService) ac.getBean("xxxService");
         service.saveTest();
     }
 

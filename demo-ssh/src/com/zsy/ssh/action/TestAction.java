@@ -2,22 +2,22 @@ package com.zsy.ssh.action;
 
 
 import com.opensymphony.xwork2.ActionSupport;
-import com.zsy.ssh.service.IService;
+import com.zsy.ssh.service.TestService;
 
 public class TestAction extends ActionSupport {
 
-	private IService iService;
+	private TestService testService;
 
-	public void setiService(IService iService) {
-		this.iService = iService;
+	public void setTestService(TestService testService) {
+		this.testService = testService;
 	}
 
 	public String execute(){
-		iService.doSomething();
+		testService.doSomething();
 		return SUCCESS;
 	}
 	public String saveTest(){
-		iService.saveTest();
+		testService.saveTest();
 		return null;
 	}
 }

@@ -4,6 +4,11 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.zsy.ssh.domain.User;
 import com.zsy.ssh.service.UserService;
 
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Namespace;
+import org.apache.struts2.convention.annotation.ParentPackage;
+import org.apache.struts2.convention.annotation.Result;
+import org.apache.struts2.convention.annotation.Results;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +21,10 @@ import javax.annotation.Resource;
  */
 
 @Component("userQuery")
-@Scope("prototype")  // 每个请求对应一个Action对象
+@Scope("prototype")            // 每个请求对应一个Action对象
+@ParentPackage("json-default")
+@Namespace("/user")  //命名空间
+@Results({@Result(type = "json", params = {"root", "object"}, name = "query")})
 public class UserAction extends ActionSupport {
 
     public Object getObject() {
@@ -32,10 +40,11 @@ public class UserAction extends ActionSupport {
     @Resource(name = "userService")
     private UserService userService;
 
-    @Override
-    public String execute() throws Exception {
+    @Action(value = "query", results = {@Result(name = "query", type = "json", params = {"root", "object"})})
+    public String query() {
+        System.out.println(" 查询     Action : " + this);
         User query = userService.query(1);
         object = query;
-        return SUCCESS;
+        return "query";
     }
 }

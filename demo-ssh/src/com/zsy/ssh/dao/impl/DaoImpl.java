@@ -1,7 +1,6 @@
 package com.zsy.ssh.dao.impl;
 
-import com.zsy.ssh.dao.RowMapper;
-import com.zsy.ssh.dao.IDao;
+import com.zsy.ssh.dao.TestDao;
 import com.zsy.ssh.domain.Account;
 
 import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
@@ -9,7 +8,7 @@ import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 /**
  *
  */
-public class DaoImpl extends HibernateDaoSupport implements IDao {
+public class DaoImpl extends HibernateDaoSupport implements TestDao {
 
     @Override
     public Account findAccount(int id) {
