@@ -30,7 +30,10 @@ public class TransactionManager {
     //环绕通知：提供的一个自由编写的入口
     //Spring框架会把原始的核心业务方法封装到一个对象中ProceedingJoinPoint
 	public void around(ProceedingJoinPoint pjp) {
-		try {
+        System.out.println("========= target : "+pjp.getTarget().getClass().getName());
+        System.out.println("========= signature : "+pjp.getSignature().getClass().getName());
+        System.out.println("========= Kind : "+pjp.getKind());
+        try {
 			//核心业务
             startTransaction(pjp);
 			Object rtValue = pjp.proceed();   //调用当前被调用的切入点

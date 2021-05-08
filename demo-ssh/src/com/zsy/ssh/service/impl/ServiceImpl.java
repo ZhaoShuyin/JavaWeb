@@ -25,7 +25,7 @@ public class ServiceImpl implements TestService {
         sAccount.setAmount(sAccount.getAmount() - 1);
         tAccount.setAmount(tAccount.getAmount() + 1);
         testDao.updateAccount(sAccount);// 每条语句都处于单独的JDBC事务中
-        int i=1/0;
+//        int i=1/0;
         testDao.updateAccount(tAccount);// 每条语句都处于单独的JDBC事务中
     }
 

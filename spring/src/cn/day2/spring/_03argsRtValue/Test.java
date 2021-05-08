@@ -12,7 +12,7 @@ public class Test {
         ApplicationContext ac = new ClassPathXmlApplicationContext("cn/day2/spring/_03argsRtValue/beans.xml");
         ServiceImpl accountService = (ServiceImpl) ac.getBean("accountService");
 //		accountService.transfer("abc");
-//        accountService.transfer1();
+//      accountService.transfer1();
 
 
         String login = accountService.login();

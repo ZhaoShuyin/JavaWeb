@@ -10,8 +10,7 @@ public class Test {
 
     public static void main(String[] args) {
         ApplicationContext ac =
-                new ClassPathXmlApplicationContext(
-                        "cn/day2/spring/_04annotationAOP/beans.xml");
+                new ClassPathXmlApplicationContext("cn/day2/spring/_04annotationAOP/beans.xml");
 
         System.out.println("================================================");
 

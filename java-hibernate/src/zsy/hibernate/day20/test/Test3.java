@@ -90,10 +90,15 @@ public class Test3 {
         tx1.commit();
         s1.close();    //c1变为了：游离态
 
+        c1.setName("李四");
+
         Session s2 = HibernateUtil.openSession();
         Transaction tx2 = s2.beginTransaction();
+
         Customer c2 = (Customer) s2.get(Customer.class, 1);//持久态
+
         Customer c3 = (Customer) s2.merge(c1);    //把c1的数据拷贝到c3对象中
+
         System.out.println("(c2 == c3) ==> " + (c2 == c3));
 
         tx2.commit();

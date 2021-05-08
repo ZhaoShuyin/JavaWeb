@@ -7,6 +7,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.transaction.support.TransactionSynchronizationAdapter;
+import org.springframework.transaction.support.TransactionSynchronizationManager;
 
 /**
  * @Title com.zsy.ssh.test
@@ -22,8 +24,9 @@ public class Test {
      * @param args
      */
     public static void main(String[] args) {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("/applicationContext.xml");
-        Object testService = ac.getBean("testService");
+        /*ApplicationContext ac = new ClassPathXmlApplicationContext("/applicationContext.xml");
+        Object testService = ac.getBean("testService");*/
+        test2();
     }
 
     private static void test2() {
@@ -46,25 +49,49 @@ public class Test {
         ApplicationContext ac = new ClassPathXmlApplicationContext("com/zsy/ssh/test/beantx.xml");
         TestService service = (TestService) ac.getBean("xxxService");
 
-//        TransactionSynchronizationManager.initSynchronization();
-//        TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronizationAdapter() {
-//            @Override
-//            public void afterCompletion(int status) {
-//                super.afterCompletion(status);
-//                System.out.println("status:" + status);
-//            }
-//
-//            @Override
-//            public void beforeCommit(boolean readOnly) {
-//                super.beforeCommit(readOnly);
-//                System.out.println("readOnly:" + readOnly);
-//            }
-//        });
+        TransactionSynchronizationManager.initSynchronization();
+        TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronizationAdapter() {
+            @Override
+            public void afterCompletion(int status) {
+                super.afterCompletion(status);
+                System.out.println("status:" + status);
+            }
 
-        service.saveTest();
+            @Override
+            public void beforeCommit(boolean readOnly) {
+                super.beforeCommit(readOnly);
+                System.out.println("readOnly:" + readOnly);
+            }
 
-        service.doSomething();
+            @Override
+            public void beforeCompletion() {
+                super.beforeCompletion();
+            }
+        });
 
+        System.out.println("==================== 添加");
+        try {
+            service.saveTest();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("=============== "+e.toString());
+        }
+
+        System.out.println("==================== 转");
+        try {
+            service.doSomething();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("=============== "+e.toString());
+        }
+
+        System.out.println("==================== 添加");
+        try {
+            service.saveTest();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("=============== "+e.toString());
+        }
 
 
     }
