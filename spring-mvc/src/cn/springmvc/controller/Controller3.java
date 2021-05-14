@@ -14,7 +14,7 @@ import cn.springmvc.po.Items;
  * 第三种方法 使用@Controller注解
  */
 @Controller
-@RequestMapping("/item") // 窄化请求
+@RequestMapping("/item") // namespace
 public class Controller3 {
 
     @RequestMapping(value = "/list", method = {RequestMethod.POST, RequestMethod.GET})
@@ -42,7 +42,7 @@ public class Controller3 {
 
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("itemsList", itemsList);
-        modelAndView.setViewName("/WEB-INF/jsp/items/itemsList.jsp");
+        modelAndView.setViewName("items/itemsList");
         return modelAndView;
     }
 }

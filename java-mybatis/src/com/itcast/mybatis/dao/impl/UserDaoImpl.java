@@ -8,9 +8,6 @@ import com.itcast.mybatis.po.User;
 
 public class UserDaoImpl implements UserDao {
 
-	/**
-	 * ע�� sqlSessionFactory ���췽��
-	 */
 	private SqlSessionFactory sqlSessionFactory;
 	public UserDaoImpl(SqlSessionFactory sqlSessionFactory){
 		this.sqlSessionFactory = sqlSessionFactory;

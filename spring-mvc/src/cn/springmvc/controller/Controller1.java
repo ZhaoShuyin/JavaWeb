@@ -19,8 +19,8 @@ import cn.springmvc.po.Items;
 public class Controller1 implements Controller {
 
     @Override
-    public ModelAndView handleRequest(HttpServletRequest request,
-                                      HttpServletResponse response) throws Exception {
+    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
+            throws Exception {
 
         System.out.println("one controller1...");
 
@@ -41,7 +41,7 @@ public class Controller1 implements Controller {
 
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("itemsList", itemsList);
-        modelAndView.setViewName("/WEB-INF/jsp/items/itemsList.jsp");
+        modelAndView.setViewName("items/itemsList");
         return modelAndView;
     }
 }

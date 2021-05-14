@@ -7,33 +7,27 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class JdbcTest {
+
 	public static void main(String[] args) {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 		ResultSet resultSet = null;
 		
 		try {
-			//�������ݿ�����
 			Class.forName("com.mysql.jdbc.Driver");
 			
-			//ͨ�������������ȡ���ݿ�����
 			connection =  DriverManager.getConnection("jdbc:mysql://localhost:3306/mybatis?characterEncoding=utf-8", "root", "root");
-			//����sql��� ?��ʾռλ��
 			String sql = "select * from user where username = ?";
-			//��ȡԤ����statement
 			preparedStatement = connection.prepareStatement(sql);
-			//���ò�������һ������Ϊsql����в�������ţ���1��ʼ�����ڶ�������Ϊ���õĲ���ֵ
-			preparedStatement.setString(1, "����");
-			//�����ݿⷢ��sqlִ�в�ѯ����ѯ�������
+			preparedStatement.setString(1, "????");
 			resultSet =  preparedStatement.executeQuery();
-			//������ѯ�����
 			while(resultSet.next()){
 				System.out.println(resultSet.getString("id")+"  "+resultSet.getString("username"));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
-			//�ͷ���Դ
+			//??????
 			if(resultSet!=null){
 				try {
 					resultSet.close();

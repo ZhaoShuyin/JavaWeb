@@ -9,32 +9,726 @@
   </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web-struts2:war exploded" />
+      <artifact name="spring-mvc:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecde8e13-1a97-4b90-b479-4baf2c85dbba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/demo_ssm_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/demo_ssm_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/spring_mvc_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/asm_3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/aspectjweaver_1_6_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_asl_1_9_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javassist_3_17_1_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jboss_logging_3_1_0_CR2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mybatis_3_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mybatis_spring_2_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_39.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-ssm/demo-ssm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-ssm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-ssm/pom_默认.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-mybatis/官方文档地址.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/config/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/config/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/config/mybatis/SqlMapConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/config/spring/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/config/spring/applicationContext-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/config/spring/applicationContext-transaction.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/config/spring/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/controller/ItemsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/mapper/ItemsCustomMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/mapper/ItemsCustomMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/mapper/ItemsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/mapper/ItemsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/po/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/po/ItemsCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/po/ItemsExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/po/ItemsQueryVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/service/ItemsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/service/impl/ItemsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/utils/converter/CustomDateConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/test/MybatisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/test/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/test/bean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/test/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/asm-3.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/aspectjweaver-1.6.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/cglib-2.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/commons-fileupload-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/commons-io-2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/commons-pool-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/hibernate-validator-4.3.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/jackson-core-asl-1.9.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/jackson-mapper-asl-1.9.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/javassist-3.17.1-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/jboss-logging-3.1.0.CR2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/junit-4.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/log4j-api-2.0-rc1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/log4j-core-2.0-rc1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/mybatis-3.2.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/slf4j-api-1.7.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/slf4j-log4j12-1.7.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-aop-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-aspects-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-beans-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-context-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-context-support-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-core-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-expression-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-jdbc-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-orm-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-test-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-tx-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-web-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-webmvc-3.2.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/validation-api-1.0.0.GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/web2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/web/js/jquery-1.4.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/date/ItemBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/date/RemoteItemBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/demo_ssh_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/demo_ssh_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_app_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_app_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_struts2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_struts2_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/asm_8_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/asm_8_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/service/impl/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/service/impl/ServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/bean33.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/bean33.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/beantx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/beantx.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day20/test/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day20/test/Test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/demo-ssh/com/zsy/ssh/service/impl/ServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/demo-ssh/com/zsy/ssh/service/impl/ServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/demo-ssh/com/zsy/ssh/test/Test$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/demo-ssh/com/zsy/ssh/test/Test$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/demo-ssh/com/zsy/ssh/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/demo-ssh/com/zsy/ssh/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/demo-ssh/com/zsy/ssh/test/bean33.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/demo-ssh/com/zsy/ssh/test/bean33.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/demo-ssh/com/zsy/ssh/test/beantx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/demo-ssh/com/zsy/ssh/test/beantx.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-hibernate/zsy/hibernate/day20/test/Test3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-hibernate/zsy/hibernate/day20/test/Test3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spring/cn/day2/spring/_03argsRtValue/TransactionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring/cn/day2/spring/_03argsRtValue/TransactionManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spring/cn/day2/spring/_04annotationAOP/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring/cn/day2/spring/_04annotationAOP/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spring/cn/day2/spring/_04annotationAOP/TransactionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring/cn/day2/spring/_04annotationAOP/TransactionManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/cn/day2/spring/_03argsRtValue/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/cn/day2/spring/_03argsRtValue/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/cn/day2/spring/_03argsRtValue/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/cn/day2/spring/_03argsRtValue/TransactionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/TransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mybatis/java-mybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-mybatis/java-mybatis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/jdbc/JdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/jdbc/JdbcTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-sql/java-sql.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-sql/java-sql.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/MyBatis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/SqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/dbcp/DBCPUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/dbcp/Test$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/dbcp/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/dbcp/ThreadManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/jdbc/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/dao/impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/jdbc/JdbcTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/mapper/OrdersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/mapper/OrdersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/po/Items.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/po/Orderdetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/po/Orders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/po/OrdersCustom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/po/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/po/UserCustom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/po/UserQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/quickstart/ImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/quickstart/MapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/quickstart/OrdersTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/quickstart/QuickStartTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/mybatis/quickstart/StartTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_01IoC/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_01IoC/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_01IoC/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_01IoC/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_01IoC/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_01IoC/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_01IoC/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_02init/InstanceObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_02init/StaticObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_02init/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_02init/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_02init/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_02init/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_03scope/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_03scope/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_03scope/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_03scope/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_04lifecycle/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_04lifecycle/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_04lifecycle/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_04lifecycle/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_05DI/Bean1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_05DI/Bean2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_05DI/Bean3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_05DI/Bean4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_05DI/Bean5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_05DI/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_05DI/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_06multiXml/Bean1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_06multiXml/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_06multiXml/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_06multiXml/model1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/Bean1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/Bean2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/Bean3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/ObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/UserAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/UserServiceImpl1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_07annotation/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_08junit/MyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_08junit/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_08junit/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day1/spring_08junit/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day2/proxy/cglibproxy/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day2/proxy/cglibproxy/MyMethodInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day2/proxy/cglibproxy/SpringBrother.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day2/proxy/jdkproxy/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day2/proxy/jdkproxy/Human.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day2/proxy/jdkproxy/MyInvocationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day2/proxy/jdkproxy/SpringBrother.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day2/proxy/staticproxy/ComputerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day2/proxy/staticproxy/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/spring/day2/proxy/staticproxy/Saler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/springmvc/controller/Controller1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/springmvc/controller/Controller2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/springmvc/controller/Controller3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/springmvc/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/springmvc/po/Items.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/controller/ItemsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/mapper/ItemsCustomMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/mapper/ItemsCustomMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/mapper/ItemsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/mapper/ItemsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/po/Items.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/po/ItemsCustom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/po/ItemsExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/po/ItemsExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/po/ItemsExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/po/ItemsExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/po/ItemsQueryVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/service/ItemsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/service/impl/ItemsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/ssm/utils/converter/CustomDateConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/AgencyServlet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/AgencyServlet$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/AgencyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/ajax/AjaxServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/ajax/VerifyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/ajax/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/ajax/jsontest/JSONTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/domain/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/domain/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/sql/SqlserverTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/web/BootServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/com/zsy/web/UploadServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/dbcp.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/ehcache.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/ehcache.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/mappers/User.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/springmvc-web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/sqlMap/User.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/test/CollectBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/classes/test/TxtUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/jsp/items/editItems.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/jsp/items/itemsList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/asm-7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/cglib-3.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/commons-dbutils-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/commons-fileupload-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/commons-pool-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/ehcache-core-2.6.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/javassist-3.27.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/log4j-api-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/log4j-core-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/mybatis-3.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/mybatis-ehcache-1.0.2-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/mybatis-ehcache-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/mybatis-spring-2.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/mysql-connector-java-5.1.39.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/ognl-3.2.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/slf4j-api-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/slf4j-log4j12-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/lib/standard.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/ajax/ajax1-status.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/ajax/ajax2-layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/ajax/jsp01.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/ajax/jsp02.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/ajax/showtable.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/1html/html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/1html/html2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/1html/html3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/1html/html4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/1html/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/1html/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/1html/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/1html/images/img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/files/frame1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/files/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/files/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/files/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/files/images/img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/frame1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/frame2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/frame3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/framset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/2framework/images/img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/3css/CSSmove.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/3css/CssSelector1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/3css/HtmlDemo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/3css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/4JS/1.Head引用JS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/4JS/2.JS引用外部文件.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/4JS/JS 变量运算.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/4JS/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/5JS/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/5JS/JS改变文字颜色内容.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/5JS/JS调用方法.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/5JS/file/wst.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/5JS/file/zzsy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/5JS/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/5JS/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/5JS/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/5JS/images/img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/5JS/时钟效果.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/5JS/鼠标事件的处理.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/6H5/H501.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/7jQuery/jQuery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/7jQuery/jquery-3.2.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/7jQuery/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/htmldemo/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/htmldemo/html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/htmldemo/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/htmldemo/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/htmldemo/图片轮播.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/htmldemo/图片闪烁.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/htmldemo/图片闪烁2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/html/stateCode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/js/my.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/js/public.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb/js/xmlHttp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/action/TestAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/action/UserAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/dao/RowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/dao/TestDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/dao/impl/Dao1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/dao/impl/Dao2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/dao/impl/Dao22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/dao/impl/Dao30.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/dao/impl/Dao33.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/dao/impl/DaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/domain/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/domain/Account.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/service/TestService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/service/impl/ServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/service/impl/TxServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/service/impl/TxServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/Test$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/Test22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/Test30.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/Test33.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/bean1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/bean2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/bean22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/bean30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/bean33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/test/beantx.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/transaction/MyEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/transaction/MyListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/transaction/MyTxAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/com/zsy/ssh/transaction/TransactionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/classes/struts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/asm-8.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/asm-commons-8.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/asm-tree-3.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/aspectjweaver-1.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/byte-buddy-1.10.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/c3p0-0.9.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/com.springsource.org.aopalliance-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/commons-dbutils-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/commons-fileupload-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/commons-io-2.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/commons-lang3-3.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/freemarker-2.3.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/hibernate-commons-annotations-5.1.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/hibernate-core-5.3.19.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/javassist-3.27.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/jboss-logging-3.3.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/jta-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/log4j-api-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/log4j-core-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.39.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/ognl-3.1.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/struts2-convention-plugin-2.5.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/struts2-core-2.5.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/struts2-json-plugin-2.5.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/struts2-spring-plugin-2.5.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/lib/xwork-core-2.3.37.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cn/springmvc/controller/Controller1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cn/springmvc/controller/Controller1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cn/springmvc/controller/Controller2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cn/springmvc/controller/Controller2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cn/springmvc/controller/Controller3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/cn/springmvc/controller/Controller3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/com/springmvc/controller/Controller1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/com/springmvc/controller/Controller2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/com/springmvc/controller/Controller3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/com/springmvc/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/com/springmvc/po/Items.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/springmvc-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/classes/springmvc-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_mvc_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/UploadServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/DefaultServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/servlet/ServletDemo9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/web/AgencyServlet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/web/AgencyServlet$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/web/AgencyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/web/BootServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/web/JSON.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/classes/com/zsy/web/UploadServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/asm-3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/asm-7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/asm-commons-3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/asm-tree-3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/cglib-3.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/commons-beanutils-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/commons-dbutils-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/commons-fileupload-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/commons-fileupload-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/commons-io-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/commons-lang3-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/commons-pool-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/ehcache-core-2.6.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/freemarker-2.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/javassist-3.11.0.GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/javassist-3.27.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/log4j-api-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/log4j-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/log4j-core-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/log4j-core-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/mybatis-3.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/mybatis-ehcache-1.0.2-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/mybatis-ehcache-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/mybatis-spring-2.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.39.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/ognl-3.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/ognl-3.2.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/slf4j-api-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/slf4j-log4j12-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/standard.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/struts2-core-2.3.15.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/xwork-core-2.3.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/lib/xwork-core-2.3.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_app_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/action-mode-serv.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/c3p0-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day1/action/HelloAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day1/action/ImplAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day1/action/SupportAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day1/json/JsonAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day1/json/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day1/mode/Demo1Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day1/mode/Demo2Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day1/servlet/Servlet1Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day1/servlet/Servlet2Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/i18n/action/Demo1Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/i18n/action/Demo1Action_en_US.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/i18n/action/Demo1Action_zh_CN.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/i18n/package_en_US.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/i18n/package_zh_CN.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/i18n/resources/message_en_US.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/i18n/resources/message_zh_CN.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/param/action/Demo1Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/param/action/Demo2Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/param/action/Demo3Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/param/action/Demo4Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/param/domain/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/regist/action/StudentAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/regist/action/StudentAction.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/regist/converter/MyDateConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/regist/dao/StudentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/regist/dao/impl/StudentDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/regist/domain/Student-conversion.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/regist/domain/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/regist/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/regist/service/impl/StudentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/regist/test/StudentServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/regist/util/C3P0Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/valid/action/StudentAction-reg2-validation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/valid/action/StudentAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/valid/action/StudentAction1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/valid/domain/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day2/valid/test/StringUtilsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/interceptoer/action/Demo1Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/interceptoer/action/Demo2Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/interceptoer/interceptor/CheckLoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/interceptoer/interceptor/Demo1Interceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/interceptoer/interceptor/Demo2Interceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/ognl/action/Demo1Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/ognl/action/Demo2Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/ognl/action/Demo3Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/upload/action/Download2Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/upload/action/DownloadAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/upload/action/Upload1Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day3/upload/action/Upload2Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day4/ognl/action/Demo1Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day4/ognl/action/Demo2Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day4/ognl/action/Demo3Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day4/ognl/action/Demo4Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day4/ognl/action/Demo5Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day4/ognl/action/Demo6Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day4/ognl/domain/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day4/resubmit/action/Demo1Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/action/UserAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/dao/impl/JdbcDaoSupport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/dao/impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/exception/IdIsNullException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/exception/UsernameExistException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/interceptor/CheckLoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/test/UserServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/day5/util/C3P0Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/json/JsonAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/json/JsonAction2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/cn/struts/json/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/intercepter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/param-regist-valid-218n.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/res/message_zh_CN.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/struts-example.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/struts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/upload-ognl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/classes/xwork-conversion.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/dtd/struts-2.3.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/dtd/xwork-validator-1.0.3.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/files/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/asm-3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/asm-commons-3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/asm-tree-3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/c3p0-0.9.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/commons-dbutils-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/commons-fileupload-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/commons-io-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/commons-lang3-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/commons-logging-1.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/fastjson-1.2.59.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/freemarker-2.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/javassist-3.11.0.GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/ognl-3.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/standard.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/struts2-core-2.3.15.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/struts2-json-plugin-2.3.15.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/struts2-json-plugin-2.5.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/lib/xwork-core-2.3.15.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/calendar/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/calendar/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/files/001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/files/002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/files/inforec-20201221-6061162f44c9f5d305d7a2ef5460aea1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/js/public.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/diapatcher.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/example/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/example/addUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/example/editUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/example/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/example/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/example/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/example/listUsers.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/example/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/example/viewUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/form/1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/i18n/1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/i18n/2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/intercepter/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/intercepter/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/ognl/1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/ognl/2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/ognl/3.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/ognl2/1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/ognl2/2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/ognl2/3.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/ognl2/4.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/ognl2/5.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/ognl2/6.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/param/2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/param/3.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/param/4.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/regist/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/regist/regist.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/regist/success.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/resubmit/1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/resubmit/message.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/resubmit/success.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/upload/1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/upload/2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/valid/reg2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_struts2_war_exploded/jsp/valid/regist.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-mybatis/com/itcast/mybatis/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-mybatis/com/itcast/mybatis/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-mybatis/com/itcast/mybatis/jdbc/JdbcTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-mybatis/com/itcast/mybatis/jdbc/JdbcTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-mybatis/com/itcast/mybatis/quickstart/QuickStartTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-mybatis/com/itcast/mybatis/quickstart/QuickStartTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring-mvc/cn/springmvc/controller/Controller1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring-mvc/cn/springmvc/controller/Controller1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring-mvc/cn/springmvc/controller/Controller2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring-mvc/cn/springmvc/controller/Controller2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring-mvc/cn/springmvc/controller/Controller3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring-mvc/cn/springmvc/controller/Controller3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring-mvc/springmvc-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring-mvc/springmvc-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/lib/servlet-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/spring-mvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/spring-mvc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/controller/Controller1.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/controller/Controller1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/controller/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/controller/Controller2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/controller/Controller3.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/controller/Controller3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/springmvc-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/springmvc-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/standard.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app/web-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web-app/web-app.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/demo-ssm/src/target/" />
+    <ignored path="$PROJECT_DIR$/demo-ssm/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,29 +760,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/beans.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/TransactionManager.java">
+        <entry file="file://$PROJECT_DIR$/spring-mvc/src/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="410">
+              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,58 +773,51 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/spring/lib/aspectjweaver-1.9.5.jar!/org/aspectj/lang/annotation/Before.class">
+        <entry file="file://$PROJECT_DIR$/spring-mvc/config/spring/applicationContext-dao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="400">
+              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_02adviceType/TransactionManager.java">
+        <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/po/Items.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-mvc/config/mybatis/SqlMapConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="209">
+              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/spring/lib/aspectjweaver-1.9.5.jar!/org/aspectj/lang/annotation/AfterReturning.class">
+        <entry file="file://$PROJECT_DIR$/spring-mvc/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="361">
+              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/PointCut1.java">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mybatis-spring-2.0.5.jar!/org/mybatis/spring/SqlSessionFactoryBean.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-              <folding>
-                <element signature="e#300#301#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="437">
+              <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/spring/lib/aspectjweaver-1.9.5.jar!/org/aspectj/lang/annotation/AdviceName.class">
+        <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/po/Items.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/spring/lib/aspectjweaver-1.9.5.jar!/org/aspectj/lang/annotation/Pointcut.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="76">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -166,22 +835,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ptServiceImpl</find>
-      <find>txAdvice</find>
-      <find />
-      <find>OpenSessionInViewInterceptor</find>
-      <find>TransactionSynchronizationAdapter</find>
-      <find>synchronization</find>
-      <find>synchronizations</find>
-      <find>CleanupSynchronization</find>
-      <find>dataSource</find>
-      <find>hibernateTemplate</find>
-      <find>MyAfterTransactionEvent</find>
-      <find>applicationEventPublisher</find>
-      <find>MyTransactionListener</find>
-      <find>jdbcTemplate</find>
-      <find>sessionFactory</find>
-      <find>testDao</find>
       <find>com.zsy.ssh.service.impl</find>
       <find>userDao</find>
       <find>applicationEvent :</find>
@@ -196,6 +849,22 @@
       <find>load(</find>
       <find>photoFileName</find>
       <find>PointCut1</find>
+      <find>handlerAdapter</find>
+      <find>HttpRequestHandlerAdapter</find>
+      <find>RequestMappingHandlerMapping</find>
+      <find>itcast</find>
+      <find>springmvc_spring_mybatis</find>
+      <find>queryUserByUserName</find>
+      <find>queryUserById</find>
+      <find>test</find>
+      <find>statement</find>
+      <find>typeAlias</find>
+      <find>itemsCustom</find>
+      <find>queryItems</find>
+      <find>SqlMapConfig</find>
+      <find>dataSource</find>
+      <find>close</find>
+      <find>ItemsCustomMapper</find>
     </findStrings>
     <replaceStrings>
       <replace>zsy/hibernate/day1</replace>
@@ -226,6 +895,7 @@
       <replace>TAG</replace>
       <replace>cn.day3.springjdbc</replace>
       <replace />
+      <replace>springmvc</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Projects\JavaWeb\java-hibernate\src</dir>
@@ -244,6 +914,10 @@
       <dir>D:\Projects\JavaWeb\web-struts2</dir>
       <dir>D:\Projects\JavaWeb\java-hibernate\src\zsy\hibernate</dir>
       <dir>D:\Projects\JavaWeb\java-hibernate</dir>
+      <dir>D:\Projects\JavaWeb\spring-mvc\src\cn\springmvc\ssm</dir>
+      <dir>D:\Projects\JavaWeb\spring-mvc\config</dir>
+      <dir>D:\Projects\JavaWeb\java-mybatis</dir>
+      <dir>D:\Projects\JavaWeb\spring-mvc</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -252,44 +926,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo-ssh/src/cn/day3/springjdbc/_03tx/Test.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/transaction/MyTransactionListener.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/HelloServiceImpl.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/transaction/MyTxAdapter.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/RowMapper.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/impl/Dao1.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/impl/Dao2.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/XXXDao.java" />
-        <option value="$PROJECT_DIR$/spring/src/cn/day3/springjdbc/_03tx/Test.java" />
-        <option value="$PROJECT_DIR$/spring/src/cn/day3/springjdbc/_03tx/beans2.xml" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/service/impl/Service2.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/Test1.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/Test2.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/impl/Dao22.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/Test22.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/impl/Dao3.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/service/impl/Service3.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/impl/Dao33.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/impl/Dao30.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/Test30.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/service/impl/Service30.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/Test33.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/service/impl/Service33.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/service/impl/Service22.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/IDao.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/transaction/HelloServiceImpl.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/bean2.xml" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/bean22.xml" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/bean30.xml" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/service/impl/XXXServiceImpl.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/action/XXXAction.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/impl/XXXDaoImpl.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/impl/DaoImpl.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/service/impl/TxServiceImpl.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/struts.xml" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/action/TestAction.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/transaction/MyListener.java" />
-        <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/action/UserAction.java" />
         <option value="$PROJECT_DIR$/demo-ssh/src/applicationContext.xml" />
         <option value="$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day20/test/Test3.java" />
@@ -303,6 +939,44 @@
         <option value="$PROJECT_DIR$/spring/src/cn/day2/spring/_03argsRtValue/TransactionManager.java" />
         <option value="$PROJECT_DIR$/spring/src/cn/day2/spring/_03argsRtValue/Test.java" />
         <option value="$PROJECT_DIR$/spring/src/cn/day2/spring/_02adviceType/TransactionManager.java" />
+        <option value="$PROJECT_DIR$/java-mybatis/官方文档地址.txt" />
+        <option value="$PROJECT_DIR$/demo-ssm/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/date/ItemBean.java" />
+        <option value="$PROJECT_DIR$/src/com/date/Test.java" />
+        <option value="$PROJECT_DIR$/demo-ssm/src/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/springmvc-web2.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/springmvc-web.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/controller/Controller3.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/config/SqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/mapper/ItemsMapper.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/config/mybatis/SqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/mapper/ItemsCustomMapper.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/po/Items.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/config/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/po/ItemsQueryVo.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/web/WEB-INF/web2.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/mapper/ItemsMapper.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/controller/Controller1.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/controller/Controller2.java" />
+        <option value="$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/jdbc/JdbcTest.java" />
+        <option value="$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/quickstart/QuickStartTest.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/mapper/ItemsCustomMapper.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/service/impl/ItemsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/test/Test.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/Test.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/test/BeanXml.xml.fxml" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/test/MybatisTest.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/config/db.properties" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/controller/ItemsController.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/test/bean.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/src/test/Test.java" />
+        <option value="$PROJECT_DIR$/spring-mvc/config/spring/applicationContext-dao.xml" />
       </list>
     </option>
   </component>
@@ -319,9 +993,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1940" />
-    <option name="height" value="1100" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="356" />
+    <option name="y" value="22" />
+    <option name="width" value="1536" />
+    <option name="height" value="1018" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -332,7 +1008,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,193 +1018,122 @@
             <path>
               <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-ssh" type="462c0819:PsiDirectoryNode" />
+              <item name="java-mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-ssh" type="462c0819:PsiDirectoryNode" />
+              <item name="java-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="java-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="java-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-ssh" type="462c0819:PsiDirectoryNode" />
+              <item name="java-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="java-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itcast" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="java-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itcast" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="java-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itcast" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-mvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-mvc" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="aspectjweaver-1.9.5.jar" type="ab9368bb:PsiFileNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="aspectjweaver-1.9.5.jar" type="ab9368bb:PsiFileNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="aspectjweaver-1.9.5.jar" type="ab9368bb:PsiFileNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="aspectj" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="aspectjweaver-1.9.5.jar" type="ab9368bb:PsiFileNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="aspectj" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="aspectjweaver-1.9.5.jar" type="ab9368bb:PsiFileNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="aspectj" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="day2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="day2" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="day2" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-              <item name="staticp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="day2" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="day2" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="_03argsRtValue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="day2" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="_04annotationAOP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="day2" type="462c0819:PsiDirectoryNode" />
-              <item name="tx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="_03tx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="day4" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -539,7 +1143,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/Android/SDK" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1620382483229" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1620986432633" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Web/ManagerServer" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -550,19 +1154,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.XML" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\JavaWeb\demo-ssh\src\com\zsy\ssh\test" />
-      <recent name="D:\Projects\JavaWeb\demo-ssh\src\com\zsy\ssh\test\txTest1" />
-      <recent name="D:\Projects\JavaWeb\spring\src\cn\day5" />
-      <recent name="D:\Projects\JavaWeb\web-service\文件\Apache-Axis-Lib" />
-      <recent name="D:\Projects\JavaWeb\web-struts2\web\WEB-INF\lib" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.struts.day1.json" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\JavaWeb\demo-ssh\web\WEB-INF\lib" />
-      <recent name="D:\Projects\JavaWeb\demo-ssh\文件\struts2" />
-      <recent name="D:\Projects\JavaWeb\demo-ssh\src\com\zsy\ssh\test" />
-      <recent name="D:\Projects\JavaWeb\demo-ssh\src\cn\day3" />
-      <recent name="D:\Projects\JavaWeb\demo-ssh\src\com\zsy\ssh\test\txTest2" />
+      <recent name="D:\Projects\JavaWeb\spring-mvc\web\WEB-INF" />
+      <recent name="D:\Projects\JavaWeb\spring-mvc\config" />
+      <recent name="D:\Projects\JavaWeb\spring-mvc\src\cn" />
+      <recent name="D:\Projects\JavaWeb\spring-mvc\web\WEB-INF\lib" />
+      <recent name="D:\Projects\JavaWeb\spring-mvc\web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zsy.ssh.service.impl" />
@@ -571,8 +1171,12 @@
       <recent name="com.zsy.ssh.dao" />
       <recent name="com.zsy.ssh.transaction" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="cn.struts.day1.json" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\JavaWeb\spring-mvc\web\WEB-INF\lib" />
+      <recent name="D:\Projects\JavaWeb\demo-ssh\src\com\zsy\ssh\test" />
+      <recent name="D:\Projects\JavaWeb\demo-ssh\src\com\zsy\ssh\test\txTest1" />
+      <recent name="D:\Projects\JavaWeb\spring\src\cn\day5" />
+      <recent name="D:\Projects\JavaWeb\web-service\文件\Apache-Axis-Lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -587,7 +1191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test (1)">
+  <component name="RunManager" selected="Application.Test (3)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -636,13 +1240,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test33" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zsy.ssh.test.Test33" />
-      <module name="demo-ssh" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <module name="spring-mvc" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.date.Test" />
+      <module name="JavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zsy.ssh.transaction.*" />
+          <option name="PATTERN" value="com.date.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -656,17 +1268,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test3.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-hibernate" />
+    <configuration name="QuickStartTest.testQueryUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-mybatis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zsy.hibernate.day20.test.*" />
+          <option name="PATTERN" value="com.itcast.mybatis.quickstart.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zsy.hibernate.day20.test" />
-      <option name="MAIN_CLASS_NAME" value="zsy.hibernate.day20.test.Test3" />
-      <option name="METHOD_NAME" value="test5" />
+      <option name="PACKAGE_NAME" value="com.itcast.mybatis.quickstart" />
+      <option name="MAIN_CLASS_NAME" value="com.itcast.mybatis.quickstart.QuickStartTest" />
+      <option name="METHOD_NAME" value="testQueryUserById" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -833,6 +1445,78 @@
         </option>
       </method>
     </configuration>
+    <configuration name="Spring_MVC" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.221" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="spring-mvc:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_JavaWeb_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="3583" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="spring-mvc:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration name="Struts2" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.221" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -907,7 +1591,7 @@
     </configuration>
     <configuration name="Tomcat 9.0.221" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.221" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
-        <artifact name="demo-ssh:war exploded">
+        <artifact name="demo-ssm:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -922,7 +1606,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="demo-ssh:war exploded" />
+          <artifact name="demo-ssm:war exploded" />
         </option>
       </method>
     </configuration>
@@ -937,22 +1621,23 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.SSH" />
+      <item itemvalue="Tomcat Server.Spring_MVC" />
       <item itemvalue="Tomcat Server.App" />
       <item itemvalue="Tomcat Server.Struts2" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.221" />
-      <item itemvalue="Application.Test33" />
       <item itemvalue="Application.Test" />
-      <item itemvalue="JUnit.Test3.test5" />
       <item itemvalue="Application.Test (1)" />
       <item itemvalue="Application.Test (2)" />
+      <item itemvalue="JUnit.QuickStartTest.testQueryUserById" />
+      <item itemvalue="Application.Test (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test (3)" />
+        <item itemvalue="JUnit.QuickStartTest.testQueryUserById" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="JUnit.Test3.test5" />
-        <item itemvalue="Application.Test33" />
       </list>
     </recent_temporary>
   </component>
@@ -1051,23 +1736,15 @@
       <workItem from="1620264206860" duration="1754000" />
       <workItem from="1620269271451" duration="7821000" />
       <workItem from="1620355632086" duration="8265000" />
-      <workItem from="1620437504989" duration="1312000" />
+      <workItem from="1620437504989" duration="2056000" />
+      <workItem from="1620868407837" duration="6445000" />
+      <workItem from="1620882805654" duration="12789000" />
+      <workItem from="1620954925364" duration="366000" />
+      <workItem from="1620955754206" duration="15289000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyTest_test - 2021.04.24 at 09h 01m 38s.xml">
-      <configuration name="MyTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test3_test5 - 2021.04.30 at 15h 43m 54s.xml">
-      <configuration name="Test3.test5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test3_test5 - 2021.04.30 at 15h 44m 44s.xml">
-      <configuration name="Test3.test5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test3_test5 - 2021.04.30 at 15h 45m 39s.xml">
-      <configuration name="Test3.test5" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Test3_test5 - 2021.04.30 at 15h 46m 05s.xml">
       <configuration name="Test3.test5" configurationId="JUnit" />
     </history-entry>
@@ -1086,9 +1763,21 @@
     <history-entry file="Test3_test5 - 2021.04.30 at 15h 49m 01s.xml">
       <configuration name="Test3.test5" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="QuickStartTest_testQueryUserById - 2021.05.14 at 10h 18m 24s.xml">
+      <configuration name="QuickStartTest.testQueryUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuickStartTest_testQueryUserById - 2021.05.14 at 10h 19m 06s.xml">
+      <configuration name="QuickStartTest.testQueryUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuickStartTest_testQueryUserById - 2021.05.14 at 10h 55m 00s.xml">
+      <configuration name="QuickStartTest.testQueryUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuickStartTest_testQueryUserById - 2021.05.14 at 10h 58m 59s.xml">
+      <configuration name="QuickStartTest.testQueryUserById" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="725157000" />
+    <option name="totallyTimeSpent" value="760790000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1100,9 +1789,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1940" height="1100" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.83189124" visible="true" weight="0.21542554" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83189124" visible="true" weight="0.25159913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1117,15 +1807,16 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32912844" />
       <window_info anchor="bottom" id="Spring" order="6" weight="0.32912844" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.18587747" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2665941" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026652" side_tool="true" weight="0.3264642" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.26378897" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.30032644" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32912844" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32912844" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.4082569" />
-      <window_info anchor="bottom" id="Run" order="15" sideWeight="0.49733475" visible="true" weight="0.2741433" />
+      <window_info anchor="bottom" id="Run" order="15" sideWeight="0.49733475" weight="0.50272036" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.1689008" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1461,363 +2152,367 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/transaction/MyListener.java">
+    <entry file="jar://$PROJECT_DIR$/java-mybatis/lib/mybatis-3.2.7.jar!/org/apache/ibatis/session/SqlSession.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="171">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/Test33.java">
+    <entry file="file://$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/dao/impl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="91" selection-start-line="16" selection-start-column="91" selection-end-line="16" selection-end-column="91" />
+        <state relative-caret-position="114">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/transaction/MyEvent.java">
+    <entry file="file://$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/jdbc/JdbcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-380">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-mybatis/src/com/mybatis/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/mybatis-3.2.7-sources.jar!/org/apache/ibatis/session/SqlSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/mapper/ItemsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-mybatis/config/sqlMap/User.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-mybatis/src/com/mybatis/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/demo-ssh/web/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar!/org/springframework/context/ApplicationEvent.class">
+    <entry file="file://$PROJECT_DIR$/java-mybatis/src/com/mybatis/mapper/OrdersMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/web/js/jquery-1.4.4.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        <state relative-caret-position="380">
+          <caret line="37" column="26" selection-start-line="32" selection-start-column="7" selection-end-line="44" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/service/ItemsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/po/ItemsQueryVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/jackson-core-asl-1.9.11.jar!/org/codehaus/jackson/JsonFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2964">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/web/WEB-INF/web2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/springmvc-web2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/springmvc-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/beantx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="13" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/bean1.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+        <state relative-caret-position="347">
+          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="90" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-ssh/src/com/zsy/ssh/service/impl/ServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day1/test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day1/test/Test2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day21/test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1191">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day22/test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-811">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day23/test/Test1.java">
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/po/ItemsCustom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day24/test/Test1.java">
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/mapper/ItemsCustomMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="171">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day25/test/Test1.java">
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/mapper/ItemsMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="-1444">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day30/test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day31/test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day32/test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day33/test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day33/domain/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day33/domain/Order.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-hibernate/src/zsy/hibernate/day33/domain/Customer.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web-struts2/web/WEB-INF/lib/commons-io-2.0.1.jar!/org/apache/commons/io/FileUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-struts2/src/cn/struts/day3/upload/action/Upload2Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-struts2/web/jsp/upload/1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="67" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-struts2/src/upload-ognl.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-struts2/src/cn/struts/day3/upload/action/Upload1Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/proxy/jdk/MyInvocationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/proxy/jdk/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/proxy/cglib/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/ServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/mapper/ItemsCustomMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/spring/lib/aspectjweaver-1.9.5.jar!/org/aspectj/lang/JoinPoint.class">
+    <entry file="file://$PROJECT_DIR$/java-mybatis/src/com/itcast/mybatis/quickstart/QuickStartTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        <state relative-caret-position="467">
+          <caret line="41" column="33" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="41" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_02adviceType/beans.xml">
+    <entry file="file://$PROJECT_DIR$/java-mybatis/config/SqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/test/MybatisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="5" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-ssh/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-ssh/src/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1097" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/config/spring/applicationContext-service.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+          <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_01aop/TransactionManager.java">
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/service/impl/ItemsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-mybatis/config/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/config/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/controller/ItemsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/config/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-mybatis/config/MyBatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/config/spring/applicationContext-transaction.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/test/bean.xml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mybatis-spring-2.0.5.jar!/org/mybatis/spring/SqlSessionFactoryBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/po/Items.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_01aop/beans.xml">
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/springmvc/ssm/po/Items.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="53" column="65" lean-forward="true" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
+        <state relative-caret-position="494">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/spring/lib/aspectjweaver-1.9.5.jar!/org/aspectj/lang/ProceedingJoinPoint.class">
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/cn/itcast/ssm/po/Items.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mvc/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        <state relative-caret-position="361">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day3/springjdbc/_04txAnnotation/AMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_03argsRtValue/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-ssh/src/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_03argsRtValue/Test.java">
+    <entry file="file://$PROJECT_DIR$/spring-mvc/config/mybatis/SqlMapConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="12" column="80" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="12" selection-end-column="80" />
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_03argsRtValue/TransactionManager.java">
+    <entry file="file://$PROJECT_DIR$/spring-mvc/config/spring/applicationContext-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="400">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/beans.xml">
+    <entry file="file://$PROJECT_DIR$/spring-mvc/src/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/spring/lib/aspectjweaver-1.9.5.jar!/org/aspectj/lang/annotation/Before.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_02adviceType/TransactionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/spring/lib/aspectjweaver-1.9.5.jar!/org/aspectj/lang/annotation/AfterReturning.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/PointCut1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#300#301#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/spring/lib/aspectjweaver-1.9.5.jar!/org/aspectj/lang/annotation/AdviceName.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/spring/lib/aspectjweaver-1.9.5.jar!/org/aspectj/lang/annotation/Pointcut.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/src/cn/day2/spring/_04annotationAOP/TransactionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="410">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1834,7 +2529,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.27586207" />
+                <option value="0.41149426" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1879,12 +2574,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JavaWeb</last-edited>
+          <last-edited>Web|spring-mvc</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.27586207" />
-                <option value="0.6" />
+                <option value="0.41149426" />
               </list>
             </option>
           </splitter-proportions>
@@ -1892,7 +2586,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jta-1.1</last-edited>
+          <last-edited>asm-8.0.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

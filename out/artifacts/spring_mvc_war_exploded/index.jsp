@@ -11,9 +11,9 @@
     <title>Spring Mvc</title>
 </head>
 <body>
-<h5>JSP传递的message值</h5>
+<h1>JSP传递的message值</h1>
+<hr/>
 <h1>${message}</h1>
-<%----%>
-$END$
+<hr/>
 </body>
 </html>

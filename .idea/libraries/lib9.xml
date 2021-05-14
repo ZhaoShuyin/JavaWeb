@@ -15,6 +15,8 @@
       <root url="jar://$PROJECT_DIR$/java-mybatis/lib/asm-3.3.1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/mybatis-3.2.7-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
