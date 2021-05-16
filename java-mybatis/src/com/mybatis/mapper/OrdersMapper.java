@@ -16,22 +16,16 @@ public interface OrdersMapper {
 
 	/**
 	 * 查询订单细信息并关联查询用户用信息   resultType实现
-	 * @return
-	 * @throws Exception
 	 */
 	public List<OrdersCustom> queryOrdersAndUserByResultType() throws Exception;
 	
 	/**
 	 * 查询订单细信息并关联查询用户用信息   resultMap实现
-	 * @return
-	 * @throws Exception
 	 */
 	public List<Orders> queryOrdersAndUserByResultMap() throws Exception;
 	
 	/**
 	 * 查询订单细信息并关联查询明细信息
-	 * @return
-	 * @throws Exception
 	 */
 	public List<Orders> queryOrdersAndDetailByResultMap() throws Exception;
 	
@@ -56,5 +50,5 @@ public interface OrdersMapper {
 	 * @throws Exception
 	 */
 	public User queryUserById(int id) throws Exception;
-	public void updateUserById(User user) throws Exception;
+
 }

@@ -12,6 +12,7 @@ import cn.itcast.ssm.po.Items;
 import cn.itcast.ssm.po.ItemsCustom;
 import cn.itcast.ssm.po.ItemsQueryVo;
 import cn.itcast.ssm.service.ItemsService;
+import cn.itcast.ssm.utils.exception.CustomException;
 
 public class ItemsServiceImpl implements ItemsService {
 	
@@ -32,8 +33,12 @@ public class ItemsServiceImpl implements ItemsService {
 	public ItemsCustom queryItemsById(Integer id) throws Exception {
 		Items items = itemsMapper.selectByPrimaryKey(id);
 		ItemsCustom itemsCustom = new ItemsCustom();
-		BeanUtils.copyProperties(items, itemsCustom);
-		return itemsCustom;
+		if (items!=null) {
+			BeanUtils.copyProperties(items, itemsCustom);
+			return itemsCustom;
+		}else{
+			throw new CustomException("查询的商品信息不存在");
+		}
 	}
 
 	

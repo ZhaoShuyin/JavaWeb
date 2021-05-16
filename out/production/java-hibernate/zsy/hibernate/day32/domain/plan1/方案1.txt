@@ -1,1 +1,0 @@
-使用 discriminator 共用一个表

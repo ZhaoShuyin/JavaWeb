@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="hibernate-validator-6.0.17.Final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/hibernate-validator-6.0.17.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/jboss-logging-3.3.2.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

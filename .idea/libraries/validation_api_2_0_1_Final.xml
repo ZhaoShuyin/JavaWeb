@@ -1,9 +1,11 @@
 <component name="libraryTable">
   <library name="validation-api-2.0.1.Final">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/spring-mvc/web/WEB-INF/lib/validation-api-2.0.1.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/validation-api-2.0.1.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/validation-api-2.0.1.Final-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

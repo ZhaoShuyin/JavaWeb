@@ -23,7 +23,7 @@
     </environments>
 
     <mappers>
-        <mapper resource="sqlMap/User.xml" />
+        <mapper resource="mappers/User.xml" />
         <!-- <mapper resource="sqlMap/UserMapper.xml"/> -->
 
         <!-- <mapper class="cn.struts.day2.regist.mybatis.mapper.UserMapper"/> -->

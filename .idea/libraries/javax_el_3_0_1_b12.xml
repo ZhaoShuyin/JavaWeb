@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="javax.el-3.0.1-b12">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/javax.el-3.0.1-b12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/javax.el-api-3.0.1-b06.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

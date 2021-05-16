@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="tomcat-el-api-10.0.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/tomcat-el-api-10.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/tomcat-jasper-el-10.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

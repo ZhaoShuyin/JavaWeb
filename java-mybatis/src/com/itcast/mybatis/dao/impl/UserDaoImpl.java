@@ -6,6 +6,9 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import com.itcast.mybatis.dao.UserDao;
 import com.itcast.mybatis.po.User;
 
+/**
+ * 1:通过旧样式Dao方式查询
+ */
 public class UserDaoImpl implements UserDao {
 
 	private SqlSessionFactory sqlSessionFactory;

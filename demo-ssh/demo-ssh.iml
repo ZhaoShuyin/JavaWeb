@@ -19,29 +19,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.221" level="application_server_libraries" />
-    <orderEntry type="module-library">
-      <library name="aspectjweaver-1.9.6">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/aspectjweaver-1.9.6.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/com.springsource.org.aopalliance-1.0.0.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/com.springsource.org.apache.commons.logging-1.1.1.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.39.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar!/" />
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="struts2-core-2.5.25" level="project" />
     <orderEntry type="library" name="xwork-core-2.3.37" level="project" />
     <orderEntry type="module-library">
@@ -56,7 +33,6 @@
     </orderEntry>
     <orderEntry type="library" name="commons-logging-1.2" level="project" />
     <orderEntry type="library" name="asm-8.0.1" level="project" />
-    <orderEntry type="library" name="log4j-to-slf4j-2.13.3" level="project" />
     <orderEntry type="library" name="log4j-core-2.13.3" level="project" />
     <orderEntry type="library" name="log4j-api-2.13.3" level="project" />
     <orderEntry type="library" name="commons-fileupload-1.4" level="project" />
@@ -83,5 +59,6 @@
     </orderEntry>
     <orderEntry type="library" name="commons-dbutils-1.7" level="project" />
     <orderEntry type="library" name="struts2-convention-plugin-2.5.25" level="project" />
+    <orderEntry type="library" name="aspectjweaver-1.9.6" level="project" />
   </component>
 </module>

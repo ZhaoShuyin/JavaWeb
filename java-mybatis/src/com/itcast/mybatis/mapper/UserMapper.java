@@ -7,6 +7,9 @@ import com.mybatis.po.User;
 import com.mybatis.po.UserCustom;
 import com.mybatis.po.UserQuery;
 
+/**
+ * 通过新的代理对象的方式进行查询
+ */
 public interface UserMapper {
 
 	/**

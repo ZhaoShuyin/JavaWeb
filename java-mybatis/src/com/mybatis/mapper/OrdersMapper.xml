@@ -30,8 +30,8 @@
             <result column="username" property="username" />
             <result column="address" property="address" />
         </association>
-
     </resultMap>
+
     <select id="queryOrdersAndUserByResultMap" resultMap="userIntoOrders">
 		SELECT o.*,u.username,u.address
 		FROM orders o,USER u
@@ -123,6 +123,7 @@
         <association property="user" javaType="user" select="queryUserById"
             column="user_id"></association>
     </resultMap>
+
     <!--延迟加载的SQl语句-->
     <select id="queryUserById" parameterType="int" resultType="user" useCache="true">
 		select * from user where id = #{user_id}

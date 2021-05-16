@@ -2,13 +2,11 @@
   <artifact type="exploded-war" name="demo-ssh:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/demo_ssh_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="demo-ssh/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="demo-ssh" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="module" name="aspectjweaver-1.9.6" module-name="demo-ssh" />
           <element id="library" level="project" name="struts2-core-2.5.25" />
           <element id="library" level="project" name="xwork-core-2.3.37" />
           <element id="library" level="module" name="slf4j-api-1.7.25" module-name="demo-ssh" />
@@ -32,8 +30,10 @@
           <element id="library" level="module" name="json" module-name="demo-ssh" />
           <element id="library" level="project" name="commons-dbutils-1.7" />
           <element id="library" level="project" name="struts2-convention-plugin-2.5.25" />
+          <element id="library" level="project" name="aspectjweaver-1.9.6" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="demo-ssh/web/Web" />
     </root>
   </artifact>
 </component>
