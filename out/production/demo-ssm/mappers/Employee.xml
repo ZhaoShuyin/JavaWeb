@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd" ><!-- namespace指定该映射文件要实现的接口 -->
+<mapper namespace="com.zsy.ssm.dao.EmplopyeeDao">
+
+    <!--使用动态Sql为空不更新-->
+    <update id="updateAllColumnById" parameterType="com.zsy.ssm.entity.Employee">
+        UPDATE tb_employee
+        set
+        last_name = #{lastName},
+        email = #{email},
+        gender = #{gender},
+        age = #{age}
+        WHERE id = #{id}
+    </update>
+
+
+</mapper>

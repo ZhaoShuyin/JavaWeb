@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="mybatis-plus-extension-3.3.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/mybatis-plus-extension-3.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/mybatis-plus-core-3.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/mybatis-plus-annotation-3.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/mybatis-3.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/demo-ssm/web/WEB-INF/lib/jsqlparser-3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

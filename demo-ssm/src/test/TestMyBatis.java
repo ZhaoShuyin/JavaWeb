@@ -33,6 +33,10 @@ public class TestMyBatis {
     }
 
     public static void main(String[] args) throws IOException {
+        test1();
+    }
+
+    private static void test4() throws IOException {
         SqlSession session = getSession();
         UserMapper mapper = session.getMapper(UserMapper.class);
         User user = new User();
