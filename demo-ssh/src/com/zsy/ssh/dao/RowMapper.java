@@ -12,12 +12,12 @@ import java.sql.SQLException;
  * @autor Zsy
  */
 public class RowMapper implements org.springframework.jdbc.core.RowMapper {
-	//封装结果集到JavaBean中
-	public Account mapRow(ResultSet rs, int rowNum) throws SQLException {
-		Account a = new Account();
-		a.setId(rs.getInt("id"));
-		a.setName(rs.getString("name"));
-		a.setAmount(rs.getFloat("amount"));
-		return a;
-	}
+    //封装结果集到JavaBean中
+    public Account mapRow(ResultSet rs, int rowNum) throws SQLException {
+        Account a = new Account();
+        a.setId(rs.getInt("id"));
+        a.setName(rs.getString("name"));
+        a.setAmount(rs.getFloat("amount"));
+        return a;
+    }
 }

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="struct">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web-app/web/WEB-INF/lib/struct.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

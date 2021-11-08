@@ -7,24 +7,24 @@ import java.io.Serializable;
  * @date 2020/3/20
  * @autor Zsy
  */
-public class ItemBean implements Serializable {
+public class ItemBean  {
 
-    public boolean QUICK;             //标记是否快速新建
-    public String SERIES = "";        //重做时覆盖的SERIES
+    public boolean QUICK;          //标记是否快速新建
+    public String SERIES = "";     //重做时覆盖的SERIES
 
-    public String EXAM_SERIES_UID;    //
+    public String EXAM_SERIES_UID;
 
-    public String EXAM_UID;           //病例唯一标识ID
-    public String ISTOP;              //是否置顶
+    public String EXAM_UID;        //病例唯一标识ID
+    public String ISTOP;           //是否置顶
 
-    public String NAME;               //姓名
-    public String NAME_PHONETIC;      //英文名
-    public String SEX;                //性别
-    public String SEX_NAME;           //性别Name
-    public String AgeDisPlay;         //年龄描述
-    public String EXAM_AGE;           //年龄
-    public String AGE_UNIT;           //年龄单位
-    public String BIRTHDAY;           //生日
+    public String NAME;             //姓名
+    public String NAME_PHONETIC;    //英文名
+    public String SEX;              //性别
+    public String SEX_NAME;         //性别Name
+    public String AgeDisPlay;       //年龄描述
+    public int EXAM_AGE;         //年龄
+    public String AGE_UNIT;         //年龄单位
+    public String BIRTHDAY;         //生日
 
     public String REQ_DEPT_NAME;      //科室Name
     public String REQ_DEPT_CODE;      //科室Code
@@ -35,36 +35,36 @@ public class ItemBean implements Serializable {
     public String ITEM_NAME;           //检查项目
     public String ITEM_CODE;           //检查项目
 
-    public String EXAM_CLASS;          //检查类型
+    public String EXAM_CLASS;        //检查类型
 
-    public String OUTP_NO;             //门诊号
-    public String INP_NO;              //住院号
-    public String ROOM_NO;             //房间号/病区
-    public String BED_NO;              //床号
+    public String OUTP_NO;           //门诊号
+    public String INP_NO;            //住院号
+    public String ROOM_NO;           //房间号/病区
+    public String BED_NO;            //床号
 
-    public String CREATE_USER_UID;     //创建者医生
+    public String CREATE_USER_UID;   //创建者医生
 
-    public String EXAM_STATUS;         //检查状态 1.未检查 2.未报告 3.已报告 4.已审核 5.已退回
-    public String EXAM_STATUS_NAME;    //检查状态
+    public String EXAM_STATUS;      //检查状态 1.未检查 2.未报告 3.已报告 4.已审核 5.已退回
+    public String EXAM_STATUS_NAME; //检查状态
 
-    public String CONSULTATION_STATUS; //会诊状态  未申请/未会诊/已会诊
-    public String File_Status;         //文件状态
+    public String CONSULTATION_STATUS;//会诊状态  未申请/未会诊/已会诊
+    public String File_Status;        //文件状态
 
-    public String CREATE_DATE;         //创建日期
-    public String EXAM_DATETIME;       //测试日期
-    public String REQ_DATETIME;        //申请日期
+    public String CREATE_DATE;      //创建日期
+    public String EXAM_DATETIME;    //测试日期
+    public String REQ_DATETIME;     //申请日期
 
-    public String PATIENT_ID;          //患者ID 使用这个>>>>>>>>>>>>>>>>>>>
-    public String HIS_PATIENT_ID;      //HIS患者ID
-    public String HOSPITAL_CODE;       //医院ID
+    public String PATIENT_ID;       //患者ID 使用这个>>>>>>>>>>>>>>>>>>>
+    public String HIS_PATIENT_ID;   //HIS患者ID
+    public String HOSPITAL_CODE;    //医院ID
 
-    public String PRINT_STATUS;        //打印状态
-    public String IMAGE_STATUS_NAME;   //图片状态
+    public String PRINT_STATUS;     //打印状态
+    public String IMAGE_STATUS_NAME;//图片状态
 
-    public String DEVICE_UID;          //设备ID
+    public String DEVICE_UID;        //设备ID
 
-    public String PATIENT_UID;         //某项ID
-    public String EXAM_NO;             //某项ID
+    public String PATIENT_UID;       //某项ID
+    public String EXAM_NO;           //某项ID
 
     public String EDIT_DATE;           //编辑日期
     public String EDIT_USER_UID;       //编辑人UID
@@ -72,26 +72,26 @@ public class ItemBean implements Serializable {
     public String EXAM_DEPT_CODE;      //检查科室
     public String EXAM_DEPT_NAME;      //科室名称
 
-    public String REQ_DOCTOR_NAME;     //申请医生名称
-    public String REQ_DOCTOR_CODE;     //申请医生ID
+    public String REQ_DOCTOR_NAME;      //申请医生名称
+    public String REQ_DOCTOR_CODE;      //申请医生ID
 
-    public String CHECK_DOCTOR_CODE;   //审核人UID
-    public String CHECK_DOCTOR_NAME;   //审核医生名称
+    public String CHECK_DOCTOR_CODE;    //审核UID
+    public String CHECK_DOCTOR_NAME;    //检查医生名称
 
-    public String EXAM_DOCTOR_NAME;    //检测医生名称
+    public String EXAM_DOCTOR_NAME;     //检测医生名称
 
-    public String REPORT_DOCTOR_UID;   //报告人UID
-    public String REPORT_DOCTOR_NAME;  //报告医生名称
+    public String REPORT_DOCTOR_UID;    //报告UID
+    public String REPORT_DOCTOR_NAME;   //报告医生名称
 
-    public String AUTOMATIC_DIAGNOSIS; //检查所见
-    public String FINDINGS;            //检查所见
-    public String CONCLUSIONS;         //检查结论
+    public String AUTOMATIC_DIAGNOSIS;  //检查所见
+    public String FINDINGS;             //检查所见
+    public String CONCLUSIONS;          //检查结论
 
-    public int PACS_UPLOAD_STATUS;     //初始化检查PACS图像未上传
-    public int RIS_UPLOAD_STATUS;      //初始化检查RIS图像未上传
-    public int IMAGE_STATUS;           //初始化检查为无图
-    public int DELETE_FLAG;            //删除状态
-    public int PRINT_NUM;              //打印次数
+    public int PACS_UPLOAD_STATUS;      //初始化检查PACS图像未上传
+    public int RIS_UPLOAD_STATUS;       //初始化检查RIS图像未上传
+    public int IMAGE_STATUS;            //初始化检查为无图
+    public int DELETE_FLAG;             //删除状态
+    public int PRINT_NUM;               //打印次数
 
     public String ACCESSIONNUMBER;
 
@@ -101,6 +101,7 @@ public class ItemBean implements Serializable {
     public String FROM_TYPE;
     public String CASE_HISTORY;
     public String INSURANCE_TYPE;
+
 
     public String PHYS_SIGN;
 
@@ -222,11 +223,11 @@ public class ItemBean implements Serializable {
         AgeDisPlay = ageDisPlay;
     }
 
-    public String getEXAM_AGE() {
+    public int getEXAM_AGE() {
         return EXAM_AGE;
     }
 
-    public void setEXAM_AGE(String EXAM_AGE) {
+    public void setEXAM_AGE(int EXAM_AGE) {
         this.EXAM_AGE = EXAM_AGE;
     }
 
@@ -933,4 +934,10 @@ public class ItemBean implements Serializable {
     public void setDELETE_DATE(String DELETE_DATE) {
         this.DELETE_DATE = DELETE_DATE;
     }
+
+
+
+
+
+
 }

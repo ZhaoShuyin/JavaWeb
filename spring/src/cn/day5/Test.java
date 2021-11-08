@@ -2,6 +2,7 @@ package cn.day5;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.util.DigestUtils;
 import org.springframework.web.context.ContextLoaderListener;
 
 /**
@@ -15,5 +16,8 @@ public class Test {
 
     public static void main(String[] args) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("cn/day5/beans.xml");
+
+
+
     }
 }

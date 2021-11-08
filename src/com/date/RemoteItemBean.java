@@ -7,7 +7,7 @@ import java.io.Serializable;
  * @date 2020/3/20
  * @autor Zsy
  */
-public class RemoteItemBean implements Serializable {
+public class RemoteItemBean {
 
 
     private static final long serialVersionUID = 5698599301560986227L;
